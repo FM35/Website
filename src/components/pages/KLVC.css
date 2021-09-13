@@ -1,0 +1,124 @@
+body{
+  background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/home-background.png');
+  background-position: center;
+}
+
+.heatpack-container{
+
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+    
+    }
+    
+.heatpack-title-container{
+
+      display:flex;
+      width: 35%;
+      height: 15%;
+      align-items: center;
+      font-size: 90px;
+      color: white;
+      overflow: hidden;
+      
+    }
+    
+.marquee{
+
+    position: absolute;
+    top: 12%;
+    width:100%;
+    color: black;
+    overflow: hidden;
+    z-index: 1;
+   }
+   
+  
+.marquee-content{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 10s linear infinite;
+          
+      }
+      
+   @keyframes scrolling{
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-127.5vw);}
+    }
+      
+.marquee-content li{
+      
+    display:flex;
+    justify-content: center;
+    width: 42.5vw;
+    flex-shrink: 0;
+    font-size: 90px;
+    white-space:nowrap;
+    text-align: center;
+    color: tomato;
+
+  }
+  
+.computer{
+    
+    position: absolute;
+    display: flex;
+    top: 22%;
+    font-size: 90px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+            
+    }
+
+.flex{
+
+    display: flex;
+    width: 100.9%;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    }
+
+.polaroid-container-1{
+     
+      align-self: flex-end;
+      width: 345px;
+      height: 440px;
+      
+  }
+
+.polaroid-container-2{
+      position: relative;
+      display:flex;
+      justify-content: center;
+      width: 1136px;
+      height: 1379px;
+      
+    
+        
+    }
+
+.polaroid-container-3{
+      position: relative;
+      align-self: flex-start;
+      width: 345px;
+      height: 418px;
+      
+      
+  }
+
+
+.first-Image {
+
+  position:relative;
+  display: flex;
+  top: 1000px;
+  justify-content: space-around;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+  
+}

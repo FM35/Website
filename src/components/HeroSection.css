@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.hero-container{
+
+  background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/home-background.png');
+  background-position: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  left: 50%;
+}
+
+.hero-container::after{
+
+  content:'';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  /*background: rgb(130, 131, 136);*/
+  opacity: 0.5;
+  background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/OLI_0100.jpg');
+  background-size: 1920px 1080px;
+  background-position: center;
+
+}
+
+.grid-image{
+  display: block;
+
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  
+  position: absolute;
+  bottom: 85px;
+  left: 13px;
+  list-style-type: none;
+
+}
+
+.photo-icon {
+ 
+  position: absolute;
+  bottom: 25px;
+  left: 35px;
+  cursor: pointer;
+  
+}
+
+.img-container{
+  width: 320px;
+  height: 300px;
+  position: relative;
+}
+
+.img-container2{
+  width: 320px;
+  height: 300px;
+  position: relative;
+}
+
+.img-container::after{
+
+  content:'';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: black;
+
+}
+
+.img-container2::after{
+
+  content:'';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+
+}
+
+.tech-icon {
+
+  position: absolute;
+  bottom: 25px;
+  left: 19px;
+  cursor: pointer;
+}
+
+.display-none {
+
+  display: none;
+}
+
+
+.figcap1{
+  color: #fff;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  
+}
+
+.figcap2{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+}
+
+.photo-item {
+  height: 28px;
+}
+
+.item-links {
+  display: block;
+  text-align: left;
+  margin: 2rem auto;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  transition: all 0.3s ease-out;
+}
+
+.item-links1 {
+  display: block;
+  text-align: left;
+  margin: 2rem auto;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container{
+    
+    background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/website-background.png');
+    background-position: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    left: 50%;
+    flex-direction: column;
+  }
+
+}
