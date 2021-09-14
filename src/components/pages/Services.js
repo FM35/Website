@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './Services.css';
-import useWindowSize from "./useWindowSize"
+import useWindowSize from "./useWindowSize";
 
 export default function Services() {
 
@@ -29,24 +29,29 @@ export default function Services() {
   }, []);
 
   const skewScrolling = () => {
-    //Set Current to the scroll position amount
-    data.current = window.scrollY;
-    // Set Previous to the scroll previous position
-    data.previous += (data.current - data.previous) * data.ease;
-    // Set rounded to
-    data.rounded = Math.round(data.previous * 100) / 100;
 
-    // Difference between
-    const difference = data.current - data.rounded;
-    const acceleration = difference / size.width;
-    const velocity = +acceleration;
-    const skew = velocity * 7.5;
+    try {
+      //Set Current to the scroll position amount
+      data.current = window.scrollY;
+      // Set Previous to the scroll previous position
+      data.previous += (data.current - data.previous) * data.ease;
+      // Set rounded to
+      data.rounded = Math.round(data.previous * 100) / 100;
 
-    //Assign skew and smooth scrolling to the scroll container
-    scrollContainer.current.style.transform = `translateY(-${data.rounded}px) skewY(${skew}deg)`;
+      // Difference between
+      const difference = data.current - data.rounded;
+      const acceleration = difference / size.width;
+      const velocity = +acceleration;
+      const skew = velocity * 7.5;
 
-    //loop vai raf
-    requestAnimationFrame(() => skewScrolling());
+      //Assign skew and smooth scrolling to the scroll container
+      scrollContainer.current.style.transform = `translateY(-${data.rounded}px) skewY(${skew}deg)`;
+
+      //loop vai raf
+      requestAnimationFrame(() => skewScrolling());
+    } catch (error) {
+
+    }
   };
 
 
@@ -57,7 +62,7 @@ export default function Services() {
       <div ref={scrollContainer} className='scroll'>
 
         <h1>Photo</h1>
-        <h1>Gallery</h1>
+        <h2>Gallery</h2>
 
         <div className='image-container'>
           <img src='images/OLI_0018.jpg'
@@ -66,43 +71,43 @@ export default function Services() {
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/DSC_0025.JPG'
             alt='Photography-Icon'
           />
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/OLI_0029.JPG'
             alt='Photography-Icon'
           />
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/OLI_0042.jpg'
             alt='Photography-Icon'
           />
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/OLI_0087.jpg'
             alt='Photography-Icon'
           />
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/OLI_0100.jpg'
             alt='Photography-Icon'
           />
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/OLI_0101.jpg'
             alt='Photography-Icon'
           />
         </div>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img src='images/OLI_0246.jpg'
             alt='Photography-Icon'
           />
         </div>

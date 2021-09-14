@@ -17,13 +17,24 @@
   height: 888px;
   overflow: hidden;
   position: relative;
-  margin: 400px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: center;
   align-items: center;
  }
 
  h1{
+  position: relative;
+  left: 10.5%;
+  font-size: 90px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+ }
 
+ h2{
+  position: relative;
+  left: 12.5%;
+  font-size: 90px;
+  font-family: 'Dancing Script', cursive;
   color: white;
  }
