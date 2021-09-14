@@ -1,9 +1,14 @@
-.left{
-    float:left;
-    margin-left: 200px;
-  }
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
 
-.right{
-    float:right;
-    margin-left: 200px;
-  }
+.scroll{
+  padding: 2vh 0;
+  pointer-events: none;
+}

@@ -95,7 +95,7 @@ function HeroSection() {
               to='/HeatPack'
               className='item-links'
             >
-              Contact Info
+              Instagram Page
             </Link>
           </motion.li>
         </ul>
