@@ -12,3 +12,18 @@
   padding: 2vh 0;
   pointer-events: none;
 }
+ .image-container{
+  width: 700px;
+  height: 888px;
+  overflow: hidden;
+  position: relative;
+  margin: 400px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ h1{
+
+  color: white;
+ }

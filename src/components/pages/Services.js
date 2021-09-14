@@ -43,7 +43,7 @@ export default function Services() {
     const skew = velocity * 7.5;
 
     //Assign skew and smooth scrolling to the scroll container
-    scrollContainer.current.style.transform = `translate(-${data.rounded}px) skewY(${skew}deg)`;
+    scrollContainer.current.style.transform = `translateY(-${data.rounded}px) skewY(${skew}deg)`;
 
     //loop vai raf
     requestAnimationFrame(() => skewScrolling());
@@ -56,37 +56,56 @@ export default function Services() {
     <div ref={app} className='App'>
       <div ref={scrollContainer} className='scroll'>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <h1>Photo</h1>
+        <h1>Gallery</h1>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
 
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div className='image-container'>
+          <img src='images/OLI_0018.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
       </div>
     </div>
   );
