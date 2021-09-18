@@ -8,6 +8,7 @@ import Pato from './components/pages/Pato';
 import KLVC from './components/pages/KLVC';
 import { AnimatePresence } from 'framer-motion';
 import HeroSection from './components/HeroSection';
+import VirtualExhibit from './components/pages/VirtualExhibit';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/HeatPack' component={HeatPack} />
           <Route path='/Pato' component={Pato} />
           <Route path='/KLVC' component={KLVC} />
+          <Route path='/VirtualExhibit' component={VirtualExhibit} />
         </Switch>
       </AnimatePresence>
     </>
