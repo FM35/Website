@@ -70,44 +70,152 @@ export default function Services() {
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 914 }} className='image-container'>
           <img src='images/DSC_0025.JPG'
             alt='Photography-Icon'
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 467 }} className='image-container'>
           <img src='images/OLI_0029.JPG'
             alt='Photography-Icon'
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 875 }} className='image-container'>
           <img src='images/OLI_0042.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 985 }} className='image-container'>
           <img src='images/OLI_0087.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 467 }} className='image-container'>
           <img src='images/OLI_0100.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 875 }} className='image-container'>
           <img src='images/OLI_0101.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div className='image-container'>
+        <div style={{ height: 908 }} className='image-container'>
           <img src='images/OLI_0246.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0001.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0006.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0007.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 467 }} className='image-container'>
+          <img src='images/OLI_0014.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0016.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0033.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0022(1).jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 467 }} className='image-container'>
+          <img src='images/OLI_0034.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0040.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0074.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 1050 }} className='image-container'>
+          <img src='images/OLI_0085.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 1054 }} className='image-container'>
+          <img src='images/OLI_0094.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0105.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 467 }} className='image-container'>
+          <img src='images/OLI_0148.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0151.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0190.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0198.jpg'
+            alt='Photography-Icon'
+          />
+        </div>
+
+        <div style={{ height: 875 }} className='image-container'>
+          <img src='images/OLI_0211.jpg'
             alt='Photography-Icon'
           />
         </div>
