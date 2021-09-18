@@ -14,7 +14,7 @@ export default function VirtualExhibit() {
 
         <div className='exhibit-container'>
             <div className='title'>
-                <div className='heading'> Virtual</div>
+                <div style={{ color: "white" }} className='heading'> Virtual</div>
                 <div className='heading-1'> Exhibit</div>
             </div>
             <div className='game-container'>

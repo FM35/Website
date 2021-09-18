@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './KLVC.css';
+import './HeatPack.css';
 import { motion } from "framer-motion";
 
 export default function HeatPack() {

@@ -1,22 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './PC_Builds.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 
 export default function PC_Builds() {
-
-  const [cursorX, setCursorX] = useState();
-  const [cursorY, setCursorY] = useState();
-
-  window.addEventListener('mousemove', (e) => {
-    setCursorX(e.pageX)
-    setCursorY(e.pageY)
-
-  })
-
   return (
-
     <motion.div className='container' style={{ overflow: 'hidden' }}>
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='title'>
         <div className='heading'> Computer</div>

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './Pato.css';
+import './HeatPack.css';
 import { motion } from "framer-motion";
 
 export default function Pato() {
