@@ -13,13 +13,73 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
 }
 
-.control-container{
+.heading-3{
+    
+    position: relative;
+    font-size: 90px;
+    left: 10%;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    
+}
 
+.title-3{
+
+display:inline-flex;
+width: 100%;
+height: 15%;
+align-items:center;
+}
+
+.controls-background {
+
+    position: absolute;
+    top: 15%;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+    height: 720px;
+  }
+
+  .controls-background li{
+    
+    list-style: none;
+    margin-bottom: 20px;
     display: flex;
-    width: 100%;
-    height: 10%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+    align-items: center;
+    cursor: pointer;
+    
+  }
+
+  .controls-background ul {
+    padding: 25px;
+    position: absolute;
+    top: 125px;
+  }
+
+  .controls-background p {
+    padding: 25px;
+    position: absolute;
+    top: 400px;
+  }
+
+  .about-background {
+
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+    height: 720px;
+  }
+
+  .about-background p {
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+  }

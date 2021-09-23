@@ -3,7 +3,7 @@
 
 .container{
 
-background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/home-background.png');
+  background-color: #121212;
 background-position: center;
 height: 100vh;
 position: relative;

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
 
@@ -6,6 +6,7 @@ export default function Pato() {
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
   const transition_2 = { duration: 0.5, ease: [0.6, 0.01, -0.05, 0.9] };
+  const reset_body = useRef();
 
   const staggerEffect = {
     initial: {
@@ -33,9 +34,15 @@ export default function Pato() {
     },
   };
 
+  useEffect(() => {
+
+    document.body.style.height = `${reset_body.current.getBoundingClientRect().height}px`;
+
+  }, []);
+
   return (
 
-    <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
+    <div ref={reset_body} className='heatpack-container' style={{ overflowX: 'hidden', }}>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"

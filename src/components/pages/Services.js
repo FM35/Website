@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './Services.css';
 import useWindowSize from "./useWindowSize";
+import { motion } from "framer-motion";
 
 export default function Services() {
 
@@ -15,6 +16,12 @@ export default function Services() {
     current: 0,
     previous: 0,
     rounded: 0
+  };
+
+  //Set the height of the body to the height of the scrolling div
+  const setBodyHeight = () => {
+    document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height
+      }px`;
   };
 
   useEffect(() => {
@@ -58,168 +65,172 @@ export default function Services() {
 
   return (
 
-    <div ref={app} className='App'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 1 }}
+      ref={app} className='App'>
       <div ref={scrollContainer} className='scroll'>
 
         <h1>Photo</h1>
         <h2>Gallery</h2>
 
         <div className='image-container'>
-          <img src='images/OLI_0018.jpg'
+          <img className='img-settings' src='images/OLI_0018.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 914 }} className='image-container'>
-          <img src='images/DSC_0025.JPG'
+        <div className='image-container'>
+          <img className='img-settings' src='images/DSC_0025.JPG'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 467 }} className='image-container'>
-          <img src='images/OLI_0029.JPG'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0029.JPG'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0042.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0042.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 985 }} className='image-container'>
-          <img src='images/OLI_0087.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0087.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 467 }} className='image-container'>
-          <img src='images/OLI_0100.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0100.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0101.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0101.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 908 }} className='image-container'>
-          <img src='images/OLI_0246.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0246.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0001.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0001.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0006.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0006.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0007.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0007.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 467 }} className='image-container'>
-          <img src='images/OLI_0014.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0014.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0016.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0016.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0033.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0033.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0022(1).jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0022(1).jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 467 }} className='image-container'>
-          <img src='images/OLI_0034.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0034.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0040.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0040.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0074.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0074.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 1050 }} className='image-container'>
-          <img src='images/OLI_0085.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0085.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 1054 }} className='image-container'>
-          <img src='images/OLI_0094.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0094.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0105.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0105.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 467 }} className='image-container'>
-          <img src='images/OLI_0148.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0148.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0151.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0151.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0190.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0190.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0198.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0198.jpg'
             alt='Photography-Icon'
           />
         </div>
 
-        <div style={{ height: 875 }} className='image-container'>
-          <img src='images/OLI_0211.jpg'
+        <div className='image-container'>
+          <img className='img-settings' src='images/OLI_0211.jpg'
             alt='Photography-Icon'
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

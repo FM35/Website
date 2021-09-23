@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './PC_Builds.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 
 export default function PC_Builds() {
+
+  const reset_body = useRef();
+
+  useEffect(() => {
+
+    document.body.style.height = `${reset_body.current.getBoundingClientRect().height}px`;
+
+  }, []);
+
   return (
-    <motion.div className='container' style={{ overflow: 'hidden' }}>
+    <motion.div ref={reset_body} className='container' style={{ overflow: 'hidden' }}>
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='title'>
         <div className='heading'> Computer</div>
         <div className='heading-1'> Builds</div>
