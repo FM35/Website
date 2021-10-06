@@ -85,7 +85,7 @@ function HeroSection() {
               to='/services'
               className='item-links'
             >
-              Photo Gallery
+              Portfolio
             </Link>
           </motion.li>
           <motion.li

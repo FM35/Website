@@ -32,15 +32,6 @@
   color: white;
  }
 
- h2{
-  position: relative;
-  left: 12.5%;
-  font-size: 90px;
-  font-family: 'Dancing Script', cursive;
-  color: white;
- }
-
-
  .img-settings {
   display: block;
   max-width:900px;
