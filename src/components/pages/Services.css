@@ -14,14 +14,19 @@
 }
 
  .image-container{
-  width: 1000px;
-  height: 1000px;
-  overflow: hidden;
+  max-width: 1220px;
+  max-height: 1000px;
   position: relative;
   margin: 100px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  
+ }
+
+ .image-container p{
+   color: white;
  }
 
  h1{
