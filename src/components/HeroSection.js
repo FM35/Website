@@ -82,7 +82,7 @@ function HeroSection() {
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
             <Link
-              to='/services'
+              to='/port-page-one'
               className='item-links'
             >
               Portfolio

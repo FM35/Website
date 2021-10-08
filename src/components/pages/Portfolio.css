@@ -1,27 +1,28 @@
 .App {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  pointer-events: none;
+  
 }
 
 .scroll{
   padding: 2vh 0;
-  pointer-events: none;
+  
 }
 
  .image-container{
   max-width: 1220px;
-  max-height: 1000px;
+  height: 1000px;
   position: relative;
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  overflow: hidden;
   
  }
 
@@ -40,7 +41,26 @@
  .img-settings {
   display: block;
   max-width:900px;
-  max-height:900px;
-  width: auto;
-  height: auto;
+  max-height:921px;
+  
+}
+
+.menu-top{
+  position: absolute;
+  left: 40%;
+  height: 25px;
+  top: 100px;
+}
+
+.menu-bottom{
+  position: absolute;
+  left: 40%;
+  height: 25px;
+  bottom: 100px;
+}
+
+.list-menu{
+  color:white;
+  
+  padding: 20px;
 }
