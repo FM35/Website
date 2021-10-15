@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 export default function HeatPack() {
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-  const transition_2 = { duration: 0.5, ease: [0.6, 0.01, -0.05, 0.9] };
-  const reset_body = useRef();
 
   const staggerEffect = {
     initial: {
@@ -15,9 +13,11 @@ export default function HeatPack() {
     animate: {
       y: 0,
       transition: {
+
         delayChildren: 0.6,
         staggerChildren: 0.04,
         staggerDirection: 1,
+
       },
     },
   };
@@ -34,28 +34,21 @@ export default function HeatPack() {
     },
   };
 
-  useEffect(() => {
-
-    document.body.style.height = `${reset_body.current.getBoundingClientRect().height}px`;
-
-  }, []);
-
   return (
 
-    <div ref={reset_body} className='heatpack-container' style={{ overflowX: 'hidden', }}>
+    <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
         className='heatpack-title-container'>
 
-        <motion.span variants={letter}>H</motion.span>
+        <motion.span variants={letter}>O</motion.span>
+        <motion.span variants={letter}>l</motion.span>
+        <motion.span variants={letter}>i</motion.span>
+        <motion.span variants={letter}>v</motion.span>
+        <motion.span variants={letter}>i</motion.span>
+        <motion.span variants={letter}>n</motion.span>
         <motion.span variants={letter}>e</motion.span>
-        <motion.span variants={letter}>a</motion.span>
-        <motion.span variants={letter}>t</motion.span>
-        <motion.span variants={letter}>p</motion.span>
-        <motion.span variants={letter}>a</motion.span>
-        <motion.span variants={letter}>c</motion.span>
-        <motion.span variants={letter}>k</motion.span>
         <motion.span variants={letter}>'</motion.span>
         <motion.span variants={letter}>s</motion.span>
 
@@ -136,6 +129,11 @@ export default function HeatPack() {
       <div className='flex'>
 
         <motion.div
+
+          initial={{
+            width: '460px',
+            height: '558.39px',
+          }}
           animate={{
             opacity: 0,
             width: '0px',
@@ -144,7 +142,7 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-1'>
-          <img src='images/polaroid-1.png'
+          <img src='images/Pato-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -156,18 +154,23 @@ export default function HeatPack() {
 
           animate={{
             y: 250,
-            width: '1136px',
-            height: '1379px',
+            width: '755px',
+            height: '921px',
             transition: { delay: 0.2, ...transition },
           }}
 
           className='polaroid-container-2'>
-          <img src='images/polaroid-1.png'
+          <img src='images/Olivine-4.png'
             alt='Photography-Icon'
           />
         </motion.div>
 
         <motion.div
+
+          initial={{
+            width: '460px',
+            height: '558.39px',
+          }}
 
           animate={{
             opacity: 0,
@@ -177,55 +180,50 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-3'>
-          <img src='images/polaroid-1.png'
+          <img src='images/KLVC-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/Olivine-2.png'
           alt='Photography-Icon'
         />
-        <ul>
-          <li>Ryzen Processor </li>
-          <li>Motherboard</li>
-          <li>Memory</li>
-          <li>Storage</li>
-          <li>Video Card</li>
-          <li>Power Supply</li>
-          <li>Case</li>
-          <li>Network Card</li>
-          <li>Operating System</li>
-        </ul>
+        <div style={{ width: '540px' }}>
+          <ul>
+            <li>Processor: AMD Ryzen 7 2700X</li>
+            <li>Memory: Kingston HyperX Fury 16GB (2 X 8GB) DDR4</li>
+            <li>Storage: Crucial MX500 250GB 3D NAND SSD and Seagate Barracuda 2TB HDD</li>
+            <li>Motherboard: ASUS Prime B450M-A</li>
+            <li>Video Card: MSI Gaming GeForce GTX 1660 Ti 192-bit 6GB GDRR6</li>
+            <li>Case: Corsair SPEC-DELTA RGB</li>
+            <li>Power Supply: Thermeltake Smart BX1 650W Bronze</li>
+          </ul>
+
+        </div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/Olivine-3.png'
           alt='Photography-Icon'
         />
-        <p>
-          This computer was designed to handle the intensive loads of gaming on some of the highest settings, app development, large data science projects (which includes machine learning neural networks techniques) and photo editing using applications such as Lightroom and photoshop.
-        </p>
+        <div style={{ width: '540px' }}>
+          <p>
+            This computer was designed for handling large data science and machine learning projects, along with frontend development and gaming large open world games in the highest possible settings. It was also designed with future proofing in mind so that the need to upgrade to perform the same requirements doesn't arise till about 5 years, especially when newer games require more and more computing poower to handle the graphics.
+          </p>
+        </div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/Olivine-1.png'
           alt='Photography-Icon'
         />
-        <p>
-          The computer was designed with future-proofing in mind. Hence the upgrade in Processor, Memory and Video Card. Other selections would have done the job for a lesser price if future-proofing was a concern.
-        </p>
-      </div>
-
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
-        <p>
-          Coupled the build with LED strips, keyboard and mouse to make for a setup that can do different lighting features.
-          For any enquires please email:heatpackollie@gmail.com
-        </p>
+        <div style={{ width: '540px' }}>
+          <p>
+            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static, breathing to name a few. The Computer was also coupled with an RGB mouse and keyboard combo, along with light strips lined up on the bottom of the desk to complete the RGB light setup.
+          </p>
+        </div>
       </div>
     </div>
   );

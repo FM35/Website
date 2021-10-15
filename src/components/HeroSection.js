@@ -100,12 +100,7 @@ function HeroSection() {
 
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
-            <Link
-              to='/HeatPack'
-              className='item-links'
-            >
-              Instagram Page
-            </Link>
+            <a href="https://www.instagram.com/olivine_35/" target="_blank" className='item-links'>Instagram Page</a>
           </motion.li>
         </ul>
 

@@ -130,16 +130,21 @@ export default function Pato() {
 
         <motion.div
 
+          initial={{
+            width: '460px',
+            height: '558.39px',
+          }}
+
           animate={{
-            x: 250,
+            x: 390,
             y: 300,
-            width: '1136px',
-            height: '1379px',
+            width: '755px',
+            height: '921px',
             transition: { delay: 0.2, ...transition },
           }}
 
           className='polaroid-container-1'>
-          <img src='images/polaroid-1.png'
+          <img src='images/Pato-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -156,12 +161,17 @@ export default function Pato() {
           }}
 
           className='polaroid-container-2'>
-          <img src='images/polaroid-1.png'
+          <img src='images/Olivine-4.png'
             alt='Photography-Icon'
           />
         </motion.div>
 
         <motion.div
+
+          initial={{
+            width: '460px',
+            height: '558.39px',
+          }}
 
           animate={{
             opacity: 0,
@@ -171,55 +181,49 @@ export default function Pato() {
           }}
 
           className='polaroid-container-3'>
-          <img src='images/polaroid-1.png'
+          <img src='images/KLVC-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/Pato-2.png'
           alt='Photography-Icon'
         />
-        <ul>
-          <li>Ryzen Processor </li>
-          <li>Motherboard</li>
-          <li>Memory</li>
-          <li>Storage</li>
-          <li>Video Card</li>
-          <li>Power Supply</li>
-          <li>Case</li>
-          <li>Network Card</li>
-          <li>Operating System</li>
-        </ul>
+        <div style={{ width: '400px' }}>
+          <ul>
+            <li>Processor: AMD Ryzen 5 3600</li>
+            <li>Memory: Corsair Vengeance LPX 16GB (2 X 8GB) DDR4 3200MHZ</li>
+            <li>Storage: Kingston 480GB SATA III SSD</li>
+            <li>Motherboard: ASRock B450M Pro4</li>
+            <li>Video Card: Don't know yet</li>
+            <li>Case: Don't know yet</li>
+            <li>Power Supply: Thermeltake Smart BX1 650W Bronze</li>
+          </ul>
+        </div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/Pato-4.png'
           alt='Photography-Icon'
         />
-        <p>
-          This computer was designed to handle the intensive loads of gaming on some of the highest settings, app development, large data science projects (which includes machine learning neural networks techniques) and photo editing using applications such as Lightroom and photoshop.
-        </p>
+        <div style={{ width: '400px' }}>
+          <p>
+            This Computer was designed to handle backend projects for school and portfolio work. While designing this computer the client also expressed an interest in doing graphic intensive work in the future, therefore a motherboard that would allow for extra memory slots and graphics cards was chosen to make the transition easier.
+          </p>
+        </div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/Pato-1.png'
           alt='Photography-Icon'
         />
-        <p>
-          The computer was designed with future-proofing in mind. Hence the upgrade in Processor, Memory and Video Card. Other selections would have done the job for a lesser price if future-proofing was a concern.
-        </p>
-      </div>
-
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
-        <p>
-          Coupled the build with LED strips, keyboard and mouse to make for a setup that can do different lighting features.
-          For any enquires please email:heatpackollie@gmail.com
-        </p>
+        <div style={{ width: '400px' }}>
+          <p>
+            Computer allows for a tri-display system which provides a 35.5% in productivity as compared to using a single screen. A dual setup provided an increase of 25.5% in productivity over using a single screen. This increase can be attributed to being able to view more than one window or browser tab at any one time, therefore the need to minimise tabs is just replaced with a quick glance to a different monitor.
+          </p>
+        </div>
       </div>
     </div>
   );

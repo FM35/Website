@@ -11,13 +11,32 @@ export default function Services() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ delay: 0.25, duration: 1 }}
+      style={{ overflowX: 'hidden' }}
       className='App'>
       <h1>Portfolio</h1>
       <ul className='menu-top'>
-        <li className='list-menu'><Link to='/port-page-one'>One</Link></li>
-        <li className='list-menu'>Two</li>
-        <li className='list-menu'><Link to='/port-page-three'>Three</Link></li>
+        <li className='list-menu' style={{ opacity: 0.5 }}>Page Number:</li>
+        <motion.li whileHover={{
+          scale: 1.3,
+        }}
+
+          whileTap={{
+            scale: 0.8,
+          }}
+
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-one' className='page-links'>One</Link></motion.li>
+        <li className='list-menu' style={{ opacity: 0.5 }}>Two</li>
+        <motion.li whileHover={{
+          scale: 1.3,
+        }}
+
+          whileTap={{
+            scale: 0.8,
+          }}
+
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-three' className='page-links'>Three</Link></motion.li>
       </ul>
       <div className='scroll'>
 
@@ -144,9 +163,26 @@ export default function Services() {
           </div>
 
           <ul className='menu-bottom'>
-            <li className='list-menu'>One</li>
-            <li className='list-menu'><Link to='/port-page-two'>Two</Link></li>
-            <li className='list-menu'><Link to='/port-page-three'>Three</Link></li>
+            <li className='list-menu' style={{ opacity: 0.5 }}>Page Number:</li>
+            <motion.li whileHover={{
+              scale: 1.3,
+            }}
+
+              whileTap={{
+                scale: 0.8,
+              }}
+
+              transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-one' className='page-links'>One</Link></motion.li>
+            <li className='list-menu' style={{ opacity: 0.5 }}>Two</li>
+            <motion.li whileHover={{
+              scale: 1.3,
+            }}
+
+              whileTap={{
+                scale: 0.8,
+              }}
+
+              transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-three' className='page-links'>Three</Link></motion.li>
           </ul>
         </div>
       </div>

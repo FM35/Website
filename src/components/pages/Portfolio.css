@@ -4,8 +4,16 @@
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  
+
+}
+
+.App h1{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  position: relative;
+  left: 10.5%;
+  font-size: 90px;
+  color: white;
 }
 
 .scroll{
@@ -14,29 +22,29 @@
 }
 
  .image-container{
-  max-width: 1220px;
-  height: 1000px;
+  max-width: 100%;
+  height: 1050px;
   position: relative;
+  left: 10px;
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  
  }
 
  .image-container p{
    color: white;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 500;
  }
 
- h1{
-  position: relative;
-  left: 10.5%;
-  font-size: 90px;
-  font-family: 'Dancing Script', cursive;
+ .image-container li{
   color: white;
- }
+  font-family: 'Roboto Slab', serif;
+   font-weight: 500;
+}
 
  .img-settings {
   display: block;
@@ -49,7 +57,8 @@
   position: absolute;
   left: 40%;
   height: 25px;
-  top: 100px;
+  top: 180px;
+  
 }
 
 .menu-bottom{
@@ -61,6 +70,15 @@
 
 .list-menu{
   color:white;
-  
+  display: inline-block;
   padding: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.page-links{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }

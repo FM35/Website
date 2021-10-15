@@ -19,7 +19,7 @@ function App() {
   return (
     <>
 
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence exitBeforeEnter >
         <Switch location={location} key={location.pathname}>
           <Route path='/' exact component={HeroSection} />
           <Route path='/port-page-one' component={Port_Page_One} />

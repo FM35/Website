@@ -1,12 +1,10 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
 
 export default function HeatPack() {
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-  const transition_2 = { duration: 0.5, ease: [0.6, 0.01, -0.05, 0.9] };
-  const reset_body = useRef();
 
   const staggerEffect = {
     initial: {
@@ -34,15 +32,9 @@ export default function HeatPack() {
     },
   };
 
-  useEffect(() => {
-
-    document.body.style.height = `${reset_body.current.getBoundingClientRect().height}px`;
-
-  }, []);
-
   return (
 
-    <div ref={reset_body} className='heatpack-container' style={{ overflowX: 'hidden', }}>
+    <div className='heatpack-container' style={{ overflowX: 'hidden' }}>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
@@ -123,6 +115,11 @@ export default function HeatPack() {
       <div className='flex'>
 
         <motion.div
+
+          initial={{
+            width: '460px',
+            height: '558.39px',
+          }}
           animate={{
             opacity: 0,
             width: '0px',
@@ -131,7 +128,7 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-1'>
-          <img src='images/polaroid-1.png'
+          <img src='images/Pato-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -149,72 +146,71 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-2'>
-          <img src='images/polaroid-1.png'
+          <img src='images/Olivine-4.png'
             alt='Photography-Icon'
           />
         </motion.div>
 
         <motion.div
 
+          initial={{
+            width: '460px',
+            height: '558.39px',
+          }}
+
           animate={{
 
-            x: -250,
-            y: 300,
-            width: '1136px',
-            height: '1379px',
+            x: -390,
+            y: 250,
+            width: '755px',
+            height: '921px',
             transition: { delay: 0.2, ...transition },
           }}
 
           className='polaroid-container-3'>
-          <img src='images/polaroid-1.png'
+          <img src='images/KLVC-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/KLVC-4.png'
           alt='Photography-Icon'
         />
-        <ul>
-          <li>Ryzen Processor </li>
-          <li>Motherboard</li>
-          <li>Memory</li>
-          <li>Storage</li>
-          <li>Video Card</li>
-          <li>Power Supply</li>
-          <li>Case</li>
-          <li>Network Card</li>
-          <li>Operating System</li>
-        </ul>
+        <div style={{ width: '400px' }}>
+          <ul>
+            <li>Processor: AMD Ryzen 5 3600</li>
+            <li>Memory: G. Skill Aegis 8GB</li>
+            <li>Storage: Kingston 240GB SATA III SSD</li>
+            <li>Motherboard: ASUS Prime A320I-K/CSM</li>
+            <li>Video Card: ASUS GeForce GT 1030 2GB</li>
+            <li>Case: Fractal Design Node 202 Black with Integra SFX 450W PSU</li>
+            <li>Monitor: Lepow 15.6 Inch Full HD Portable Monitor</li>
+          </ul>
+        </div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/KLVC-1.png'
           alt='Photography-Icon'
         />
-        <p>
-          This computer was designed to handle the intensive loads of gaming on some of the highest settings, app development, large data science projects (which includes machine learning neural networks techniques) and photo editing using applications such as Lightroom and photoshop.
-        </p>
+        <div style={{ width: '400px' }}>
+          <p>
+            Designed for streaming church services online and presenting slides both in house and online. Compactness was at the focal point of the design process inorder to save space on the media table as it was limited and to also make transporting the Computer to different locations easier as a media team member might need to take it home or to a different organisation being hosted by the church. The Fractal Design Node 202 was a great choice to achieve compactness with a volume coming in at only 10.2 litres, whereas standard computer cases have a volume of 45 litres.
+          </p>
+        </div>
       </div>
 
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
+      <div style={{ top: '400px' }} className='image-container'>
+        <img className='img-settings' src='images/KLVC-2.png'
           alt='Photography-Icon'
         />
-        <p>
-          The computer was designed with future-proofing in mind. Hence the upgrade in Processor, Memory and Video Card. Other selections would have done the job for a lesser price if future-proofing was a concern.
-        </p>
-      </div>
-
-      <div className='first-Image'>
-        <img src='images/polaroid-1.png'
-          alt='Photography-Icon'
-        />
-        <p>
-          Coupled the build with LED strips, keyboard and mouse to make for a setup that can do different lighting features.
-          For any enquires please email:heatpackollie@gmail.com
-        </p>
+        <div style={{ width: '400px' }}>
+          <p>
+            Coupled with a portable Monitor, wireless keyboard and mouse to make the system decoupled interms of wire connections. The only component that need to be plugged into power is the Power Supply in the computer, however, I am currently working on a system that would make the system fully portable by incorporating a portable power station or a device of a similar nature.
+          </p>
+        </div>
       </div>
     </div>
   );

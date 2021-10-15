@@ -1,27 +1,32 @@
 body{
   background-color: #121212;
-  background-position: center;
 }
 
 .heatpack-container{
 
   height: 100vh;
   position: relative;
-  background-size: cover;
     
     }
     
 .heatpack-title-container{
 
       display:flex;
-      width: 35%;
+      position: relative;
       height: 15%;
       align-items: center;
       font-size: 90px;
       color: white;
+      left: 5%;
       overflow: hidden;
       
     }
+
+.heatpack-title-container span{
+
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
     
 .marquee{
 
@@ -41,25 +46,35 @@ body{
     animation: scrolling 10s linear infinite;
           
       }
+
+.marquee-content span{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.marquee-content li{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
       
    @keyframes scrolling{
     0% {transform: translateX(0);}
-    100% {transform: translateX(-127.5vw);}
+    100% {transform: translateX(-2400px);}
     }
       
 .marquee-content li{
       
     display:flex;
     justify-content: center;
-    width: 42.5vw;
+    width: 800px;
     flex-shrink: 0;
     font-size: 90px;
     white-space:nowrap;
     text-align: center;
-    color: tomato;
+    color: white;
 
   }
-  
+
 .computer{
     
     position: absolute;
@@ -67,10 +82,15 @@ body{
     top: 22%;
     font-size: 90px;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
+    left: 10%;
             
     }
+
+.computer span{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
 
 .flex{
 
@@ -86,8 +106,10 @@ body{
 .polaroid-container-1{
      
       align-self: flex-end;
+      position: relative;
       width: 345px;
       height: 440px;
+      left: 0px;
       
   }
 
