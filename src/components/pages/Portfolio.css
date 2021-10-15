@@ -2,16 +2,16 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-
 }
 
 .App h1{
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   position: relative;
-  left: 10.5%;
+  display: flex;
+  left: 5.5%;
   font-size: 90px;
   color: white;
 }
@@ -23,9 +23,7 @@
 
  .image-container{
   max-width: 100%;
-  height: 1050px;
   position: relative;
-  left: 10px;
   margin: 100px auto;
   display: flex;
   justify-content: space-around;
@@ -35,9 +33,11 @@
  }
 
  .image-container p{
+  
    color: white;
    font-family: 'Roboto Slab', serif;
    font-weight: 500;
+   padding: 20px;
  }
 
  .image-container li{
@@ -48,29 +48,30 @@
 
  .img-settings {
   display: block;
-  max-width:900px;
+  max-width: 95%;
   max-height:921px;
   
 }
 
 .menu-top{
-  position: absolute;
-  left: 40%;
-  height: 25px;
-  top: 180px;
-  
+  display:flex;
+  position: relative;
+  top: 100px;
+  left: 5%;
+  width: 380px;
 }
 
 .menu-bottom{
-  position: absolute;
-  left: 40%;
-  height: 25px;
+  display: flex;
+  position: relative;
   bottom: 100px;
+  left: 5%;
+  width: 380px;
 }
 
 .list-menu{
   color:white;
-  display: inline-block;
+  display: flex;
   padding: 20px;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -78,6 +79,7 @@
 
 .page-links{
   text-decoration: none;
+  display: flex;
   color: white;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
