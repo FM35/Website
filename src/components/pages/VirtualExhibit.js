@@ -100,7 +100,7 @@ export default function VirtualExhibit() {
             </motion.div>
             <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
             <div className='game-container'>
-                <Unity style={{ height: 720 }} unityContext={unityContext} />
+                <Unity unityContext={unityContext} />
             </div>
         </div >
     );

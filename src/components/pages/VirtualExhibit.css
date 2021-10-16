@@ -9,11 +9,10 @@
 
     display: flex;
     position: relative;
+    height: 720px;
     width: 100%;
-    height: 73.9%;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-shrink: 1;
     flex-direction: column-reverse;
     top: 30px;
 }
@@ -26,6 +25,7 @@
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     color: white;
+    top: 30px;
     
 }
 
@@ -36,56 +36,6 @@ width: 100%;
 height: 15%;
 align-items:center;
 }
-
-.controls-background {
-
-    position: absolute;
-    top: 15%;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    background: #fff;
-    height: 720px;
-  }
-
-  .controls-background li{
-    
-    list-style: none;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    
-  }
-
-  .controls-background ul {
-    padding: 25px;
-    position: absolute;
-    top: 125px;
-  }
-
-  .controls-background p {
-    padding: 25px;
-    position: absolute;
-    top: 400px;
-  }
-
-  .about-background {
-
-    position: absolute;
-    top: 15%;
-    left: 80%;
-    bottom: 0;
-    width: 300px;
-    background: #fff;
-    height: 720px;
-  }
-
-  .about-background p {
-    padding: 25px;
-    position: absolute;
-    top: 100px;
-  }
 
   .three-dots{
     position: absolute; 
