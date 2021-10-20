@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import './Portfolio.css';
 import useWindowSize from "./useWindowSize";
 import { motion } from "framer-motion";

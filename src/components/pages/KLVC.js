@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
+import CSSRulePlugin from 'gsap/CSSRulePlugin';
+import { Power3, TimelineLite } from "gsap";
 
 export default function HeatPack() {
+
+  const tl = new TimelineLite();
+
+  let imageReveal1 = CSSRulePlugin.getRule('.flex');
+
+  useEffect(() => {
+    tl.to(imageReveal1, 2, { display: "flex", ease: Power3.easeInOut, delay: 0.7 });
+  });
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -160,7 +170,6 @@ export default function HeatPack() {
 
           animate={{
 
-            x: -390,
             y: 250,
             width: '755px',
             height: '921px',

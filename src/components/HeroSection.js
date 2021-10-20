@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
@@ -25,18 +25,9 @@ function HeroSection() {
       .to([imageReveal1, imageReveal2], 2, { width: "0%", ease: Power2.easeInOut, delay: -1.5 });
   });
 
-  const reset_body = useRef();
-
-  useEffect(() => {
-
-    document.body.style.height = `${reset_body.current.getBoundingClientRect().height}px`;
-
-  }, []);
-
   return (
 
     <motion.div
-      ref={reset_body}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
       className='hero-container'>

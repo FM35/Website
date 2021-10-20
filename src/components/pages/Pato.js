@@ -1,12 +1,21 @@
 import React, { useRef, useEffect } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
+import CSSRulePlugin from 'gsap/CSSRulePlugin';
+import { Power3, TimelineLite } from "gsap";
 
 export default function Pato() {
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
   const transition_2 = { duration: 0.5, ease: [0.6, 0.01, -0.05, 0.9] };
-  const reset_body = useRef();
+
+  const tl = new TimelineLite();
+
+  let imageReveal1 = CSSRulePlugin.getRule('.flex');
+
+  useEffect(() => {
+    tl.to(imageReveal1, 2, { display: "flex", ease: Power3.easeInOut, delay: 0.7 });
+  });
 
   const staggerEffect = {
     initial: {
@@ -34,15 +43,10 @@ export default function Pato() {
     },
   };
 
-  useEffect(() => {
-
-    document.body.style.height = `${reset_body.current.getBoundingClientRect().height}px`;
-
-  }, []);
 
   return (
 
-    <div ref={reset_body} className='heatpack-container' style={{ overflowX: 'hidden', }}>
+    <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
@@ -136,11 +140,12 @@ export default function Pato() {
           }}
 
           animate={{
-            x: 390,
+
             y: 300,
             width: '755px',
             height: '921px',
             transition: { delay: 0.2, ...transition },
+
           }}
 
           className='polaroid-container-1'>

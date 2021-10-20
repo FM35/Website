@@ -3,9 +3,18 @@ import './PC_Builds.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt';
+import CSSRulePlugin from 'gsap/CSSRulePlugin';
+import { Power3, TimelineLite } from "gsap";
 
 export default function PC_Builds() {
 
+  const tl = new TimelineLite();
+
+  let imageReveal1 = CSSRulePlugin.getRule('.flex');
+
+  useEffect(() => {
+    tl.to(imageReveal1, 2, { display: "grid", ease: Power3.easeInOut });
+  });
 
 
   return (

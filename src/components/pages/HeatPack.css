@@ -92,46 +92,6 @@ body{
   font-weight: 300;
 }
 
-.flex{
-
-    display: flex;
-    width: 100.9%;
-    height: 80%;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-    }
-
-.polaroid-container-1{
-     
-      align-self: flex-end;
-      position: relative;
-      width: 345px;
-      height: 440px;
-      left: 0px;
-      
-  }
-
-.polaroid-container-2{
-      position: relative;
-      display:flex;
-      justify-content: center;
-      width: 1136px;
-      height: 1379px;
-      
-    
-        
-    }
-
-.polaroid-container-3{
-      position: relative;
-      align-self: flex-start;
-      width: 345px;
-      height: 418px;
-      
-      
-  }
 
 
 .first-Image {
@@ -144,3 +104,91 @@ body{
   /*flex-wrap: wrap;*/
   
 }
+
+.flex{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  top: 10%;
+  justify-content: center;
+
+    }
+
+.polaroid-container-1{
+     
+      position: relative;
+      justify-self: center;
+      grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+.polaroid-container-2{
+      position: relative;
+      justify-self: center;
+      grid-column-start: 3;
+    grid-column-end: 5;
+    }
+
+.polaroid-container-3{
+      position: relative;
+      justify-self: center;
+      grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+  @media screen and (max-width: 1421px) and (min-width: 1082px) {
+
+    .polaroid-container-1{
+         
+          position: relative;
+          justify-self: center;
+          grid-column-start: 1;
+    grid-column-end: 4;
+          
+      }
+    
+    .polaroid-container-2{
+          position: relative;
+          justify-self: center;
+          grid-column-start: 4;
+    grid-column-end: 7;
+    
+        }
+    
+    .polaroid-container-3{
+          position: relative;
+          justify-self: center;
+          grid-column-start: 3;
+    grid-column-end: 5;
+          
+      }
+  
+  }
+
+  @media screen and (max-width: 1082px) {
+
+    .polaroid-container-1{
+         
+          position: relative;
+          justify-self: center;
+          grid-column-start: 3;
+          grid-column-end: 5;
+          
+      }
+    
+    .polaroid-container-2{
+          position: relative;
+          justify-self: center;
+          grid-column-start: 3;
+          grid-column-end: 5;
+        }
+    
+    .polaroid-container-3{
+          position: relative;
+          justify-self: center;
+          grid-column-start: 3;
+          grid-column-end: 5;
+      }
+  
+  }
