@@ -13,7 +13,7 @@ export default function PC_Builds() {
   let imageReveal1 = CSSRulePlugin.getRule('.flex');
 
   useEffect(() => {
-    tl.to(imageReveal1, 2, { display: "grid", ease: Power3.easeInOut });
+    tl.to(imageReveal1, 2, { display: "grid", gap: "20px", ease: Power3.easeInOut });
   });
 
 

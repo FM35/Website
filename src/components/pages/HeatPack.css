@@ -113,6 +113,7 @@ body{
   top: 10%;
   justify-content: center;
 
+
     }
 
 .polaroid-container-1{
@@ -120,21 +121,25 @@ body{
       position: relative;
       justify-self: center;
       grid-column-start: 1;
-    grid-column-end: 3;
+      grid-column-end: 3;
+      max-width: 95%;
+      
   }
 
 .polaroid-container-2{
       position: relative;
       justify-self: center;
       grid-column-start: 3;
-    grid-column-end: 5;
+      grid-column-end: 5;
+      max-width: 95%;
     }
 
 .polaroid-container-3{
       position: relative;
       justify-self: center;
       grid-column-start: 5;
-    grid-column-end: 7;
+      grid-column-end: 7;
+      max-width: 95%;
   }
 
   @media screen and (max-width: 1421px) and (min-width: 1082px) {
@@ -145,7 +150,7 @@ body{
           justify-self: center;
           grid-column-start: 1;
     grid-column-end: 4;
-          
+    max-width: 95%;
       }
     
     .polaroid-container-2{
@@ -153,7 +158,7 @@ body{
           justify-self: center;
           grid-column-start: 4;
     grid-column-end: 7;
-    
+    max-width: 95%;
         }
     
     .polaroid-container-3{
@@ -161,7 +166,7 @@ body{
           justify-self: center;
           grid-column-start: 3;
     grid-column-end: 5;
-          
+    max-width: 95%;
       }
   
   }
@@ -174,7 +179,7 @@ body{
           justify-self: center;
           grid-column-start: 3;
           grid-column-end: 5;
-          
+          max-width: 95%;
       }
     
     .polaroid-container-2{
@@ -182,6 +187,7 @@ body{
           justify-self: center;
           grid-column-start: 3;
           grid-column-end: 5;
+          max-width: 95%;
         }
     
     .polaroid-container-3{
@@ -189,6 +195,7 @@ body{
           justify-self: center;
           grid-column-start: 3;
           grid-column-end: 5;
+          max-width: 95%;
       }
   
   }

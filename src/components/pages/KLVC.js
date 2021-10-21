@@ -11,7 +11,7 @@ export default function HeatPack() {
   let imageReveal1 = CSSRulePlugin.getRule('.flex');
 
   useEffect(() => {
-    tl.to(imageReveal1, 2, { display: "flex", ease: Power3.easeInOut, delay: 0.7 });
+    tl.to(imageReveal1, 2, { display: "flex", gap: "0px", ease: Power3.easeInOut, delay: 0.7 });
   });
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -165,14 +165,12 @@ export default function HeatPack() {
 
           initial={{
             width: '460px',
-            height: '558.39px',
           }}
 
           animate={{
 
             y: 250,
             width: '755px',
-            height: '921px',
             transition: { delay: 0.2, ...transition },
           }}
 

@@ -14,7 +14,7 @@ export default function Pato() {
   let imageReveal1 = CSSRulePlugin.getRule('.flex');
 
   useEffect(() => {
-    tl.to(imageReveal1, 2, { display: "flex", ease: Power3.easeInOut, delay: 0.7 });
+    tl.to(imageReveal1, 2, { display: "flex", gap: "0px", ease: Power3.easeInOut, delay: 0.7 });
   });
 
   const staggerEffect = {
@@ -136,20 +136,20 @@ export default function Pato() {
 
           initial={{
             width: '460px',
-            height: '558.39px',
+
           }}
 
           animate={{
 
-            y: 300,
+            y: 200,
             width: '755px',
-            height: '921px',
             transition: { delay: 0.2, ...transition },
 
           }}
 
           className='polaroid-container-1'>
-          <img src='images/Pato-3.png'
+          <img
+            src='images/Pato-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
