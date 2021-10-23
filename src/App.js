@@ -5,12 +5,14 @@ import Port_Page_One from './components/pages/Portfolio_page_1';
 import Port_Page_Two from './components/pages/Portfolio_page_2';
 import Port_Page_Three from './components/pages/Portfolio_page_3';
 import PC_Builds from './components/pages/PC_Builds';
+import Sign_up from './components/pages/Sign_up'
 import HeatPack from './components/pages/HeatPack';
 import Pato from './components/pages/Pato';
 import KLVC from './components/pages/KLVC';
 import { AnimatePresence } from 'framer-motion';
 import HeroSection from './components/HeroSection';
 import VirtualExhibit from './components/pages/VirtualExhibit';
+import About_Me from './components/pages/About_Me';
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
           <Route path='/Pato' component={Pato} />
           <Route path='/KLVC' component={KLVC} />
           <Route path='/VirtualExhibit' component={VirtualExhibit} />
+          <Route path='/sign-up' component={Sign_up} />
+          <Route path='/about-me' component={About_Me} />
         </Switch>
       </AnimatePresence>
     </>

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
@@ -7,7 +7,6 @@ import { Power3, TimelineLite } from "gsap";
 export default function Pato() {
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-  const transition_2 = { duration: 0.5, ease: [0.6, 0.01, -0.05, 0.9] };
 
   const tl = new TimelineLite();
 
@@ -15,7 +14,10 @@ export default function Pato() {
 
   useEffect(() => {
     tl.to(imageReveal1, 2, { display: "flex", gap: "0px", ease: Power3.easeInOut, delay: 0.7 });
+    console.log(window.pageYOffset);
   });
+
+
 
   const staggerEffect = {
     initial: {

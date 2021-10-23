@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './PC_Builds.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
@@ -30,7 +30,10 @@ export default function PC_Builds() {
           transition={{ delay: 0.5, type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className='polaroid-1'>
           <Link
-            to='/Pato'
+            to={{
+              pathname: '/Pato',
+              state: window.pageYOffset
+            }}
           >
             <Tilt duration={7500} onHover={true}>
               <img src='images/Pato-3.png'

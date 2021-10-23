@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
 import CSSRulePlugin from 'gsap/CSSRulePlugin';

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Portfolio.css';
-import useWindowSize from "./useWindowSize";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
