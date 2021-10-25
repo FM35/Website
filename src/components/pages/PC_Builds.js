@@ -1,24 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './PC_Builds.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
+import useWindowSize from './useWindowSize'
 
 export default function PC_Builds() {
 
   const tl = new TimelineLite();
+  const size = useWindowSize();
 
   let imageReveal1 = CSSRulePlugin.getRule('.flex');
 
+  var scrollHeightRef = useRef({ scrollHeight: window.pageYOffset });
+
+
   useEffect(() => {
     tl.to(imageReveal1, 2, { display: "grid", gap: "20px", ease: Power3.easeInOut });
-  });
-
+    scrollHeightRef.current.scrollHeight = window.pageYOffset;
+    console.log(scrollHeightRef.current.scrollHeight)
+  }, [size.yscroll]);
 
   return (
-    <motion.div className='container' style={{ overflowX: 'hidden' }}>
+    <motion.div className='container'>
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading'>
         Computer Builds
       </motion.div>
@@ -32,13 +38,12 @@ export default function PC_Builds() {
           <Link
             to={{
               pathname: '/Pato',
-              state: window.pageYOffset
+              state: scrollHeightRef.current.scrollHeight
             }}
           >
             <Tilt duration={7500} onHover={true}>
               <img src='images/Pato-3.png'
                 alt='Photography-Icon'
-
               />
             </Tilt>
           </Link>
@@ -51,7 +56,10 @@ export default function PC_Builds() {
           transition={{ delay: 0.25, type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className='polaroid-2'>
           <Link
-            to='/HeatPack'
+            to={{
+              pathname: '/HeatPack',
+              state: scrollHeightRef.current.scrollHeight
+            }}
           >
             <Tilt duration={7500} onHover={true}>
               <img src='images/Olivine-4.png'
@@ -68,7 +76,10 @@ export default function PC_Builds() {
           transition={{ type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className='polaroid-3'>
           <Link
-            to='/KLVC'
+            to={{
+              pathname: '/KLVC',
+              state: scrollHeightRef.current.scrollHeight
+            }}
           >
             <Tilt duration={7500} onHover={true}>
               <img src='images/KLVC-3.png'

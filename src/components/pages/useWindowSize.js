@@ -4,7 +4,8 @@ export default function useWindowSize() {
     function getSize() {
         return {
             width: window.innerWidth,
-            height: window.innerHeight
+            height: window.innerHeight,
+            yscroll: window.pageYOffset
         };
     }
 
@@ -15,8 +16,8 @@ export default function useWindowSize() {
             setWindowSize(getSize());
         }
 
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
+        window.addEventListener("scroll", handleResize);
+        return () => window.removeEventListener("scroll", handleResize);
     }, []);
 
     return windowSize;

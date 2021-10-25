@@ -1,0 +1,45 @@
+.about-me{
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 20px;;
+}
+
+.about-me p{
+  color: white;
+  max-width: 800px;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px;
+}
+
+.about-me h1{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-settings1 {
+  display: block;
+  max-width: 95%;
+  max-height:500px;
+}
+
+@media screen and (max-width: 525px){
+
+  .about-me h1{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    width: 210px;
+    padding: 10px;
+    text-align: center;
+  }
+}

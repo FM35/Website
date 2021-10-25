@@ -3,18 +3,22 @@ import './HeatPack.css';
 import { motion } from "framer-motion";
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
+import { useLocation } from "react-router-dom";
 
 export default function Pato() {
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
   const tl = new TimelineLite();
+  const location = useLocation();
+  const height = location.state;
 
   let imageReveal1 = CSSRulePlugin.getRule('.flex');
 
   useEffect(() => {
     tl.to(imageReveal1, 2, { display: "flex", gap: "0px", ease: Power3.easeInOut, delay: 0.7 });
-    console.log(window.pageYOffset);
+    window.scrollTo(0, height);
+    console.log(height);
   });
 
 

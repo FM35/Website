@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './HeatPack.css';
+import './About-Me.css';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
 
@@ -44,9 +44,12 @@ export default function HeatPack() {
   return (
 
     <div className='heatpack-container' style={{ overflowX: 'hidden' }}>
-      <div>
-        Image gonna be here
-        <h1> Fungai(foon-guy-e) Mawoyo </h1>
+      <div className='about-me'>
+        <img className='img-settings1' src='images/Fungi-circle.png'
+          alt='Photography-Icon'
+
+        />
+        <h1> Fungai (foon-guy-e) Mawoyo </h1>
         <p>
           I am a photographer and Computer Scientist (Bachelor of Science in Computer Science conferred by the University of Calgary), from Harare Zimbabwe, currently based in Calgary, Canada.
           My passion lies in finding intersections between photography and technology, which is why the Virtual Exhibit idea is my prized jewel. It is an idea that was brought about by my desire to exhibit
