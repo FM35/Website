@@ -76,7 +76,7 @@ function HeroSection() {
               to='/port-page-one'
               className='item-links'
             >
-              Portfolio
+              Photography Portfolio
             </Link>
           </motion.li>
           <motion.li
@@ -157,7 +157,7 @@ function HeroSection() {
               to='/sign-up'
               className='item-links1'
             >
-              Mobile and Web Apps
+              Application Portfolio
             </Link>
           </motion.li>
           <motion.li

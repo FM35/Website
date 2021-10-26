@@ -1,0 +1,26 @@
+.about-me-container{
+
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+    
+    }
+
+
+.about-me-container h1{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-me-container p{
+  color: white;
+  max-width: 400px;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  left: 21%;
+}
