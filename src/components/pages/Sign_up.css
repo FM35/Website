@@ -2,9 +2,6 @@
 
   height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-    
     }
 
 
@@ -19,8 +16,46 @@
 
 .about-me-container p{
   color: white;
-  max-width: 400px;
+  max-width: 90%;
   font-family: 'Roboto Slab', serif;
   position: relative;
-  left: 21%;
+  text-align: center;
+  
+}
+
+.contact-me{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  top: 10%;
+  justify-content: center;
+
+}
+
+
+.position-1{
+  position: relative;
+  justify-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+
+
+.form-inline {
+  text-align: center;
+
+  
+}
+
+input{
+  width: 100%;
+  max-width: 90%;
+}
+
+textarea{
+  width: 100%;
+  max-width: 90%;
 }
