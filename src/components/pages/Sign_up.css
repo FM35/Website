@@ -16,7 +16,7 @@
 
 .about-me-container p{
   color: white;
-  max-width: 90%;
+  
   font-family: 'Roboto Slab', serif;
   position: relative;
   text-align: center;
@@ -26,7 +26,7 @@
 .contact-me{
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   top: 10%;
   justify-content: center;
@@ -38,7 +38,7 @@
   position: relative;
   justify-self: center;
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 6;
 
 }
 
@@ -47,15 +47,19 @@
 .form-inline {
   text-align: center;
 
-  
 }
 
 input{
   width: 100%;
   max-width: 90%;
+  margin: 20px;
 }
 
 textarea{
   width: 100%;
   max-width: 90%;
+  margin: 20px;
+  resize: none;
+  height: 300px;
+
 }

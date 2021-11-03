@@ -2,6 +2,7 @@ import React from 'react';
 import './Portfolio.css';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
+import Navbar from '../Nav_helper';
 
 export default function Portfolio_page_1() {
 
@@ -14,8 +15,9 @@ export default function Portfolio_page_1() {
       transition={{ delay: 0.25, duration: 1 }}
       style={{ overflowX: 'hidden' }}
       className='App'>
-
+      <Navbar />
       <h1>Portfolio</h1>
+
       <div className='menu-top'>
         <p className='list-menu' style={{ opacity: 0.5 }}>Page Number:</p>
         <p className='list-menu' style={{ opacity: 0.5 }}>One</p>

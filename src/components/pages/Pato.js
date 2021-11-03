@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
 import { useLocation } from "react-router-dom";
+import Navbar from '../Nav_helper';
 
 export default function Pato() {
 
@@ -53,10 +54,12 @@ export default function Pato() {
   return (
 
     <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
+      <Navbar />
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
         className='heatpack-title-container'>
+
 
         <motion.span variants={letter}>P</motion.span>
         <motion.span variants={letter}>a</motion.span>
@@ -148,7 +151,7 @@ export default function Pato() {
           animate={{
 
             y: 200,
-            width: '755px',
+            width: '655px',
             transition: { delay: 0.2, ...transition },
 
           }}
@@ -198,7 +201,7 @@ export default function Pato() {
         </motion.div>
       </div>
 
-      <div style={{ top: '400px' }} className='image-container'>
+      <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/Pato-2.png'
           alt='Photography-Icon'
         />
@@ -215,7 +218,7 @@ export default function Pato() {
         </div>
       </div>
 
-      <div style={{ top: '400px' }} className='image-container'>
+      <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/Pato-4.png'
           alt='Photography-Icon'
         />
@@ -226,7 +229,7 @@ export default function Pato() {
         </div>
       </div>
 
-      <div style={{ top: '400px' }} className='image-container'>
+      <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/Pato-1.png'
           alt='Photography-Icon'
         />

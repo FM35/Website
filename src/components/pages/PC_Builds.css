@@ -1,7 +1,6 @@
 .container{
 
-background-color: #121212;
-height: 100vh;
+height: auto;
 position: relative;
 }
 
@@ -46,6 +45,7 @@ img {
   grid-gap: 20px;
   top: 10%;
   justify-content: center;
+  margin-top: 100px;
 
 }
 

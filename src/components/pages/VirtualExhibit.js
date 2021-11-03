@@ -3,6 +3,7 @@ import Unity, { UnityContext } from "react-unity-webgl";
 import './VirtualExhibit.css';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 import { motion } from "framer-motion";
+import Navbar from '../Nav_helper';
 
 const unityContext = new UnityContext({
     loaderUrl: "/build/virtualexhibit.loader.js",
@@ -71,6 +72,7 @@ export default function VirtualExhibit() {
     return (
 
         <div ref={reset_body} className='exhibit-container'>
+            <Navbar />
             <div className='title-3'>
                 <div style={{ color: "white" }} className='heading-3'> Virtual Exhibit</div>
                 <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />

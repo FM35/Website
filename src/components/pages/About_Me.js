@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './About-Me.css';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
+import { motion } from "framer-motion";
+import Navbar from '../Nav_helper';
 
 export default function HeatPack() {
 
@@ -44,13 +46,56 @@ export default function HeatPack() {
   return (
 
     <div className='heatpack-container' style={{ overflowX: 'hidden' }}>
+      <Navbar />
       <div className='about-me'>
-        <img className='img-settings1' src='images/Fungi-circle.png'
-          alt='Photography-Icon'
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.25, duration: 3 }}
+        >
+          <img className='img-settings1' src='images/Fungi-circle.png'
+            alt='Photography-Icon'
+          />
+        </motion.div>
+        <motion.div
+          variants={staggerEffect}
+          initial="initial"
+          animate="animate"
+          className='about-me-name'
+        >
+          <motion.span variants={letter}>F</motion.span>
+          <motion.span variants={letter}>u</motion.span>
+          <motion.span variants={letter}>n</motion.span>
+          <motion.span variants={letter}>g</motion.span>
+          <motion.span variants={letter}>a</motion.span>
+          <motion.span variants={letter}>i</motion.span>
+          <motion.span variants={letter}> </motion.span>
+          <motion.span variants={letter}>(</motion.span>
+          <motion.span variants={letter}>f</motion.span>
+          <motion.span variants={letter}>o</motion.span>
+          <motion.span variants={letter}>o</motion.span>
+          <motion.span variants={letter}>n</motion.span>
+          <motion.span variants={letter}>-</motion.span>
+          <motion.span variants={letter}>g</motion.span>
+          <motion.span variants={letter}>u</motion.span>
+          <motion.span variants={letter}>y</motion.span>
+          <motion.span variants={letter}>-</motion.span>
+          <motion.span variants={letter}>e</motion.span>
+          <motion.span variants={letter}>)</motion.span>
+          <motion.span variants={letter}> </motion.span>
+          <motion.span variants={letter}>M</motion.span>
+          <motion.span variants={letter}>a</motion.span>
+          <motion.span variants={letter}>w</motion.span>
+          <motion.span variants={letter}>o</motion.span>
+          <motion.span variants={letter}>y</motion.span>
+          <motion.span variants={letter}>o</motion.span>
+        </motion.div>
 
-        />
-        <h1> Fungai (foon-guy-e) Mawoyo </h1>
-        <p>
+        <motion.p
+          initial={{ y: 1000 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.75, duration: 1 }}
+        >
           I am a photographer and Computer Scientist (Bachelor of Science in Computer Science conferred by the University of Calgary), from Harare Zimbabwe, currently based in Calgary, Canada.
           My passion lies in finding intersections between photography and technology, which is why the Virtual Exhibit idea is my prized jewel. It is an idea that was brought about by my desire to exhibit
           photography but lacking the capital to rent out a physical space to do so. The Virtual Exhibit was built using the Unity Platform and the programming language C#. My other Technological exploit
@@ -61,7 +106,7 @@ export default function HeatPack() {
           where I can travel to different cities on the globe and document the Downtown scene and sell prints of my work.<br />
           Explain Olivine and thank the community for APIs and what not. Done.
 
-        </p>
+        </motion.p>
       </div>
     </div>
   );

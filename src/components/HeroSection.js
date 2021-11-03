@@ -138,7 +138,7 @@ function HeroSection() {
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
             <Link to='/pc_builds' className='item-links1'>
-              Computer Builds
+              Computers
             </Link>
           </motion.li>
           <motion.li
@@ -157,7 +157,7 @@ function HeroSection() {
               to='/sign-up'
               className='item-links1'
             >
-              Application Portfolio
+              Technology Portfolio
             </Link>
           </motion.li>
           <motion.li

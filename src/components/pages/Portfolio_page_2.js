@@ -2,6 +2,8 @@ import React from 'react';
 import './Portfolio.css';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
+import Navbar from '../Nav_helper';
+import { Nav } from '../NavbarElements';
 
 export default function Services() {
 
@@ -14,6 +16,7 @@ export default function Services() {
       transition={{ delay: 0.25, duration: 1 }}
       style={{ overflowX: 'hidden' }}
       className='App'>
+      <Navbar />
       <h1>Portfolio</h1>
       <ul className='menu-top'>
         <li className='list-menu' style={{ opacity: 0.5 }}>Page Number:</li>

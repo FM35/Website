@@ -17,13 +17,15 @@
   padding: 10px;
 }
 
-.about-me h1{
+.about-me-name{
+  display: flex;
   color: white;
   font-family: 'Roboto Slab', serif;
-  font-weight: 400;
   max-width: 500px;
   padding: 10px;
-  text-align: center;
+  font-size: 35px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .img-settings1 {
@@ -34,7 +36,7 @@
 
 @media screen and (max-width: 525px){
 
-  .about-me h1{
+  .about-me-name{
     color: white;
     font-family: 'Roboto Slab', serif;
     font-weight: 400;

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Sign_up.css';
+import Navbar from '../Nav_helper';
 
 export default function Services() {
 
   return (
     <div className='about-me-container'>
+      <Navbar />
       <div className='contact-me'>
         <h1 className='position-1'>Contact Me</h1>
         <p className='position-1'>Contact me for any business enquries that align with Website/FrontEnd developing, Computer Builds, Virtual Exhibit or photography</p>

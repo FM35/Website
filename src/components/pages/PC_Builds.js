@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
-import useWindowSize from './useWindowSize'
+import useWindowSize from './useWindowSize';
+import Navbar from '../Nav_helper';
+
 
 export default function PC_Builds() {
 
@@ -18,15 +20,23 @@ export default function PC_Builds() {
 
 
   useEffect(() => {
-    tl.to(imageReveal1, 2, { display: "grid", gap: "20px", ease: Power3.easeInOut });
+
     scrollHeightRef.current.scrollHeight = window.pageYOffset;
     console.log(scrollHeightRef.current.scrollHeight)
   }, [size.yscroll]);
 
+  useEffect(() => {
+    tl.to(imageReveal1, 2, { display: "grid", gap: "20px", ease: Power3.easeInOut });
+  });
+
+
+
+
   return (
     <motion.div className='container'>
+      <Navbar />
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading'>
-        Computer Builds
+        Computers
       </motion.div>
       <div className='polaroids'>
         <motion.div

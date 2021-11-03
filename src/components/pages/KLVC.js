@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
 import { useLocation } from "react-router-dom";
+import Navbar from '../Nav_helper';
 
 export default function HeatPack() {
 
@@ -50,10 +51,12 @@ export default function HeatPack() {
   return (
 
     <div className='heatpack-container' style={{ overflowX: 'hidden' }}>
+      <Navbar />
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
         className='heatpack-title-container'>
+
 
         <motion.span variants={letter}>K</motion.span>
         <motion.span variants={letter}>L</motion.span>
@@ -174,8 +177,8 @@ export default function HeatPack() {
 
           animate={{
 
-            y: 250,
-            width: '755px',
+            y: 200,
+            width: '655px',
             transition: { delay: 0.2, ...transition },
           }}
 
@@ -186,7 +189,7 @@ export default function HeatPack() {
         </motion.div>
       </div>
 
-      <div style={{ top: '400px' }} className='image-container'>
+      <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/KLVC-4.png'
           alt='Photography-Icon'
         />
@@ -203,7 +206,7 @@ export default function HeatPack() {
         </div>
       </div>
 
-      <div style={{ top: '400px' }} className='image-container'>
+      <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/KLVC-1.png'
           alt='Photography-Icon'
         />
@@ -214,7 +217,7 @@ export default function HeatPack() {
         </div>
       </div>
 
-      <div style={{ top: '400px' }} className='image-container'>
+      <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/KLVC-2.png'
           alt='Photography-Icon'
         />

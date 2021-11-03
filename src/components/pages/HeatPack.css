@@ -1,11 +1,12 @@
 body{
-  background-color: #121212;
+  background-color: #202124;
 }
 
 .heatpack-container{
 
-  height: 100vh;
+  height: auto;
   position: relative;
+  
     
     }
     
@@ -27,11 +28,24 @@ body{
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
+
+
+.computer{
+    
+  position: absolute;
+  display: flex;
+  top: 5%;
+  font-size: 90px;
+  color: white;
+  overflow: hidden;
+  left: 10%;
+          
+  }
     
 .marquee{
 
     position: absolute;
-    top: 12%;
+    top: 2.5%;
     width:100%;
     color: black;
     overflow: hidden;
@@ -75,17 +89,6 @@ body{
 
   }
 
-.computer{
-    
-    position: absolute;
-    display: flex;
-    top: 22%;
-    font-size: 90px;
-    color: white;
-    overflow: hidden;
-    left: 10%;
-            
-    }
 
 .computer span{
   font-family: 'Roboto Slab', serif;
@@ -112,7 +115,7 @@ body{
   grid-gap: 20px;
   top: 10%;
   justify-content: center;
-
+  margin-top: 100px;
 
     }
 
