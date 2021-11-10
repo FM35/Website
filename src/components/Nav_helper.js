@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
     Nav,
     NavLink,
@@ -10,12 +9,6 @@ import {
 } from './NavbarElements';
 
 const Navbar = () => {
-
-
-    useEffect(() => {
-
-        console.log(open)
-    });
 
     const [open, toggleOpen] = useState(false);
 
@@ -97,14 +90,14 @@ const Navbar = () => {
                         initial="closed"
                         animate={open ? "open" : "closed"}
                         to='/about-me' >
-                        About Me
+                        About Us
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
                         to='/sign-up' >
-                        Contact Me
+                        Contact Us
                     </MobileNav>
 
                 </ButtonParent>
@@ -122,10 +115,10 @@ const Navbar = () => {
                         Technology Portfolio
                     </NavLink>
                     <NavLink to='/about-me' >
-                        About Me
+                        About Us
                     </NavLink>
                     <NavLink to='/sign-up' >
-                        Contact Me
+                        Contact Us
                     </NavLink>
                 </NavMenu>
             </Nav>

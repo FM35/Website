@@ -1,7 +1,9 @@
 .container{
 
+background-color: #0b0b0b;
 height: auto;
 position: relative;
+
 }
 
 .heading{
@@ -56,8 +58,7 @@ img {
   grid-column-start: 1;
     grid-column-end: 3;
     max-width: 95%;
-
-  
+    
 }
 
 .polaroid-2{

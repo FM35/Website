@@ -14,23 +14,13 @@ export default function PC_Builds() {
   const tl = new TimelineLite();
   const size = useWindowSize();
 
-  let imageReveal1 = CSSRulePlugin.getRule('.flex');
-
   var scrollHeightRef = useRef({ scrollHeight: window.pageYOffset });
 
 
   useEffect(() => {
 
     scrollHeightRef.current.scrollHeight = window.pageYOffset;
-    console.log(scrollHeightRef.current.scrollHeight)
   }, [size.yscroll]);
-
-  useEffect(() => {
-    tl.to(imageReveal1, 2, { display: "grid", gap: "20px", ease: Power3.easeInOut });
-  });
-
-
-
 
   return (
     <motion.div className='container'>

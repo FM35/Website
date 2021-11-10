@@ -95,9 +95,8 @@ function HeroSection() {
               to='/about-me'
               className='item-links'
             >
-              About Me
+              About Us
             </Link>
-            {/*<a href="https://www.instagram.com/olivine_35/" target="_blank" className='item-links'>About Me</a>*/}
           </motion.li>
         </ul>
 
@@ -176,7 +175,7 @@ function HeroSection() {
               to='/sign-up'
               className='item-links1'
             >
-              Contact Me
+              Contact Us
             </Link>
           </motion.li>
         </ul>

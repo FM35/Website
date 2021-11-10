@@ -1,30 +1,84 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
-import CSSRulePlugin from 'gsap/CSSRulePlugin';
 import { Power3, TimelineLite } from "gsap";
 import { useLocation } from "react-router-dom";
 import Navbar from '../Nav_helper';
+import CSSRulePlugin from 'gsap/CSSRulePlugin';
 
 
 export default function HeatPack() {
+
+  const [animate, setAnimate] = useState(false);
+  const handleClick = () => setAnimate(!animate);
+
 
   const tl = new TimelineLite();
   const location = useLocation();
   const height = location.state;
 
-  let imageReveal1 = CSSRulePlugin.getRule('.flex');
+  let polaroid1 = CSSRulePlugin.getRule('.polaroid-container-1');
+  let polaroid2 = CSSRulePlugin.getRule('.polaroid-container-2');
+  let polaroid3 = CSSRulePlugin.getRule('.polaroid-container-3');
+
+
+  const mediaQuery = window.matchMedia('(max-width: 1082px)')
+  const media2Query = window.matchMedia('(min-width: 1082px) and (max-width: 1421px)')
+  const media3Query = window.matchMedia('(min-width: 1421px)')
+
+  mediaQuery.addListener(handleChange);
+  media2Query.addListener(handleChange2);
+  media3Query.addListener(handleChange3);
+
+  function onStart() {
+
+    setTimeout(handleClick, 1000);
+    setTimeout(handleChange2(media2Query), 1000);
+  }
+
+  function handleChange(e) {
+
+    if (e.matches) {
+
+      polaroid1.gridColumn = '3/5'
+      polaroid2.gridColumn = '3/5'
+      polaroid3.gridColumn = '3/5'
+    }
+
+  }
+
+  function handleChange2(e) {
+
+    if (e.matches && animate) {
+      polaroid1.gridColumn = '1/4'
+      polaroid2.gridColumn = '3/5'
+      polaroid3.gridColumn = '3/5'
+    }
+    if (e.matches && !animate) {
+      polaroid1.gridColumn = '1/4'
+      polaroid2.gridColumn = '4/7'
+      polaroid3.gridColumn = '3/5'
+    }
+  }
+
+  function handleChange3(e) {
+
+    if (e.matches) {
+      polaroid1.gridColumn = '1/3'
+      polaroid2.gridColumn = '3/5'
+      polaroid3.gridColumn = '5/7'
+    }
+  }
+
+  handleChange(mediaQuery);
+  handleChange2(media2Query);
+  handleChange3(media3Query);
 
   useEffect(() => {
-    tl.to(imageReveal1, 2, { display: "flex", gap: "0px", ease: Power3.easeInOut, delay: 0.7 });
     window.scrollTo(0, height);
-    console.log(height);
   });
 
-
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-
-
 
   const staggerEffect = {
     initial: {
@@ -130,9 +184,9 @@ export default function HeatPack() {
           <li> Multipurpose</li>
           <li> Multipurpose</li>
           <li> Multipurpose</li>
-          <li> Multipurpose</li>
+          <li>  Multipurpose</li>
         </motion.ul>
-      </motion.div>
+      </motion.div >
       <motion.div
         variants={staggerEffect}
         initial="initial"
@@ -148,7 +202,7 @@ export default function HeatPack() {
         <motion.span variants={letter}>e</motion.span>
         <motion.span variants={letter}>r</motion.span>
       </motion.div>
-      <div className='flex'>
+      <div className='polaroids'>
 
         <motion.div
 
@@ -178,6 +232,8 @@ export default function HeatPack() {
             width: '655px',
             transition: { delay: 0.2, ...transition },
           }}
+          onAnimationStart={onStart}
+          exit={handleClick}
 
           className='polaroid-container-2'>
           <img src='images/Olivine-4.png'
@@ -188,7 +244,7 @@ export default function HeatPack() {
         <motion.div
 
           initial={{
-            width: '460px',
+            width: ' 460px',
             height: '558.39px',
           }}
 
@@ -200,7 +256,7 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-3'>
-          <img src='images/KLVC-3.png'
+          < img src='images/KLVC-3.png'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -208,7 +264,7 @@ export default function HeatPack() {
 
       <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/Olivine-2.png'
-          alt='Photography-Icon'
+          alt='Photo graphy-Icon'
         />
         <div style={{ width: '540px' }}>
           <ul>
