@@ -223,15 +223,13 @@ export default function HeatPack() {
           />
         </motion.div>
 
-        <motion.div initial={{
-          width: '460px',
-        }}
+        <motion.div animate={{
 
-          animate={{
-            y: 200,
-            width: '655px',
-            transition: { delay: 0.2, ...transition },
-          }}
+          y: 200,
+          width: [460, 0, 655],
+          transition: { delay: 0.2, ...transition },
+
+        }}
           onAnimationStart={onStart}
           exit={handleClick}
 

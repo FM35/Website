@@ -8,8 +8,8 @@ export default function Services() {
     <div className='about-me-container'>
       <Navbar />
       <div className='contact-me'>
-        <h1 className='position-1'>Contact Me</h1>
-        <p className='position-1'>Contact me for any business enquries that align with Website/FrontEnd developing, Computer Builds, Virtual Exhibit or photography</p>
+        <h1 className='position-1'>Contact Us</h1>
+        <p className='position-1'>We offer virtual, website and computer building services. Let us know how we can best serve you!</p>
         <div className='position-1'>
           <form className='form-inline' action="https://formsubmit.co/fungaimawoyo@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false" />

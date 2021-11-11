@@ -202,15 +202,10 @@ export default function Pato() {
 
         <motion.div
 
-          initial={{
-            width: '460px',
-
-          }}
-
           animate={{
 
             y: 200,
-            width: '655px',
+            width: [460, 0, 655],
             transition: { delay: 0.2, ...transition },
 
           }}
