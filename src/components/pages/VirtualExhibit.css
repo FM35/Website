@@ -53,3 +53,25 @@ align-items:center;
     font-family: 'Roboto Slab', serif;
 
   }
+
+  .mobilePC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+  .mobilePCButton{
+    margin: 2rem auto;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin-top: 70px;
+    font-family: 'Roboto Slab', serif;
+    border: 3px solid whitesmoke;
+    width:200px;
+    text-align: center;
+  
+  }

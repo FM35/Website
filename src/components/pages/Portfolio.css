@@ -10,7 +10,6 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   position: relative;
-  display: flex;
   left: 5.5%;
   font-size: 90px;
   color: white;
@@ -19,6 +18,16 @@
 .scroll{
   padding: 2vh 0;
   
+}
+
+.paragraph{
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+  left: 5.5%;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
  .image-container{

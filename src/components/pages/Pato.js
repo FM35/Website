@@ -114,6 +114,10 @@ export default function Pato() {
 
     <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
       <Navbar />
+      <motion.div style={{ position: 'absolute' }} initial={{ opacity: 1 }} transition={{ duration: 0.5 }} animate={{ opacity: 0 }} className='heading'>
+        Computers
+      </motion.div>
+      <motion.p initial={{ opacity: 1 }} transition={{ duration: 0.75 }} animate={{ opacity: 0 }} className='compPara'>A catalogue of the best computers we've built so far! Click a polaroid for more information.</motion.p>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"

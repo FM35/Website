@@ -28,7 +28,7 @@ export default function PC_Builds() {
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading'>
         Computers
       </motion.div>
-      <p style={{ color: 'white' }}>A catalogue of the best computers we've built so far</p>
+      <p className='compPara'>A catalogue of the best computers we've built so far! Click a polaroid for more information.</p>
       <div className='polaroids'>
         <motion.div
 

@@ -47,6 +47,8 @@
 .section1{
   grid-column: 9/19;
   font-size: 40px;
+  font-weight: 100;
+  font-family: 'Roboto Slab', serif;
 }
 
 .section2{
@@ -64,21 +66,13 @@
 }
 
 .section5{
-  margin-top: 250px;
-  grid-column: 3/7;
 
+  grid-column: 3/7;
 }
 
-@media screen and (max-width: 525px){
+.section6{
 
-  .about-me-name{
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    width: 210px;
-    padding: 10px;
-    text-align: center;
-  }
+  grid-column: 9/19;
 }
 
 @media screen and (max-width: 767px){

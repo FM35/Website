@@ -61,6 +61,13 @@ const Navbar = () => {
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
+                        to='/' >
+                        Home
+                    </MobileNav>
+                    <MobileNav
+                        variants={MobileMenuVariants}
+                        initial="closed"
+                        animate={open ? "open" : "closed"}
                         to='/VirtualExhibit' >
                         Virtual Exhibit
                     </MobileNav>
@@ -102,6 +109,9 @@ const Navbar = () => {
 
                 </ButtonParent>
                 <NavMenu>
+                    <NavLink to='/' >
+                        Home
+                    </NavLink>
                     <NavLink to='/VirtualExhibit' >
                         Virtual Exhibit
                     </NavLink>

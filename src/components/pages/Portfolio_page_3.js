@@ -17,7 +17,7 @@ export default function Services() {
       className='App'>
       <Navbar />
       <h1>Portfolio</h1>
-
+      <p className='paragraph'>Some of HeatPackOllie's best shots</p>
       <ul className='menu-top'>
         <li className='list-menu' style={{ opacity: 0.5 }}>Page Number:</li>
         <motion.li whileHover={{

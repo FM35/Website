@@ -17,7 +17,7 @@ export default function Services() {
             <input type="text" name="subject" placeholder="Subject" required />
             <input type="email" name="email" placeholder="Email Address" required />
             <textarea placeholder="Type Your Message Here" required></textarea><br />
-            <button type="submit">Send</button>
+            <button className='button' type="submit">Send</button>
           </form>
         </div>
       </div>

@@ -20,23 +20,29 @@ export const NavMenu = styled.div`
 display: flex;
 align-items: center;
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 972px) {
 	display: none;
 }
 `;
 
 export const NavLink = styled(Link)`
+
 color: #FFFFFF;
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0 3rem;
+padding: 0 2.5rem;
 height: 100%;
 cursor: pointer;
 font-family: 'Roboto Slab', serif;
 `;
 
 export const MobileNav = styled(motion(Link))`
+
+@media screen and (min-width: 972px) {
+	display: none;
+}
+
 color: #FFFFFF;
 display: flex;
 align-items: center;
@@ -45,14 +51,14 @@ font-family: 'Roboto Slab', serif;
 width: 100%;
 text-decoration: none;
 padding: 0 1rem;
-height: 16.67%;
+height: 13.67%;
 cursor: pointer;
 `;
 
 export const Bars = styled(FaBars)`
 display: none;
 color: #FFFFFF;
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 972px) {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -68,7 +74,7 @@ export const ButtonParent = styled(motion.div)`
 display: none;
 width: 0px;
 
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 972px) {  
 position: absolute;
 display: flex;
 flex-direction: column;
