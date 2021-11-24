@@ -40,9 +40,10 @@ export default function HeatPack() {
 
     if (e.matches) {
 
-      polaroid1.gridColumn = '3/5'
-      polaroid2.gridColumn = '3/5'
-      polaroid3.gridColumn = '3/5'
+      polaroid1.gridColumn = '2/6'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '2/6'
+      polaroid3.left = '0'
     }
 
   }
@@ -51,22 +52,32 @@ export default function HeatPack() {
 
     if (e.matches && animate) {
       polaroid1.gridColumn = '1/4'
-      polaroid2.gridColumn = '3/5'
+      polaroid2.gridColumn = '2/6'
       polaroid3.gridColumn = '3/5'
+      polaroid3.left = '0'
     }
     if (e.matches && !animate) {
       polaroid1.gridColumn = '1/4'
       polaroid2.gridColumn = '4/7'
-      polaroid3.gridColumn = '3/5'
+      polaroid3.gridColumn = '2/5'
+      polaroid3.left = '17.5%'
     }
   }
 
   function handleChange3(e) {
 
-    if (e.matches) {
+    if (e.matches && animate) {
+      polaroid1.gridColumn = '1/3'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '5/7'
+      polaroid3.left = '0'
+    }
+
+    if (e.matches && !animate) {
       polaroid1.gridColumn = '1/3'
       polaroid2.gridColumn = '3/5'
       polaroid3.gridColumn = '5/7'
+      polaroid3.left = '0'
     }
   }
 
@@ -110,12 +121,8 @@ export default function HeatPack() {
 
   return (
 
-    <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
+    <div className='heatpack-container' style={{ overflowX: 'hidden' }}>
       <Navbar />
-      <motion.div style={{ position: 'absolute' }} initial={{ opacity: 1 }} transition={{ duration: 0.5 }} animate={{ opacity: 0 }} className='heading'>
-        Computers
-      </motion.div>
-      <motion.p initial={{ opacity: 1 }} transition={{ duration: 0.75 }} animate={{ opacity: 0 }} className='compPara'>A catalogue of the best computers we've built so far! Click a polaroid for more information.</motion.p>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
@@ -209,11 +216,6 @@ export default function HeatPack() {
       <div className='polaroids'>
 
         <motion.div
-
-          initial={{
-            width: '460px',
-            height: '558.39px',
-          }}
           animate={{
             opacity: 0,
             width: '0px',
@@ -230,7 +232,7 @@ export default function HeatPack() {
         <motion.div animate={{
 
           y: 200,
-          width: [460, 0, 655],
+          opacity: [1, 0, 1],
           transition: { delay: 0.2, ...transition },
 
         }}
@@ -244,12 +246,6 @@ export default function HeatPack() {
         </motion.div>
 
         <motion.div
-
-          initial={{
-            width: ' 460px',
-            height: '558.39px',
-          }}
-
           animate={{
             opacity: 0,
             width: '0px',
@@ -288,7 +284,7 @@ export default function HeatPack() {
         />
         <div style={{ width: '540px' }}>
           <p>
-            This computer was designed for handling large data science and machine learning projects, along with frontend development and gaming large open world games in the highest possible settings. It was also designed with future proofing in mind so that the need to upgrade to perform the same requirements doesn't arise till about 5 years, especially when newer games require more and more computing poower to handle the graphics.
+            This computer was designed for handling large data science and machine learning projects, along with frontend development and gaming large open world games in the highest possible settings.It was also designed with future proofing in mind so that the need to upgrade to perform the same requirements doesn't arise till about 5 years, especially when newer games require more and more computing poower to handle the graphics.
           </p>
         </div>
       </div>
@@ -299,10 +295,10 @@ export default function HeatPack() {
         />
         <div style={{ width: '540px' }}>
           <p>
-            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static, breathing to name a few. The Computer was also coupled with an RGB mouse and keyboard combo, along with light strips lined up on the bottom of the desk to complete the RGB light setup.
+            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static , breathing to name a few.The Computer was also coupled with an RGB mouse and keyboard combo, along with light strips lined up on the bottom of the desk to complete the RGB light setup.
           </p>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

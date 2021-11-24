@@ -4,6 +4,8 @@ import './VirtualExhibit.css';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 import { motion } from "framer-motion";
 import Navbar from '../Nav_helper';
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 
 const unityContext = new UnityContext({
     loaderUrl: "/buildMobile/virtualexhibit.loader.js",
@@ -69,38 +71,42 @@ export default function VirtualExhibit() {
     return (
 
         <div className='exhibit-container'>
-            <Navbar />
-            <div className='title-3'>
-                <div style={{ color: "white" }} className='heading-3'> Virtual Exhibit</div>
-                <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />
-            </div>
-            <motion.div
-                className='three-dots'
-                style={loadingContainer}
-                variants={loadingContainerVariants}
-                initial="start"
-                animate="end"
-            >
-                <motion.span
-                    style={loadingCircle}
-                    variants={loadingCircleVariants}
-                    transition={loadingCircleTransition}
-                />
-                <motion.span
-                    style={loadingCircle}
-                    variants={loadingCircleVariants}
-                    transition={loadingCircleTransition}
-                />
-                <motion.span
-                    style={loadingCircle}
-                    variants={loadingCircleVariants}
-                    transition={loadingCircleTransition}
-                />
-            </motion.div>
-            <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
-            <div className='game-container'>
-                <Unity unityContext={unityContext} />
-            </div>
+            <SimpleBar style={{ height: '100vh' }}>
+                <div style={{ overflowX: 'hidden' }}>
+                    <Navbar />
+                    <div className='title-3'>
+                        <div style={{ color: "white" }} className='heading-3'> Virtual Exhibit</div>
+                        <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />
+                    </div>
+                    <motion.div
+                        className='three-dots'
+                        style={loadingContainer}
+                        variants={loadingContainerVariants}
+                        initial="start"
+                        animate="end"
+                    >
+                        <motion.span
+                            style={loadingCircle}
+                            variants={loadingCircleVariants}
+                            transition={loadingCircleTransition}
+                        />
+                        <motion.span
+                            style={loadingCircle}
+                            variants={loadingCircleVariants}
+                            transition={loadingCircleTransition}
+                        />
+                        <motion.span
+                            style={loadingCircle}
+                            variants={loadingCircleVariants}
+                            transition={loadingCircleTransition}
+                        />
+                    </motion.div>
+                    <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
+                    <div className='game-container'>
+                        <Unity unityContext={unityContext} />
+                    </div>
+                </div>
+            </SimpleBar>
         </div >
     );
 }

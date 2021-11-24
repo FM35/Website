@@ -28,12 +28,12 @@ export default function PC_Builds() {
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading'>
         Computers
       </motion.div>
-      <p className='compPara'>A catalogue of the best computers we've built so far! Click a polaroid for more information.</p>
+      <p className='compPara'>The best computers we've built so far! Click a polaroid for more information.</p>
       <div className='polaroids'>
         <motion.div
 
-          initial={{ width: '460px', height: '558.39px', x: -1800, opacity: 0 }}
-          animate={{ width: '460px', height: '558.39px', x: 0, opacity: 1 }}
+          initial={{ x: -1800, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.5, type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className='polaroid-1'>
           <Link
@@ -52,8 +52,8 @@ export default function PC_Builds() {
 
         <motion.div
 
-          initial={{ width: '460px', height: '558.39px', x: -1800, opacity: 0 }}
-          animate={{ width: '460px', height: '558.39px', x: 0, opacity: 1 }}
+          initial={{ x: -1800, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.25, type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className='polaroid-2'>
           <Link
@@ -72,8 +72,8 @@ export default function PC_Builds() {
 
         <motion.div
 
-          initial={{ width: '460px', height: '558.39px', x: -1800, opacity: 0 }}
-          animate={{ width: '460px', height: '558.39px', x: 0, opacity: 1 }}
+          initial={{ x: -1800, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className='polaroid-3'>
           <Link

@@ -46,7 +46,7 @@
 
 .section1{
   grid-column: 9/19;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 100;
   font-family: 'Roboto Slab', serif;
 }
@@ -80,6 +80,9 @@
   .about-me-passage{
     display: block;
     width: 88vw;
-    margin: 0 auto;
+  }
+
+  .section4{
+    font-size: 60px;
   }
 }

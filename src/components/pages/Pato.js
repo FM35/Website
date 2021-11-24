@@ -39,9 +39,10 @@ export default function Pato() {
 
     if (e.matches) {
 
-      polaroid1.gridColumn = '3/5'
-      polaroid2.gridColumn = '3/5'
-      polaroid3.gridColumn = '3/5'
+      polaroid1.gridColumn = '2/6'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '2/6'
+      polaroid3.left = '0'
 
     }
   }
@@ -49,29 +50,33 @@ export default function Pato() {
   function handleChange2(e) {
 
     if (e.matches && animate) {
-      polaroid1.gridColumn = '3/5'
+      polaroid1.gridColumn = '2/6'
       polaroid2.gridColumn = '4/7'
       polaroid3.gridColumn = '3/5'
+      polaroid3.left = '0'
     }
     if (e.matches && !animate) {
       polaroid1.gridColumn = '1/4'
       polaroid2.gridColumn = '4/7'
-      polaroid3.gridColumn = '3/5'
+      polaroid3.gridColumn = '2/5'
+      polaroid3.left = '17.5%'
     }
   }
 
   function handleChange3(e) {
 
     if (e.matches && animate) {
-      polaroid1.gridColumn = '3/5'
+      polaroid1.gridColumn = '2/6'
       polaroid2.gridColumn = '3/5'
       polaroid3.gridColumn = '5/7'
+      polaroid3.left = '0'
     }
 
     if (e.matches && !animate) {
       polaroid1.gridColumn = '1/3'
       polaroid2.gridColumn = '3/5'
       polaroid3.gridColumn = '5/7'
+      polaroid3.left = '0'
     }
   }
 
@@ -114,10 +119,6 @@ export default function Pato() {
 
     <div className='heatpack-container' style={{ overflowX: 'hidden', }}>
       <Navbar />
-      <motion.div style={{ position: 'absolute' }} initial={{ opacity: 1 }} transition={{ duration: 0.5 }} animate={{ opacity: 0 }} className='heading'>
-        Computers
-      </motion.div>
-      <motion.p initial={{ opacity: 1 }} transition={{ duration: 0.75 }} animate={{ opacity: 0 }} className='compPara'>A catalogue of the best computers we've built so far! Click a polaroid for more information.</motion.p>
       <motion.div variants={staggerEffect}
         initial="initial"
         animate="animate"
@@ -209,7 +210,7 @@ export default function Pato() {
           animate={{
 
             y: 200,
-            width: [460, 0, 655],
+            opacity: [1, 0, 1],
             transition: { delay: 0.2, ...transition },
 
           }}
@@ -223,10 +224,7 @@ export default function Pato() {
           />
         </motion.div>
 
-        <motion.div initial={{
-          width: '460px',
-          height: '558.39px',
-        }}
+        <motion.div
           animate={{
             opacity: 0,
             width: '0px',
@@ -241,12 +239,6 @@ export default function Pato() {
         </motion.div>
 
         <motion.div
-
-          initial={{
-            width: '460px',
-            height: '558.39px',
-          }}
-
           animate={{
             opacity: 0,
             width: '0px',

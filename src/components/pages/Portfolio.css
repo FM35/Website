@@ -6,25 +6,11 @@
   width: 100%;
 }
 
-.App h1{
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  position: relative;
-  left: 5.5%;
-  font-size: 90px;
-  color: white;
-}
-
-.scroll{
-  padding: 2vh 0;
-  
-}
-
 .paragraph{
   font-size: 30px;
   position: relative;
   top: 50px;
-  left: 5.5%;
+  left: 5%;
   color: white;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -41,20 +27,29 @@
   overflow: hidden;
  }
 
- .image-container p{
-  
-   color: white;
-   font-family: 'Roboto Slab', serif;
-   font-weight: 500;
-   padding: 20px;
+ .image-container1{
+  max-width: 100%;
+  position: relative;
+  margin: 300px auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
  }
 
- .image-container li{
-  padding: 20px;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-   font-weight: 500;
-}
+ .image-container-last{
+  max-width: 100%;
+  position: relative;
+  margin: 300px auto;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+ }
 
  .img-settings {
   display: block;
@@ -63,12 +58,47 @@
   
 }
 
+img { 
+  max-width: 100%; 
+}
+
+ .image-container p{
+  
+   color: white;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 500;
+   padding: 20px;
+ }
+
+ .image-container1 p{
+  
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.image-container-last p{
+  
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  padding: 20px;
+}
+
+ .image-container li{
+  padding: 20px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+   font-weight: 500;
+}
+
 .menu-top{
   display:flex;
   position: relative;
   top: 100px;
   left: 5%;
-  width: 380px;
+  width: 280px;
 }
 
 .menu-bottom{
@@ -76,13 +106,13 @@
   position: relative;
   bottom: 100px;
   left: 5%;
-  width: 380px;
+  width: 280px;
 }
 
 .list-menu{
   color:white;
   display: flex;
-  padding: 20px;
+  padding-right: 20px;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
@@ -93,4 +123,28 @@
   color: white;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
+}
+
+@media screen and (max-width: 542px) {
+  .paragraph{
+    font-size: 18px;
+    top: 0px;
+  }
+
+  .menu-top{
+    top: 50px;
+  }
+  
+  .menu-bottom{
+    bottom: 50px;
+  }
+
+  .image-container1{
+    margin-top: 100px;
+   }
+
+   .image-container-last{
+    margin-top: 100px;
+   }
+
 }
