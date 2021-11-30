@@ -64,11 +64,6 @@ body{
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
-
-.marquee-content li{
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-}
       
    @keyframes scrolling{
     0% {transform: translateX(0);}
@@ -85,6 +80,8 @@ body{
     white-space:nowrap;
     text-align: center;
     color: white;
+    font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 
   }
 
@@ -136,11 +133,22 @@ body{
 
     .computer{
       font-size: 60px;
+      top: 190px;
+      }
+      .marquee{
+        top: 120px;
       }
 
       .marquee-content li{
         font-size: 60px;
+        width: 600px;
       }
+
+      @keyframes scrolling{
+        0% {transform: translateX(0);}
+        100% {transform: translateX(-1800px);}
+        }
+      
   
   }
   
@@ -150,11 +158,22 @@ body{
     }
 
     .computer{
-      font-size: 40px;  
+      font-size: 40px;
+      top: 170px; 
+      }
+
+      .marquee{
+        top: 110px;
       }
 
       .marquee-content li{
         font-size: 40px;
+        width: 400px;
       }
+
+      @keyframes scrolling{
+        0% {transform: translateX(0);}
+        100% {transform: translateX(-1200px);}
+        }
   
   }

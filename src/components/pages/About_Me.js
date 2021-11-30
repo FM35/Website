@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './About-Me.css';
-import { Power3, TimelineLite } from "gsap";
-import { motion } from "framer-motion";
 import Navbar from '../Nav_helper';
 
 export default function aboutMe() {

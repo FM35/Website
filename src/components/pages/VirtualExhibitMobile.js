@@ -1,11 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
 import './VirtualExhibit.css';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
 import { motion } from "framer-motion";
 import Navbar from '../Nav_helper';
-import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
+import CSSRulePlugin from 'gsap/CSSRulePlugin';
 
 const unityContext = new UnityContext({
     loaderUrl: "/buildMobile/virtualexhibit.loader.js",
@@ -13,6 +12,9 @@ const unityContext = new UnityContext({
     frameworkUrl: "/buildMobile/virtualexhibit.framework.js",
     codeUrl: "/buildMobile/virtualexhibit.wasm",
 });
+
+let threeDots = CSSRulePlugin.getRule('.three-dots');
+let loading = CSSRulePlugin.getRule('.loading');
 
 const loadingContainer = {
     width: "2rem",
@@ -59,6 +61,8 @@ const loadingCircleTransition = {
 
 export default function VirtualExhibit() {
 
+    //Self explanatory
+
     const [progression, setProgression] = useState(0);
 
     useEffect(function () {
@@ -66,47 +70,48 @@ export default function VirtualExhibit() {
         unityContext.on("progress", function (progression) {
             setProgression(progression);
         });
-    }, []);
+
+        if (progression === 1) {
+            threeDots.display = 'none'
+            loading.display = 'none'
+        }
+    }, [progression]);
 
     return (
 
         <div className='exhibit-container'>
-            <SimpleBar style={{ height: '100vh' }}>
-                <div style={{ overflowX: 'hidden' }}>
-                    <Navbar />
-                    <div className='title-3'>
-                        <div style={{ color: "white" }} className='heading-3'> Virtual Exhibit</div>
-                        <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />
-                    </div>
-                    <motion.div
-                        className='three-dots'
-                        style={loadingContainer}
-                        variants={loadingContainerVariants}
-                        initial="start"
-                        animate="end"
-                    >
-                        <motion.span
-                            style={loadingCircle}
-                            variants={loadingCircleVariants}
-                            transition={loadingCircleTransition}
-                        />
-                        <motion.span
-                            style={loadingCircle}
-                            variants={loadingCircleVariants}
-                            transition={loadingCircleTransition}
-                        />
-                        <motion.span
-                            style={loadingCircle}
-                            variants={loadingCircleVariants}
-                            transition={loadingCircleTransition}
-                        />
-                    </motion.div>
-                    <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
-                    <div className='game-container'>
-                        <Unity unityContext={unityContext} />
-                    </div>
-                </div>
-            </SimpleBar>
+            <Navbar />
+            <div className='title-3'>
+                <div style={{ color: "white" }} className='heading-3'> Virtual Exhibit</div>
+                <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />
+            </div>
+            <div className='game-container'>
+                <motion.div
+                    className='three-dots'
+                    style={loadingContainer}
+                    variants={loadingContainerVariants}
+                    initial="start"
+                    animate="end"
+                >
+                    <motion.span
+                        style={loadingCircle}
+                        variants={loadingCircleVariants}
+                        transition={loadingCircleTransition}
+                    />
+                    <motion.span
+                        style={loadingCircle}
+                        variants={loadingCircleVariants}
+                        transition={loadingCircleTransition}
+                    />
+                    <motion.span
+                        style={loadingCircle}
+                        variants={loadingCircleVariants}
+                        transition={loadingCircleTransition}
+                    />
+                </motion.div>
+                <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
+                <Unity unityContext={unityContext} />
+            </div>
         </div >
     );
 }

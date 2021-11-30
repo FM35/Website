@@ -5,8 +5,8 @@ import Port_Page_One from './components/pages/Portfolio_page_1';
 import Port_Page_Two from './components/pages/Portfolio_page_2';
 import Port_Page_Three from './components/pages/Portfolio_page_3';
 import PC_Builds from './components/pages/PC_Builds';
-import Sign_up from './components/pages/Sign_up'
-import HeatPack from './components/pages/HeatPack';
+import Contact_Us from './components/pages/Contact-Us'
+import Olivine from './components/pages/Olivine';
 import Pato from './components/pages/Pato';
 import KLVC from './components/pages/KLVC';
 import { AnimatePresence } from 'framer-motion';
@@ -31,11 +31,11 @@ function App() {
           <Route path='/port-page-two' component={Port_Page_Two} />
           <Route path='/port-page-three' component={Port_Page_Three} />
           <Route path='/pc_builds' component={PC_Builds} />
-          <Route path='/HeatPack' component={HeatPack} />
+          <Route path='/Olivine' component={Olivine} />
           <Route path='/Pato' component={Pato} />
           <Route path='/KLVC' component={KLVC} />
           <Route path='/VirtualExhibit' component={VirtualExhibit} />
-          <Route path='/sign-up' component={Sign_up} />
+          <Route path='/contact-us' component={Contact_Us} />
           <Route path='/about-me' component={About_Me} />
           <Route path='/VEC' component={VirtualExhibitComputer} />
           <Route path='/VEM' component={VirtualExhibitMobile} />

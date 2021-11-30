@@ -46,6 +46,8 @@ const Navbar = () => {
     };
 
     return (
+
+        //Self explanatory
         <>
             <Nav>
                 <Bars onClick={() => {
@@ -56,7 +58,6 @@ const Navbar = () => {
                     initial="closed"
                     animate={open ? "open" : "closed"}
                 >
-
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
@@ -83,7 +84,7 @@ const Navbar = () => {
                         initial="closed"
                         animate={open ? "open" : "closed"}
                         to='/pc_builds' >
-                        Computers
+                        Computer Portfolio
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
@@ -106,7 +107,6 @@ const Navbar = () => {
                         to='/sign-up' >
                         Contact Us
                     </MobileNav>
-
                 </ButtonParent>
                 <NavMenu>
                     <NavLink to='/' >
@@ -119,7 +119,7 @@ const Navbar = () => {
                         Photography Portfolio
                     </NavLink>
                     <NavLink to='/pc_builds' >
-                        Computers
+                        Computer Portfolio
                     </NavLink>
                     <NavLink to='/sign-up' >
                         Technology Portfolio

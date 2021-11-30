@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 
 export default function useWindowSize() {
+
+    //Hook I use to get the window size details
+
     function getSize() {
         return {
             width: window.innerWidth,

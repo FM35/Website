@@ -1,8 +1,10 @@
 import React from 'react';
-import './Sign_up.css';
+import './Contact-Us.css';
 import Navbar from '../Nav_helper';
 
-export default function Services() {
+export default function ContactUs() {
+
+  //Self explanatory
 
   return (
     <div className='about-me-container'>
@@ -10,7 +12,7 @@ export default function Services() {
       <div className='contact-me'>
         <h1 className='position-1'>Contact Us</h1>
         <p className='position-1'>We offer virtual, website and computer building services. Let us know how we can best serve you!</p>
-        <div className='position-1'>
+        <div className='position-2'>
           <form className='form-inline' action="https://formsubmit.co/fungaimawoyo@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false" />
             <input type="text" name="full-name" placeholder="Full Name" required />

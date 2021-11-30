@@ -3,20 +3,17 @@ import './PC_Builds.css';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import Tilt from 'react-parallax-tilt';
-import CSSRulePlugin from 'gsap/CSSRulePlugin';
-import { Power3, TimelineLite } from "gsap";
 import useWindowSize from './useWindowSize';
 import Navbar from '../Nav_helper';
 
 
 export default function PC_Builds() {
 
-  const tl = new TimelineLite();
   const size = useWindowSize();
 
   var scrollHeightRef = useRef({ scrollHeight: window.pageYOffset });
 
-
+  //Sending scroll height to respective page, either Olivine, KLVC or Pato
   useEffect(() => {
 
     scrollHeightRef.current.scrollHeight = window.pageYOffset;
@@ -28,7 +25,6 @@ export default function PC_Builds() {
       <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading'>
         Computers
       </motion.div>
-      <p className='compPara'>The best computers we've built so far! Click a polaroid for more information.</p>
       <div className='polaroids'>
         <motion.div
 
@@ -58,7 +54,7 @@ export default function PC_Builds() {
           className='polaroid-2'>
           <Link
             to={{
-              pathname: '/HeatPack',
+              pathname: '/Olivine',
               state: scrollHeightRef.current.scrollHeight
             }}
           >

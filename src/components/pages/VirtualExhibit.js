@@ -7,6 +7,8 @@ export default function VirtualExhibit() {
 
     return (
 
+        //Self explanatory
+
         <div className='exhibit-container'>
             <Navbar />
             <div style={{ color: "white" }} className='heading'> Virtual Exhibit</div>

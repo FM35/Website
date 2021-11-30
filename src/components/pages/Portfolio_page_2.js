@@ -3,9 +3,10 @@ import './Portfolio.css';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import Navbar from '../Nav_helper';
-import { Nav } from '../NavbarElements';
 
 export default function Services() {
+
+  //Self explanatory
 
   return (
 

@@ -2,56 +2,65 @@ import React, { useEffect, useState } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
-import { Power3, TimelineLite } from "gsap";
 import { useLocation } from "react-router-dom";
 import Navbar from '../Nav_helper';
 
 export default function HeatPack() {
 
+  //Comments are the same as Olivine
   const [animate, setAnimate] = useState(false);
   const handleClick = () => setAnimate(!animate);
 
-  const tl = new TimelineLite();
   const location = useLocation();
   const height = location.state;
 
   let polaroid1 = CSSRulePlugin.getRule('.polaroid-container-1');
   let polaroid2 = CSSRulePlugin.getRule('.polaroid-container-2');
   let polaroid3 = CSSRulePlugin.getRule('.polaroid-container-3');
+  let polaroids = CSSRulePlugin.getRule('.polaroids');
 
-  const mediaQuery = window.matchMedia('(max-width: 1082px)')
+  const mediaQuery = window.matchMedia('(min-width: 500px) and (max-width: 1082px)')
   const media2Query = window.matchMedia('(min-width: 1082px) and (max-width: 1421px)')
   const media3Query = window.matchMedia('(min-width: 1421px)')
+  const media4Query = window.matchMedia('(min-width: 350px) and (max-width: 500px)')
+  const media5Query = window.matchMedia('(max-width: 350px)')
 
   mediaQuery.addListener(handleChange);
   media2Query.addListener(handleChange2);
   media3Query.addListener(handleChange3);
+  media4Query.addListener(handleChange4);
+  media5Query.addListener(handleChange5);
 
   function onStart() {
-
     setTimeout(handleClick, 1000);
-    setTimeout(handleChange2(media2Query), 1000);
-    setTimeout(handleChange3(media3Query), 1000);
   }
 
   function handleChange(e) {
 
-    if (e.matches) {
+    if (e.matches && animate) {
+      polaroid1.gridColumn = '1/4'
+      polaroid2.gridColumn = '4/7'
+      polaroid3.gridColumn = '1/7'
+      polaroid3.left = '0'
+      polaroids.marginTop = '130px'
+    }
+
+    if (e.matches && !animate) {
 
       polaroid1.gridColumn = '2/6'
       polaroid2.gridColumn = '2/6'
       polaroid3.gridColumn = '2/6'
       polaroid3.left = '0'
+
     }
   }
 
   function handleChange2(e) {
 
     if (e.matches && animate) {
-      polaroid1.gridColumn = '1/4'
-      polaroid2.gridColumn = '4/7'
-      polaroid3.gridColumn = '2/6'
+      polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
+      polaroids.marginTop = '130px'
     }
 
     if (e.matches && !animate) {
@@ -65,10 +74,9 @@ export default function HeatPack() {
   function handleChange3(e) {
 
     if (e.matches && animate) {
-      polaroid1.gridColumn = '1/3'
-      polaroid2.gridColumn = '3/5'
-      polaroid3.gridColumn = '2/6'
+      polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
+      polaroids.marginTop = '130px'
     }
 
     if (e.matches && !animate) {
@@ -79,9 +87,49 @@ export default function HeatPack() {
     }
   }
 
+  function handleChange4(e) {
+
+    if (e.matches && animate) {
+      polaroid1.gridColumn = '1/4'
+      polaroid2.gridColumn = '4/7'
+      polaroid3.gridColumn = '1/7'
+      polaroid3.left = '0'
+      polaroids.marginTop = '20px'
+    }
+
+    if (e.matches && !animate) {
+      polaroid1.gridColumn = '2/6'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '2/6'
+      polaroid3.left = '0'
+      polaroids.marginTop = '20px'
+    }
+  }
+
+  function handleChange5(e) {
+
+    if (e.matches && animate) {
+      polaroid1.gridColumn = '1/4'
+      polaroid2.gridColumn = '4/7'
+      polaroid3.gridColumn = '1/7'
+      polaroid3.left = '0'
+      polaroids.marginTop = '0px'
+    }
+
+    if (e.matches && !animate) {
+      polaroid1.gridColumn = '2/6'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '2/6'
+      polaroid3.left = '0'
+      polaroids.marginTop = '0px'
+    }
+  }
+
   handleChange(mediaQuery);
   handleChange2(media2Query);
   handleChange3(media3Query);
+  handleChange4(media4Query);
+  handleChange5(media5Query);
 
   useEffect(() => {
     window.scrollTo(0, height);
@@ -247,7 +295,7 @@ export default function HeatPack() {
         <img className='img-settings' src='images/KLVC-4.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '400px' }}>
+        <div style={{ width: '800px' }}>
           <ul>
             <li>Processor: AMD Ryzen 5 3600</li>
             <li>Memory: G. Skill Aegis 8GB</li>
@@ -264,9 +312,9 @@ export default function HeatPack() {
         <img className='img-settings' src='images/KLVC-1.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '400px' }}>
+        <div style={{ width: '800px' }}>
           <p>
-            Designed for streaming church services online and presenting slides both in house and online. Compactness was at the focal point of the design process inorder to save space on the media table as it was limited and to also make transporting the Computer to different locations easier as a media team member might need to take it home or to a different organisation being hosted by the church. The Fractal Design Node 202 was a great choice to achieve compactness with a volume coming in at only 10.2 litres, whereas standard computer cases have a volume of 45 litres.
+            Designed for streaming church services online and presenting slides both in house and online. Compactness was at the focal point of the design process inorder to save space on the media table as it was limited and to also make transporting the Computer to different locations easier as a media team member might need to take it home or to a venue being hosted outside the church building. The Fractal Design Node 202 was a great choice to achieve compactness with a volume coming in at only 10.2 litres, whereas standard computer cases have a volume of 45 litres.
           </p>
         </div>
       </div>
@@ -275,9 +323,9 @@ export default function HeatPack() {
         <img className='img-settings' src='images/KLVC-2.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '400px' }}>
+        <div style={{ width: '800px' }}>
           <p>
-            Coupled with a portable Monitor, wireless keyboard and mouse to make the system decoupled interms of wire connections. The only component that need to be plugged into power is the Power Supply in the computer, however, I am currently working on a system that would make the system fully portable by incorporating a portable power station or a device of a similar nature.
+            Coupled with a portable monitor, wireless keyboard and mouse to make the system decoupled interms of wire connections. The only component that need to be plugged into power is the Power Supply in the computer. To make the system fully portable a portable power station can be implemented
           </p>
         </div>
       </div>

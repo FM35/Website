@@ -1,44 +1,55 @@
 import React, { useEffect, useState } from 'react';
 import './HeatPack.css';
 import { motion } from "framer-motion";
-import { Power3, TimelineLite } from "gsap";
 import { useLocation } from "react-router-dom";
 import Navbar from '../Nav_helper';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
 
-
-export default function HeatPack() {
+export default function Olivine() {
 
   const [animate, setAnimate] = useState(false);
   const handleClick = () => setAnimate(!animate);
 
-
-  const tl = new TimelineLite();
+  //Getting the scrool position from PCBuilds for the animation
   const location = useLocation();
   const height = location.state;
 
+  //Retrieving Css styles for the mentioned classNames
   let polaroid1 = CSSRulePlugin.getRule('.polaroid-container-1');
   let polaroid2 = CSSRulePlugin.getRule('.polaroid-container-2');
   let polaroid3 = CSSRulePlugin.getRule('.polaroid-container-3');
+  let polaroids = CSSRulePlugin.getRule('.polaroids');
 
-
-  const mediaQuery = window.matchMedia('(max-width: 1082px)')
+  //Putting the different media size queries into consts
+  const mediaQuery = window.matchMedia('(min-width: 500px) and (max-width: 1082px)')
   const media2Query = window.matchMedia('(min-width: 1082px) and (max-width: 1421px)')
   const media3Query = window.matchMedia('(min-width: 1421px)')
+  const media4Query = window.matchMedia('(min-width: 350px) and (max-width: 500px)')
+  const media5Query = window.matchMedia('(max-width: 350px)')
 
+  //Adding listeners for each media query
   mediaQuery.addListener(handleChange);
   media2Query.addListener(handleChange2);
   media3Query.addListener(handleChange3);
+  media4Query.addListener(handleChange4);
+  media5Query.addListener(handleChange5);
 
+  //Changing the value of animate to true
   function onStart() {
-
     setTimeout(handleClick, 1000);
-    setTimeout(handleChange2(media2Query), 1000);
   }
 
+  //Setting the grid positions for each media query before and after the animation
   function handleChange(e) {
 
-    if (e.matches) {
+    if (e.matches && animate) {
+
+      polaroid2.gridColumn = '1/7'
+      polaroid3.left = '0'
+      polaroids.marginTop = '130px'
+    }
+
+    if (e.matches && !animate) {
 
       polaroid1.gridColumn = '2/6'
       polaroid2.gridColumn = '2/6'
@@ -51,10 +62,9 @@ export default function HeatPack() {
   function handleChange2(e) {
 
     if (e.matches && animate) {
-      polaroid1.gridColumn = '1/4'
-      polaroid2.gridColumn = '2/6'
-      polaroid3.gridColumn = '3/5'
+      polaroid2.gridColumn = '1/7'
       polaroid3.left = '0'
+      polaroids.marginTop = '130px'
     }
     if (e.matches && !animate) {
       polaroid1.gridColumn = '1/4'
@@ -67,10 +77,9 @@ export default function HeatPack() {
   function handleChange3(e) {
 
     if (e.matches && animate) {
-      polaroid1.gridColumn = '1/3'
-      polaroid2.gridColumn = '2/6'
-      polaroid3.gridColumn = '5/7'
+      polaroid2.gridColumn = '1/7'
       polaroid3.left = '0'
+      polaroids.marginTop = '130px'
     }
 
     if (e.matches && !animate) {
@@ -81,10 +90,49 @@ export default function HeatPack() {
     }
   }
 
+  function handleChange4(e) {
+
+    if (e.matches && animate) {
+      polaroid2.gridColumn = '1/7'
+      polaroid3.left = '0'
+      polaroids.marginTop = '20px'
+    }
+
+    if (e.matches && !animate) {
+      polaroid1.gridColumn = '2/6'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '2/6'
+      polaroid3.left = '0'
+      polaroids.marginTop = '20px'
+    }
+  }
+
+  function handleChange5(e) {
+
+    if (e.matches && animate) {
+
+      polaroid2.gridColumn = '1/7'
+      polaroid3.left = '0'
+      polaroids.marginTop = '0px'
+    }
+
+    if (e.matches && !animate) {
+      polaroid1.gridColumn = '2/6'
+      polaroid2.gridColumn = '2/6'
+      polaroid3.gridColumn = '2/6'
+      polaroid3.left = '0'
+      polaroids.marginTop = '0px'
+    }
+  }
+
+  //Intial function fire for grid positions
   handleChange(mediaQuery);
   handleChange2(media2Query);
   handleChange3(media3Query);
+  handleChange4(media4Query);
+  handleChange5(media5Query);
 
+  //Scrolls to similar height as PCBuild
   useEffect(() => {
     window.scrollTo(0, height);
   });
@@ -262,9 +310,9 @@ export default function HeatPack() {
 
       <div style={{ top: '100px' }} className='image-container'>
         <img className='img-settings' src='images/Olivine-2.png'
-          alt='Photo graphy-Icon'
+          alt='Photography-Icon'
         />
-        <div style={{ width: '540px' }}>
+        <div style={{ width: '800px' }}>
           <ul>
             <li>Processor: AMD Ryzen 7 2700X</li>
             <li>Memory: Kingston HyperX Fury 16GB (2 X 8GB) DDR4</li>
@@ -282,9 +330,9 @@ export default function HeatPack() {
         <img className='img-settings' src='images/Olivine-3.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '540px' }}>
+        <div style={{ width: '800px' }}>
           <p>
-            This computer was designed for handling large data science and machine learning projects, along with frontend development and gaming large open world games in the highest possible settings.It was also designed with future proofing in mind so that the need to upgrade to perform the same requirements doesn't arise till about 5 years, especially when newer games require more and more computing poower to handle the graphics.
+            This computer was designed for handling large data science and machine learning projects, along with frontend development and playing large open world games in the highest possible settings.It was also designed with future proofing in mind so that the need to upgrade to perform the same requirements doesn't arise till about 5 years, especially when newer games require more and more computing poower to handle the graphics.
           </p>
         </div>
       </div>
@@ -293,9 +341,9 @@ export default function HeatPack() {
         <img className='img-settings' src='images/Olivine-1.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '540px' }}>
+        <div style={{ width: '800px' }}>
           <p>
-            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static , breathing to name a few.The Computer was also coupled with an RGB mouse and keyboard combo, along with light strips lined up on the bottom of the desk to complete the RGB light setup.
+            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static , breathing to name a few. The Computer was also coupled with an RGB mouse and keyboard combo, along with light strips lined up on the bottom of the desk to complete the RGB light setup.
           </p>
         </div>
       </div>

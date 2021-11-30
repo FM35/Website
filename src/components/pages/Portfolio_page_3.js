@@ -6,6 +6,8 @@ import Navbar from '../Nav_helper';
 
 export default function Services() {
 
+  //Self explanatory
+
   return (
 
     <motion.div

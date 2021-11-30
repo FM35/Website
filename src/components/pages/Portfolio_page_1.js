@@ -6,6 +6,8 @@ import Navbar from '../Nav_helper';
 
 export default function Portfolio_page_1() {
 
+  //Self explanatory
+
   return (
 
     <motion.div
