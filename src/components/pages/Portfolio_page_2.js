@@ -30,7 +30,7 @@ export default function Services() {
             scale: 0.8,
           }}
 
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-one' className='page-links'>One</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-one' className='page-links'>One</Link></motion.li>
         <li className='list-menu' style={{ opacity: 0.5 }}>Two</li>
         <motion.li whileHover={{
           scale: 1.3,
@@ -40,7 +40,7 @@ export default function Services() {
             scale: 0.8,
           }}
 
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-three' className='page-links'>Three</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.li>
       </ul>
       <div className='image-container1'>
         <img className='img-settings' src='images/OLI_0016.jpg'
@@ -173,7 +173,7 @@ export default function Services() {
             scale: 0.8,
           }}
 
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-one' className='page-links'>One</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-one' className='page-links'>One</Link></motion.li>
         <li className='list-menu' style={{ opacity: 0.5 }}>Two</li>
         <motion.li whileHover={{
           scale: 1.3,
@@ -183,7 +183,7 @@ export default function Services() {
             scale: 0.8,
           }}
 
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-three' className='page-links'>Three</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.li>
       </ul>
     </motion.div>
   );

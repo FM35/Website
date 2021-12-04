@@ -54,7 +54,7 @@ function HeroSection() {
 
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
-            <Link to='/VirtualExhibit' className='item-links'>
+            <Link to='/virtual-exhibit' className='item-links'>
               Virtual Exhibit
             </Link>
           </motion.li>
@@ -71,7 +71,7 @@ function HeroSection() {
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
             <Link
-              to='/port-page-one'
+              to='/photography-portfolio-page-one'
               className='item-links'
             >
               Photography Portfolio
@@ -90,7 +90,7 @@ function HeroSection() {
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
             <Link
-              to='/about-me'
+              to='/about-us'
               className='item-links'
             >
               About Us
@@ -126,7 +126,7 @@ function HeroSection() {
 
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
-            <Link to='/pc_builds' className='item-links1'>
+            <Link to='/computer-portfolio' className='item-links1'>
               Computer Portfolio
             </Link>
           </motion.li>
@@ -143,7 +143,7 @@ function HeroSection() {
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
             <Link
-              to='/techPort'
+              to='/technology-portfolio'
               className='item-links1'
             >
               Technology Portfolio

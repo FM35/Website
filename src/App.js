@@ -12,7 +12,7 @@ import KLVC from './components/pages/KLVC';
 import { AnimatePresence } from 'framer-motion';
 import HeroSection from './components/HeroSection';
 import VirtualExhibit from './components/pages/VirtualExhibit';
-import About_Me from './components/pages/About_Me';
+import About_Me from './components/pages/aboutUs';
 import VirtualExhibitComputer from './components/pages/VirtualExhibitComputer'
 import VirtualExhibitMobile from './components/pages/VirtualExhibitMobile'
 import TechPort from './components/pages/TechPort'
@@ -27,19 +27,19 @@ function App() {
       <AnimatePresence exitBeforeEnter >
         <Switch location={location} key={location.pathname}>
           <Route path='/' exact component={HeroSection} />
-          <Route path='/port-page-one' component={Port_Page_One} />
-          <Route path='/port-page-two' component={Port_Page_Two} />
-          <Route path='/port-page-three' component={Port_Page_Three} />
-          <Route path='/pc_builds' component={PC_Builds} />
-          <Route path='/Olivine' component={Olivine} />
-          <Route path='/Pato' component={Pato} />
-          <Route path='/KLVC' component={KLVC} />
-          <Route path='/VirtualExhibit' component={VirtualExhibit} />
+          <Route path='/photography-portfolio-page-one' component={Port_Page_One} />
+          <Route path='/photography-portfolio-page-two' component={Port_Page_Two} />
+          <Route path='/photography-portfolio-page-three' component={Port_Page_Three} />
+          <Route path='/computer-portfolio' component={PC_Builds} />
+          <Route path='/olivine' component={Olivine} />
+          <Route path='/pato' component={Pato} />
+          <Route path='/klvc' component={KLVC} />
+          <Route path='/virtual-exhibit' component={VirtualExhibit} />
           <Route path='/contact-us' component={Contact_Us} />
-          <Route path='/about-me' component={About_Me} />
-          <Route path='/VEC' component={VirtualExhibitComputer} />
-          <Route path='/VEM' component={VirtualExhibitMobile} />
-          <Route path='/techPort' component={TechPort} />
+          <Route path='/about-us' component={About_Me} />
+          <Route path='/virtual-exhibit-computer' component={VirtualExhibitComputer} />
+          <Route path='/virtual-exhibit-mobile' component={VirtualExhibitMobile} />
+          <Route path='/technology-portfolio' component={TechPort} />
         </Switch>
       </AnimatePresence>
     </>

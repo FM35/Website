@@ -1,8 +1,8 @@
 import React from 'react';
-import './About-Me.css';
+import './aboutUs.css';
 import Navbar from '../Nav_helper';
 
-export default function aboutMe() {
+export default function aboutUs() {
 
   return (
 

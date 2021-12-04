@@ -34,7 +34,7 @@ export default function PC_Builds() {
           className='polaroid-1'>
           <Link
             to={{
-              pathname: '/Pato',
+              pathname: '/pato',
               state: scrollHeightRef.current.scrollHeight
             }}
           >
@@ -54,7 +54,7 @@ export default function PC_Builds() {
           className='polaroid-2'>
           <Link
             to={{
-              pathname: '/Olivine',
+              pathname: '/olivine',
               state: scrollHeightRef.current.scrollHeight
             }}
           >
@@ -74,7 +74,7 @@ export default function PC_Builds() {
           className='polaroid-3'>
           <Link
             to={{
-              pathname: '/KLVC',
+              pathname: '/klvc',
               state: scrollHeightRef.current.scrollHeight
             }}
           >

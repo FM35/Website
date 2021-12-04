@@ -14,10 +14,10 @@ export default function VirtualExhibit() {
             <div style={{ color: "white" }} className='heading'> Virtual Exhibit</div>
             <div className='mobilePC'>
                 <p className='question'> Are you on a mobile device or computer?</p>
-                <Link to='/VEC' className='mobilePCButton'>
+                <Link to='/virtual-exhibit-computer' className='mobilePCButton'>
                     Computer
                 </Link>
-                <Link to='/VEM' className='mobilePCButton'>
+                <Link to='/virtual-exhibit-mobile' className='mobilePCButton'>
                     Mobile
                 </Link>
             </div>

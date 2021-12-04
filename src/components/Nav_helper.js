@@ -69,42 +69,42 @@ const Navbar = () => {
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
-                        to='/VirtualExhibit' >
+                        to='/virtual-exhibit' >
                         Virtual Exhibit
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
-                        to='/port-page-one' >
+                        to='/photography-portfolio-page-one' >
                         Photography Portfolio
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
-                        to='/pc_builds' >
+                        to='/computer-portfolio' >
                         Computer Portfolio
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
-                        to='/sign-up' >
+                        to='/technology-portfolio' >
                         Technology Portfolio
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
-                        to='/about-me' >
+                        to='/about-us' >
                         About Us
                     </MobileNav>
                     <MobileNav
                         variants={MobileMenuVariants}
                         initial="closed"
                         animate={open ? "open" : "closed"}
-                        to='/sign-up' >
+                        to='/contact-us' >
                         Contact Us
                     </MobileNav>
                 </ButtonParent>
@@ -112,22 +112,22 @@ const Navbar = () => {
                     <NavLink to='/' >
                         Home
                     </NavLink>
-                    <NavLink to='/VirtualExhibit' >
+                    <NavLink to='/virtual-exhibit' >
                         Virtual Exhibit
                     </NavLink>
-                    <NavLink to='/port-page-one' >
+                    <NavLink to='/photography-portfolio-page-one' >
                         Photography Portfolio
                     </NavLink>
-                    <NavLink to='/pc_builds' >
+                    <NavLink to='/computer-portfolio' >
                         Computer Portfolio
                     </NavLink>
-                    <NavLink to='/sign-up' >
+                    <NavLink to='/technology-portfolio' >
                         Technology Portfolio
                     </NavLink>
-                    <NavLink to='/about-me' >
+                    <NavLink to='/about-us' >
                         About Us
                     </NavLink>
-                    <NavLink to='/sign-up' >
+                    <NavLink to='/contact-us' >
                         Contact Us
                     </NavLink>
                 </NavMenu>

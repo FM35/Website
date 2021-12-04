@@ -7,14 +7,11 @@
 
 .game-container{
 
-    display: flex;
-    position: relative;
-    height: 720px;
-    width: 100%;
-    justify-content: space-around;
-    flex-shrink: 1;
-    flex-direction: column-reverse;
-    top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
 }
 
   .three-dots{
@@ -22,6 +19,10 @@
     left: 50%;
     top: 50%;
     z-index: -1;
+  }
+
+  .three-dots-wrapper{
+    display: block;
   }
 
   .loading{
@@ -63,6 +64,27 @@
     font-weight: 100;
     font-family: 'Roboto Slab', serif;
     margin-top: 80px;
+  }
+
+  .web-gl{
+    position: relative;
+  justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    width: 100%;
+  }
+
+  .landscape-notice{
+    position: relative;
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    max-width: 95%;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: center;
+    
   }
 
   @media screen and (max-width: 800px) {

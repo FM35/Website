@@ -33,7 +33,7 @@ export default function Portfolio_page_1() {
 
           transition={{ type: 'spring', stiffness: 300 }}
           className='list-menu'>
-          <Link to='/port-page-two' className='page-links'>Two</Link></motion.p>
+          <Link to='/photography-portfolio-page-two' className='page-links'>Two</Link></motion.p>
         <motion.p whileHover={{
           scale: 1.3,
 
@@ -43,7 +43,7 @@ export default function Portfolio_page_1() {
             scale: 0.8,
           }}
 
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-three' className='page-links'>Three</Link></motion.p>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.p>
       </div>
 
       <div className='image-container1'>
@@ -179,7 +179,7 @@ export default function Portfolio_page_1() {
 
           transition={{ type: 'spring', stiffness: 300 }}
           className='list-menu'>
-          <Link to='/port-page-two' className='page-links'>Two</Link></motion.li>
+          <Link to='/photography-portfolio-page-two' className='page-links'>Two</Link></motion.li>
         <motion.li whileHover={{
           scale: 1.3,
 
@@ -189,7 +189,7 @@ export default function Portfolio_page_1() {
             scale: 0.8,
           }}
 
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/port-page-three' className='page-links'>Three</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.li>
       </ul>
     </motion.div>
   );
