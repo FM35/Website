@@ -1,94 +1,39 @@
 .exhibit-container{
 
-    height: 100vh;
-    position: relative;
-    background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
 }
 
 .game-container{
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  height:100vh;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  position: relative;
+  height: 720px;
+  width: 100%;
+  justify-content: space-around;
+  flex-shrink: 1;
+  flex-direction: column-reverse;
+  top: 30px;
 }
 
-  .three-dots{
-    position: absolute; 
-    left: 50%;
-    top: 50%;
-    z-index: -1;
-  }
+.three-dots{
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+}
 
-  .three-dots-wrapper{
-    display: block;
-  }
+.three-dots-wrapper{
+  display: block;
+}
 
-  .loading{
-    position: absolute;
-    left: 48.2%;
-    top: 54%;
-    color: white;
-    z-index: -1;
-    font-family: 'Roboto Slab', serif;
+.loading{
+  position: absolute;
+  left: 48.2%;
+  top: 54%;
+  color: white;
+  z-index: -1;
+  font-family: 'Roboto Slab', serif;
 
-  }
-
-  .mobilePC{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-  }
-
-  .mobilePCButton{
-    margin: 2rem auto;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: whitesmoke;
-    padding: 14px 20px;
-    margin-top: 70px;
-    font-family: 'Roboto Slab', serif;
-    border: 3px solid whitesmoke;
-    width:200px;
-    text-align: center;
-  
-  }
-
-  .question{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 100;
-    font-family: 'Roboto Slab', serif;
-    margin-top: 80px;
-  }
-
-  .web-gl{
-    position: relative;
-  justify-self: center;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    width: 100%;
-  }
-
-  .landscape-notice{
-    position: relative;
-    justify-self: center;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    max-width: 95%;
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    text-align: center;
-    
-  }
-
-  @media screen and (max-width: 800px) {
-    .question{
-      font-size: 20px;
-    }
-  }
+}

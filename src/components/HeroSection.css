@@ -151,15 +151,13 @@
   .hero-container{
     
     background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/website-background.png');
-    background-position: center;
     flex-direction: column;
-    overflow: hidden;
     width: 100vw;
   }
 
   .welcomeMessage{
     font-size: 50px;
-    width: 100vw;
+    width: 90vw;
   }
 
 }

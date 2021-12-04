@@ -12,14 +12,7 @@ function HeroSection() {
 
   const [click1, setClick1] = useState(true);
   const handleClick1 = () => setClick1(!click1);
-
-  const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
-
   const showAnimation = useIntro();
-
-  useEffect(() => {
-    console.log(showAnimation);
-  });
 
   return (
 
@@ -54,7 +47,7 @@ function HeroSection() {
 
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
-            <Link to='/virtual-exhibit' className='item-links'>
+            <Link to='/virtual-exhibit-computer' className='item-links'>
               Virtual Exhibit
             </Link>
           </motion.li>

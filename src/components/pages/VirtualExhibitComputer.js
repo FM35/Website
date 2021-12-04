@@ -13,7 +13,7 @@ const unityContext = new UnityContext({
     codeUrl: "/build/virtualexhibit.wasm",
 });
 
-let threeDots = CSSRulePlugin.getRule('.three-dots');
+let threeDots = CSSRulePlugin.getRule('.three-dots-wrapper');
 let loading = CSSRulePlugin.getRule('.loading');
 
 const loadingContainer = {
@@ -79,39 +79,46 @@ export default function VirtualExhibit() {
 
     return (
 
-        <div className='exhibit-container'>
+        <motion.div className='exhibit-container'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.25, duration: 1 }}
+        >
             <Navbar />
             <div className='title-3'>
                 <div style={{ fontSize: '50px' }} className='heading'> Olivine's Virtual Exhibit</div>
                 <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />
             </div>
             <div className='game-container'>
-                <motion.div
-                    className='three-dots'
-                    style={loadingContainer}
-                    variants={loadingContainerVariants}
-                    initial="start"
-                    animate="end"
-                >
-                    <motion.span
-                        style={loadingCircle}
-                        variants={loadingCircleVariants}
-                        transition={loadingCircleTransition}
-                    />
-                    <motion.span
-                        style={loadingCircle}
-                        variants={loadingCircleVariants}
-                        transition={loadingCircleTransition}
-                    />
-                    <motion.span
-                        style={loadingCircle}
-                        variants={loadingCircleVariants}
-                        transition={loadingCircleTransition}
-                    />
-                </motion.div>
+                <div className='three-dots-wrapper'>
+                    <motion.div
+                        className='three-dots'
+                        style={loadingContainer}
+                        variants={loadingContainerVariants}
+                        initial="start"
+                        animate="end"
+                    >
+                        <motion.span
+                            style={loadingCircle}
+                            variants={loadingCircleVariants}
+                            transition={loadingCircleTransition}
+                        />
+                        <motion.span
+                            style={loadingCircle}
+                            variants={loadingCircleVariants}
+                            transition={loadingCircleTransition}
+                        />
+                        <motion.span
+                            style={loadingCircle}
+                            variants={loadingCircleVariants}
+                            transition={loadingCircleTransition}
+                        />
+                    </motion.div>
+                </div>
                 <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
-                <Unity unityContext={unityContext} />
+                <Unity className='web-gl' unityContext={unityContext} />
             </div>
-        </div >
+        </motion.div >
     );
 }

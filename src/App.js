@@ -11,11 +11,9 @@ import Pato from './components/pages/Pato';
 import KLVC from './components/pages/KLVC';
 import { AnimatePresence } from 'framer-motion';
 import HeroSection from './components/HeroSection';
-import VirtualExhibit from './components/pages/VirtualExhibit';
 import About_Me from './components/pages/aboutUs';
-import VirtualExhibitComputer from './components/pages/VirtualExhibitComputer'
-import VirtualExhibitMobile from './components/pages/VirtualExhibitMobile'
-import TechPort from './components/pages/TechPort'
+import VirtualExhibitComputer from './components/pages/VirtualExhibitComputer';
+import TechPort from './components/pages/TechPort';
 
 
 function App() {
@@ -34,11 +32,9 @@ function App() {
           <Route path='/olivine' component={Olivine} />
           <Route path='/pato' component={Pato} />
           <Route path='/klvc' component={KLVC} />
-          <Route path='/virtual-exhibit' component={VirtualExhibit} />
           <Route path='/contact-us' component={Contact_Us} />
           <Route path='/about-us' component={About_Me} />
           <Route path='/virtual-exhibit-computer' component={VirtualExhibitComputer} />
-          <Route path='/virtual-exhibit-mobile' component={VirtualExhibitMobile} />
           <Route path='/technology-portfolio' component={TechPort} />
         </Switch>
       </AnimatePresence>

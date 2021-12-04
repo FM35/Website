@@ -1,13 +1,19 @@
 import React from 'react';
 import './Contact-Us.css';
 import Navbar from '../Nav_helper';
+import { motion } from "framer-motion";
 
 export default function ContactUs() {
 
   //Self explanatory
 
   return (
-    <div className='about-me-container'>
+    <motion.div className='about-me-container'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ delay: 0.25, duration: 1 }}
+    >
       <Navbar />
       <div className='contact-me'>
         <h1 className='position-1'>Contact Us</h1>
@@ -23,6 +29,6 @@ export default function ContactUs() {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

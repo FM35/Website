@@ -1,12 +1,18 @@
 import React from 'react';
 import './aboutUs.css';
 import Navbar from '../Nav_helper';
+import { motion } from "framer-motion";
 
 export default function aboutUs() {
 
   return (
 
-    <div className='heatpack-container' style={{ overflowX: 'hidden' }}>
+    <motion.div className='heatpack-container' style={{ overflowX: 'hidden' }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ delay: 0.25, duration: 1 }}
+    >
       <Navbar />
       <div className='about-me'>
         <div style={{ width: '100%', textAlign: 'center', left: '0%' }} className='heading'>About Us</div>
@@ -38,6 +44,6 @@ export default function aboutUs() {
           <p className='section1'> At Olivine we currently offer Website development services and virtual space services. We are working hard to offer the sale of prints from various photographers along with mobile applivation development services</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

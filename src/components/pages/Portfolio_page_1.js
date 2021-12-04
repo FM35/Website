@@ -19,7 +19,7 @@ export default function Portfolio_page_1() {
       className='App'>
       <Navbar />
       <div className='heading'>Portfolio</div>
-      <p className='paragraph'>Some of HeatPackOllie's best shots</p>
+      <p className='paragraph'>Some of Olivine's best shots</p>
       <div className='menu-top'>
         <p className='list-menu' style={{ opacity: 0.5 }}>Page:</p>
         <p className='list-menu' style={{ opacity: 0.5 }}>One</p>
