@@ -46,6 +46,8 @@
   justify-self: center;
   grid-column-start: 1;
   grid-column-end: 7;
+  margin-bottom: 80px;
+  max-width: 80%;
 }
 
 .form-inline {

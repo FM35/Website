@@ -91,6 +91,15 @@ body{
   font-weight: 300;
 }
 
+.navHidden{
+  height: 8.67;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+justify-content: center;
+width: 100%;
+}
 
 
 .first-Image {

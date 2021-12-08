@@ -5,14 +5,15 @@ import {
     Bars,
     NavMenu,
     ButtonParent,
-    MobileNav
+    MobileNav,
+    Close
 } from './NavbarElements';
 
 const Navbar = () => {
 
     const [open, toggleOpen] = useState(false);
 
-    const ButtonVariants = {
+    const Menu = {
         closed: {
             height: "0",
             transition: {
@@ -29,6 +30,7 @@ const Navbar = () => {
 
     const MobileMenuVariants = {
         closed: {
+            y: -100,
             opacity: "0",
             transition: {
                 duration: "1",
@@ -36,10 +38,11 @@ const Navbar = () => {
             }
         },
         open: {
+            y: 0,
             opacity: "1",
             transition: {
-                duration: "1",
-                delay: "1"
+                duration: "1.75",
+                delay: "0.05"
 
             }
         }
@@ -50,63 +53,85 @@ const Navbar = () => {
         //Self explanatory
         <>
             <Nav>
-                <Bars onClick={() => {
-                    toggleOpen(!open);
-                }} />
+                <div className={open ? 'display-none' : ''}>
+                    <Bars onClick={() => {
+                        toggleOpen(!open);
+                    }} />
+                </div>
+
+                <div className={open ? '' : 'display-none'}>
+                    <Close onClick={() => {
+                        toggleOpen(!open);
+                    }} />
+                </div>
+
                 <ButtonParent
-                    variants={ButtonVariants}
-                    initial="closed"
+                    variants={Menu}
+                    initial='closed'
                     animate={open ? "open" : "closed"}
-                >
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/' >
-                        Home
-                    </MobileNav>
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/virtual-exhibit' >
-                        Virtual Exhibit
-                    </MobileNav>
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/photography-portfolio-page-one' >
-                        Photography Portfolio
-                    </MobileNav>
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/computer-portfolio' >
-                        Computer Portfolio
-                    </MobileNav>
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/technology-portfolio' >
-                        Technology Portfolio
-                    </MobileNav>
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/about-us' >
-                        About Us
-                    </MobileNav>
-                    <MobileNav
-                        variants={MobileMenuVariants}
-                        initial="closed"
-                        animate={open ? "open" : "closed"}
-                        to='/contact-us' >
-                        Contact Us
-                    </MobileNav>
+                >   <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/' >
+                            Home
+                        </MobileNav>
+                    </div>
+                    <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/virtual-exhibit' >
+                            Virtual Exhibit
+                        </MobileNav>
+                    </div>
+                    <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/photography-portfolio-page-one' >
+                            Photography Portfolio
+                        </MobileNav>
+                    </div>
+                    <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/computer-portfolio' >
+                            Computer Portfolio
+                        </MobileNav>
+                    </div>
+                    <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/technology-portfolio' >
+                            Technology Portfolio
+                        </MobileNav>
+                    </div>
+                    <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/about-us' >
+                            About Us
+                        </MobileNav>
+                    </div>
+                    <div className='navHidden'>
+                        <MobileNav
+                            variants={MobileMenuVariants}
+                            initial='closed'
+                            animate={open ? "open" : "closed"}
+                            to='/contact-us' >
+                            Contact Us
+                        </MobileNav>
+                    </div>
                 </ButtonParent>
                 <NavMenu>
                     <NavLink to='/' >

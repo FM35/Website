@@ -19,7 +19,7 @@ export default function Services() {
       className='App'>
       <Navbar />
       <div className='heading'>Portfolio</div>
-      <p className='paragraph'>Some of Olivine's best shots</p>
+      <p className='paragraph'>Olivine's best shots</p>
       <ul className='menu-top'>
         <li className='list-menu' style={{ opacity: 0.5 }}>Page:</li>
         <motion.li whileHover={{
@@ -75,13 +75,90 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container-last'>
+      <div className='image-container'>
         <img className='img-settings' src='images/OLI_0211.jpg'
           alt='Photography-Icon'
         />
         <p>
           Downtown <br />
           November, 2020 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0026.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Stephen Avenue Walk <br />
+          August, 2021 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0031.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          3rd Street SW Train Station <br />
+          August, 2021 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0061.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Harvie Passage Lookout <br />
+          October, 2021 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0106.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Vancouver Seawall <br />
+          September, 2021 <br />
+          Vancouver, BC, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0201.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Lower Mount Royal <br />
+          October, 2021 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0278.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Museum of Vancouver <br />
+          September, 2021 <br />
+          Vancouver, BC, Canada
+        </p>
+      </div>
+
+      <div className='image-container-last'>
+        <img className='img-settings' src='images/OLI_0324.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Vancouver Intl. Airport <br />
+          September, 2021 <br />
           Calgary, AB, Canada
         </p>
       </div>
