@@ -9,6 +9,7 @@ import Contact_Us from './components/pages/Contact-Us'
 import Olivine from './components/pages/Olivine';
 import Pato from './components/pages/Pato';
 import KLVC from './components/pages/KLVC';
+import VirtualExhibit from './components/pages/VirtualExhibit';
 import { AnimatePresence } from 'framer-motion';
 import HeroSection from './components/HeroSection';
 import About_Me from './components/pages/aboutUs';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/pato' component={Pato} />
           <Route path='/klvc' component={KLVC} />
           <Route path='/contact-us' component={Contact_Us} />
+          <Route path='/virtual-exhibit' component={VirtualExhibit} />
           <Route path='/about-us' component={About_Me} />
           <Route path='/virtual-exhibit-computer' component={VirtualExhibitComputer} />
           <Route path='/technology-portfolio' component={TechPort} />

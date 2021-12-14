@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Portfolio.css';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import Navbar from '../Nav_helper';
 
 export default function Services() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
 
   //Self explanatory
 
@@ -124,7 +129,7 @@ export default function Services() {
           alt='Photography-Icon'
         />
         <p>
-          Bankview <br />
+          Banff Tea Co <br />
           February, 2021 <br />
           Calgary, AB, Canada
         </p>

@@ -47,9 +47,9 @@ export default function HeatPack() {
 
     if (e.matches && !animate) {
 
-      polaroid1.gridColumn = '2/6'
-      polaroid2.gridColumn = '2/6'
-      polaroid3.gridColumn = '2/6'
+      polaroid1.gridColumn = '1/7'
+      polaroid2.gridColumn = '1/7'
+      polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
 
     }
@@ -98,9 +98,9 @@ export default function HeatPack() {
     }
 
     if (e.matches && !animate) {
-      polaroid1.gridColumn = '2/6'
-      polaroid2.gridColumn = '2/6'
-      polaroid3.gridColumn = '2/6'
+      polaroid1.gridColumn = '1/7'
+      polaroid2.gridColumn = '1/7'
+      polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
       polaroids.marginTop = '20px'
     }
@@ -117,9 +117,9 @@ export default function HeatPack() {
     }
 
     if (e.matches && !animate) {
-      polaroid1.gridColumn = '2/6'
-      polaroid2.gridColumn = '2/6'
-      polaroid3.gridColumn = '2/6'
+      polaroid1.gridColumn = '1/7'
+      polaroid2.gridColumn = '1/7'
+      polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
       polaroids.marginTop = '0px'
     }

@@ -92,23 +92,33 @@ position: relative;
 
 }
 
+@media screen and (max-width: 500px) and (min-width: 350px) {
+  .polaroids{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .polaroids{
+    margin-top: 0px;
+  }
+}
+
 @media screen and (max-width: 1082px) {
 
   .polaroid-1{
-    grid-column-start: 2;
-    grid-column-end: 6;
-  
-    
+    grid-column-start: 1;
+    grid-column-end: 7;
   }
   
   .polaroid-2{
-      grid-column-start: 2;
-      grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
   }
   
   .polaroid-3{
-      grid-column-start: 2;
-      grid-column-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
   }
 
 }

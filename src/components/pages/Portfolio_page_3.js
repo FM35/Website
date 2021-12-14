@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Portfolio.css';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import Navbar from '../Nav_helper';
 
 export default function Services() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
 
   //Self explanatory
 
@@ -87,81 +92,83 @@ export default function Services() {
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0026.jpg'
+        <img className='img-settings' src='images/OLI_0087.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Stephen Avenue Walk <br />
-          August, 2021 <br />
+          Chinatown <br />
+          April, 2021 <br />
           Calgary, AB, Canada
         </p>
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0031.jpg'
+        <img className='img-settings' src='images/OLI_0100.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Banff Tea Co <br />
+          February, 2021 <br />
+          Banff, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0101.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Calgary Tennis Club <br />
+          August, 2020 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0246.jpg'
           alt='Photography-Icon'
         />
         <p>
           3rd Street SW Train Station <br />
-          August, 2021 <br />
+          November, 2020 <br />
           Calgary, AB, Canada
         </p>
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0061.jpg'
+        <img className='img-settings' src='images/OLI_0001.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Harvie Passage Lookout <br />
-          October, 2021 <br />
+          Bankview <br />
+          September, 2020 <br />
           Calgary, AB, Canada
         </p>
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0106.jpg'
+        <img className='img-settings' src='images/OLI_0006.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Vancouver Seawall <br />
-          September, 2021 <br />
-          Vancouver, BC, Canada
-        </p>
-      </div>
-
-      <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0201.jpg'
-          alt='Photography-Icon'
-        />
-        <p>
-          Lower Mount Royal <br />
-          October, 2021 <br />
+          Bankview <br />
+          December, 2020 <br />
           Calgary, AB, Canada
-        </p>
-      </div>
-
-      <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0278.jpg'
-          alt='Photography-Icon'
-        />
-        <p>
-          Museum of Vancouver <br />
-          September, 2021 <br />
-          Vancouver, BC, Canada
         </p>
       </div>
 
       <div className='image-container-last'>
-        <img className='img-settings' src='images/OLI_0324.jpg'
+        <img className='img-settings' src='images/OLI_0007.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Vancouver Intl. Airport <br />
-          September, 2021 <br />
+          Bankview <br />
+          September, 2020 <br />
           Calgary, AB, Canada
         </p>
       </div>
+
+
       <ul className='menu-bottom'>
         <li className='list-menu' style={{ opacity: 0.5 }}>Page:</li>
         <motion.li whileHover={{

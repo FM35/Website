@@ -37,3 +37,41 @@
   font-family: 'Roboto Slab', serif;
 
 }
+
+.mobilePC{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.mobilePCButton{
+  margin: 2rem auto;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  padding: 14px 20px;
+  margin-top: 70px;
+  font-family: 'Roboto Slab', serif;
+  border: 3px solid whitesmoke;
+  width:200px;
+  text-align: center;
+
+}
+
+.question{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 80px;
+  max-width: 85%;
+}
+
+.web-gl-pc{
+  display: block;
+  width: 80vw;
+  transform: translatex(calc(50vw - 50%)) translatey(calc(43vh - 50%));
+}

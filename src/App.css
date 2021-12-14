@@ -4,9 +4,3 @@
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 }
-
-.simplebar-scrollbar::before {
-  background-color: white !important;
-  opacity: 0.8 !important;
-  
-}

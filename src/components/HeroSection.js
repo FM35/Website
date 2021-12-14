@@ -49,7 +49,7 @@ function HeroSection() {
 
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
-            <Link to='/virtual-exhibit-computer' className='item-links'>
+            <Link to='/virtual-exhibit' className='item-links'>
               Virtual Exhibit
             </Link>
           </motion.li>

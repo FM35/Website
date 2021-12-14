@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './aboutUs.css';
 import Navbar from '../Nav_helper';
 import { motion } from "framer-motion";
 
-export default function aboutUs() {
+export default function AboutUs() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
 

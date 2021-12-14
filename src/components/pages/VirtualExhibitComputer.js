@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
 import './VirtualExhibit.css';
-import KeyboardEventHandler from 'react-keyboard-event-handler';
 import { motion } from "framer-motion";
 import Navbar from '../Nav_helper';
 import CSSRulePlugin from 'gsap/CSSRulePlugin';
@@ -77,6 +76,11 @@ export default function VirtualExhibit() {
         }
     }, [progression]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
+
     return (
 
         <motion.div className='exhibit-container'
@@ -88,38 +92,35 @@ export default function VirtualExhibit() {
             <Navbar />
             <div className='title-3'>
                 <div style={{ fontSize: '50px' }} className='heading'> Olivine's Virtual Exhibit</div>
-                <p className='heading' style={{ fontSize: '15px' }}>Please note the Virtual Exhibit can only be experienced on a device that has keyboard and mouse entry. The team is working hard to make it accessible for devices that have touch input only.</p>
-                <KeyboardEventHandler handleKeys={['f']} onKeyEvent={(key, e) => unityContext.setFullscreen(true)} />
+                <p style={{ fontSize: '15px', left: '15%', fontWeight: '400' }} className='heading'>Press ESC key to show/hide cursor.</p>
             </div>
-            <div className='game-container'>
-                <div className='three-dots-wrapper'>
-                    <motion.div
-                        className='three-dots'
-                        style={loadingContainer}
-                        variants={loadingContainerVariants}
-                        initial="start"
-                        animate="end"
-                    >
-                        <motion.span
-                            style={loadingCircle}
-                            variants={loadingCircleVariants}
-                            transition={loadingCircleTransition}
-                        />
-                        <motion.span
-                            style={loadingCircle}
-                            variants={loadingCircleVariants}
-                            transition={loadingCircleTransition}
-                        />
-                        <motion.span
-                            style={loadingCircle}
-                            variants={loadingCircleVariants}
-                            transition={loadingCircleTransition}
-                        />
-                    </motion.div>
-                </div>
-                <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
-                <Unity className='web-gl' unityContext={unityContext} />
+            <div className='three-dots-wrapper'>
+                <motion.div
+                    className='three-dots'
+                    style={loadingContainer}
+                    variants={loadingContainerVariants}
+                    initial="start"
+                    animate="end"
+                >
+                    <motion.span
+                        style={loadingCircle}
+                        variants={loadingCircleVariants}
+                        transition={loadingCircleTransition}
+                    />
+                    <motion.span
+                        style={loadingCircle}
+                        variants={loadingCircleVariants}
+                        transition={loadingCircleTransition}
+                    />
+                    <motion.span
+                        style={loadingCircle}
+                        variants={loadingCircleVariants}
+                        transition={loadingCircleTransition}
+                    />
+                </motion.div>
             </div>
+            <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
+            <Unity className='web-gl-pc' unityContext={unityContext} />
         </motion.div >
     );
 }
