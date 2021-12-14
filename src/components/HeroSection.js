@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
@@ -138,7 +138,7 @@ function HeroSection() {
             transition={{ type: 'spring', stiffness: 300 }}
             className='photo-item'>
             <Link
-              to='/technology-portfolio'
+              to='/technology-portfolio-page-one'
               className='item-links1'
             >
               Technology Portfolio

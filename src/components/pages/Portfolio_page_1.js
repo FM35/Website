@@ -51,16 +51,7 @@ export default function Portfolio_page_1() {
           transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.p>
       </div>
 
-      <div className='image-container1'>
-        <img className='img-settings' src='images/OLI_0018.jpg'
-          alt='Photography-Icon'
-        />
-        <p>
-          Central Memorial Park <br />
-          July, 2021 <br />
-          Calgary, AB, Canada <br />
-        </p>
-      </div>
+
 
       <div className='image-container'>
         <img className='img-settings' src='images/DSC_0025.JPG'
@@ -69,28 +60,6 @@ export default function Portfolio_page_1() {
         <p>
           Centre Street Train Platform <br />
           March, 2020 <br />
-          Calgary, AB, Canada
-        </p>
-      </div>
-
-      <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0029.JPG'
-          alt='Photography-Icon'
-        />
-        <p>
-          Sunalta Train Platform <br />
-          July, 2020 <br />
-          Calgary, AB, Canada
-        </p>
-      </div>
-
-      <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0042.jpg'
-          alt='Photography-Icon'
-        />
-        <p>
-          Sunalta <br />
-          April, 2021 <br />
           Calgary, AB, Canada
         </p>
       </div>
@@ -168,6 +137,39 @@ export default function Portfolio_page_1() {
         <p>
           Vancouver Intl. Airport <br />
           September, 2021 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container1'>
+        <img className='img-settings' src='images/OLI_0018.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Central Memorial Park <br />
+          July, 2021 <br />
+          Calgary, AB, Canada <br />
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0029.JPG'
+          alt='Photography-Icon'
+        />
+        <p>
+          Sunalta Train Platform <br />
+          July, 2020 <br />
+          Calgary, AB, Canada
+        </p>
+      </div>
+
+      <div className='image-container'>
+        <img className='img-settings' src='images/OLI_0042.jpg'
+          alt='Photography-Icon'
+        />
+        <p>
+          Sunalta <br />
+          April, 2021 <br />
           Calgary, AB, Canada
         </p>
       </div>

@@ -91,7 +91,7 @@ export default function VirtualExhibit() {
         >
             <Navbar />
             <div className='title-3'>
-                <div style={{ fontSize: '50px' }} className='heading'> Olivine's Virtual Exhibit</div>
+                <div style={{ fontSize: '50px' }} className='heading'>Virtual Exhibit</div>
                 <p style={{ fontSize: '15px', left: '15%', fontWeight: '400' }} className='heading'>Press ESC key to show/hide cursor.</p>
             </div>
             <div className='three-dots-wrapper'>

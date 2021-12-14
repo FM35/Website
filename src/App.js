@@ -14,7 +14,8 @@ import { AnimatePresence } from 'framer-motion';
 import HeroSection from './components/HeroSection';
 import About_Me from './components/pages/aboutUs';
 import VirtualExhibitComputer from './components/pages/VirtualExhibitComputer';
-import TechPort from './components/pages/TechPort';
+import TechPort from './components/pages/TechPort1';
+import TechPort2 from './components/pages/TechPort2';
 
 
 function App() {
@@ -37,7 +38,8 @@ function App() {
           <Route path='/virtual-exhibit' component={VirtualExhibit} />
           <Route path='/about-us' component={About_Me} />
           <Route path='/virtual-exhibit-computer' component={VirtualExhibitComputer} />
-          <Route path='/technology-portfolio' component={TechPort} />
+          <Route path='/technology-portfolio-page-one' component={TechPort} />
+          <Route path='/technology-portfolio-page-two' component={TechPort2} />
         </Switch>
       </AnimatePresence>
     </>

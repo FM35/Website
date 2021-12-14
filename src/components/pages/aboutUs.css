@@ -16,6 +16,12 @@
   padding: 10px;
 }
 
+.about-me-passage p{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  padding: 10px;
+}
+
 
 .about-me-name{
   display: flex;

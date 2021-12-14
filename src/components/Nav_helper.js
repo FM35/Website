@@ -110,7 +110,7 @@ const Navbar = () => {
                             variants={MobileMenuVariants}
                             initial='closed'
                             animate={open ? "open" : "closed"}
-                            to='/technology-portfolio' >
+                            to='/technology-portfolio-page-one' >
                             Technology Portfolio
                         </MobileNav>
                     </div>
@@ -146,7 +146,7 @@ const Navbar = () => {
                     <NavLink to='/computer-portfolio' >
                         Computer Portfolio
                     </NavLink>
-                    <NavLink to='/technology-portfolio' >
+                    <NavLink to='/technology-portfolio-page-one' >
                         Technology Portfolio
                     </NavLink>
                     <NavLink to='/about-us' >
