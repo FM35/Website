@@ -15,9 +15,9 @@ export default function Services() {
             style={{ overflowX: 'hidden' }}
             className='App'>
             <Navbar />
-            <div className='heading'>Exhibit Project</div>
+            <div className='heading'>Exhibit</div>
 
-            <ul className='menu-top'>
+            <ul className='top-menu'>
                 <li className='list-menu' style={{ opacity: 0.5 }}>Page: </li>
                 <li className='list-menu' style={{ opacity: 0.5 }}>One</li>
                 <motion.li whileHover={{
@@ -34,7 +34,7 @@ export default function Services() {
 
             </ul>
 
-            <div style={{ top: '200px', color: 'white' }} className='about-me-passage'>
+            <div style={{ top: '50px', color: 'white' }} className='about-me-passage'>
                 <p className='section1'>
                     Bringing a First Person feel to the Virtual Gallery World that's more immersive than a 360 VR camera or a Google Maps Street View kind of experience
                 </p>
@@ -46,17 +46,19 @@ export default function Services() {
                 </p>
 
                 <p className='section1'> Some of the notable features:</p>
-                <p style={{ opacity: 0.5 }} className='section5'> Website Designed and Coded In-house</p>
+
                 <p className='section1'>1)Exhibit Layering</p>
+                <video className='vid-section' src='videos/nested.mp4' autoPlay loop muted />
                 <p className='section6'> An exhibit, inside an exhibit, that's inside an exhibit. That's inside of another exhibit. Make sure to take a closer look so you can see our little animated buddies</p>
 
-                <p style={{ opacity: 0.5 }} className='section5'> Website Designed and Coded In-house</p>
+
                 <p className='section1'>2)Position Based Text Triggering</p>
+                <video className='vid-section' src='videos/info.mp4' autoPlay loop muted />
                 <p className='section6'> Information about the photograph gets revealed when you get within a certain distance of the photograph</p>
             </div>
 
 
-            <ul style={{ bottom: '-150px' }} className='menu-bottom'>
+            <ul className='bottom-menu'>
                 <li className='list-menu' style={{ opacity: 0.5 }}>Page:</li>
                 <li className='list-menu' style={{ opacity: 0.5 }}>One</li>
                 <motion.li whileHover={{

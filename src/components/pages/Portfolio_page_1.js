@@ -153,26 +153,28 @@ export default function Portfolio_page_1() {
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0029.JPG'
+        <img className='img-settings' src='images/OLI_0085.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Sunalta Train Platform <br />
-          July, 2020 <br />
+          Banff Tea Co <br />
+          February, 2021 <br />
           Calgary, AB, Canada
         </p>
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0042.jpg'
+        <img className='img-settings' src='images/OLI_0148.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Sunalta <br />
-          April, 2021 <br />
+          Downtown <br />
+          September, 2020 <br />
           Calgary, AB, Canada
         </p>
       </div>
+
+
 
       <ul className='menu-bottom'>
         <li className='list-menu' style={{ opacity: 0.5 }}>Page:</li>

@@ -43,11 +43,11 @@
 .about-me-passage{
   width: 100vw;
   margin: 0 auto;
-  height: 100%;
   display: grid;
   grid-template-columns: 2vw repeat(18,1fr) 2vw;
   column-gap: 1.6rem;
   position: relative;
+  margin-bottom: 150px;
 }
 
 .section1{
@@ -81,6 +81,10 @@
   grid-column: 9/19;
 }
 
+.vid-section{
+  grid-column: 2/8;
+  width: 35vw;
+}
 @media screen and (max-width: 767px){
 
   .about-me-passage{
@@ -90,6 +94,9 @@
 
   .section4{
     font-size: 60px;
+  }
+  .vid-section{
+    width: 90vw;
   }
 
   .section1{

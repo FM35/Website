@@ -25,27 +25,29 @@ export default function AboutUs() {
         />
         <div className='about-me-passage'>
           <p className='section1'>
-            An idea brought about by a passion for technology and photography
+            We are a technology and photography start up based in Calgary, Alberta that offers the following services:
           </p>
           <p style={{ opacity: 0.5 }} className='section5'> Website Designed and Coded In-house</p>
           <p className='section2'>
-            In 2021. an avid photographer had the desire to exhibit his work without the means to acquire a physical space. Relying
-            on his technological background, an idea of using a virtual space instead, came about.
+            1)Web and Mobile Application Development
           </p>
           <p className='section3'>
-            Once the initial Exhibit was finished, we started thinking about how this idea could help entities in different industries.
-
+            2)Virtual Exhibit Development
+          </p>
+          <p className='section2'>
+            3)Custom Built Desktop Computers
+          </p>
+          <p className='section3'>
+            4)Photographic prints from various photographers
           </p>
 
-          <p className='section1'> Here are some benefits of having a virtual space to accompany or replace a physical space</p>
-          <p className='section1'>1)Accessibility</p>
-          <p className='section6'> By having a virtual space you eliminate geographrical position being a factor when it comes to who can and cannot make the journey to view your physical space. This makes your exhibit more accessible to audiences all over the world, thereby increasing the reach of your the venue you are showcasing virtually</p>
-          <p className='section1'>2)Proofing</p>
-          <p className='section6'> Being able to see an immersive virtual experience before fully commiting on building the physical experience</p>
-          <p className='section1'>3) No Time Constraints</p>
-          <p className='section6'> The virtual space is open 24/7, 365!</p>
-          <p className='section4'> What services do we offer?</p>
-          <p className='section1'> At Olivine we currently offer Website development services and virtual space services. We are working hard to offer the sale of prints from various photographers along with mobile applivation development services</p>
+          <p className='section1'>When it comes to any well developed solution we believe the following 3 points to be true:</p>
+          <p className='section1'>1)Minimalist Design</p>
+          <p className='section6'>By definition a minimalistic design limits the amount of noise an interface has inorder to emphasize necessary information. What this essentially means is taking out what is not important, so that what is important can stand out.</p>
+          <p className='section1'>2)Minimalistic does not mean simplistic</p>
+          <p className='section6'>Bringing in some form of excitement where possible does not hurt. This might mean smooth page transitions, animating icons into positions or playing around with text. Of course there is a place and time for this and we understand that some applications are just meant to get straight to the point.</p>
+          <p className='section1'>3) An Amazing Human-Computer Interaction</p>
+          <p className='section6'>This point might be the last, but if we were to be honest, it's probably the most important. We strive to make the human-computer Interaction an enjoyable, pain-free experience. This means making an interface that is straight-forward to use, has limited waiting times inbetween a button press and the return of information and has a limited number of bugs/errors. </p>
         </div>
       </div>
     </motion.div>

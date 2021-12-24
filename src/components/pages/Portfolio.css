@@ -107,11 +107,26 @@ img {
   width: 280px;
 }
 
+.top-menu{
+  display:flex;
+  position: relative;
+  left: 5%;
+  width: 280px;
+}
+
 .menu-bottom{
   display: flex;
   position: relative;
   bottom: 100px;
   left: 5%;
+  width: 280px;
+}
+
+.bottom-menu{
+  display: flex;
+  position: relative;
+  left: 5%;
+  bottom: 30px;
   width: 280px;
 }
 

@@ -125,15 +125,16 @@ export default function Services() {
       </div>
 
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0085.jpg'
+        <img className='img-settings' src='images/OLI_0042.jpg'
           alt='Photography-Icon'
         />
         <p>
-          Banff Tea Co <br />
-          February, 2021 <br />
+          Sunalta <br />
+          April, 2021 <br />
           Calgary, AB, Canada
         </p>
       </div>
+
 
       <div className='image-container'>
         <img className='img-settings' src='images/OLI_0094.jpg'
@@ -146,16 +147,18 @@ export default function Services() {
         </p>
       </div>
 
+
       <div className='image-container'>
-        <img className='img-settings' src='images/OLI_0148.jpg'
+        <img className='img-settings' src='images/OLI_0029.JPG'
           alt='Photography-Icon'
         />
         <p>
-          Downtown <br />
-          September, 2020 <br />
+          Sunalta Train Platform <br />
+          July, 2020 <br />
           Calgary, AB, Canada
         </p>
       </div>
+
 
       <div className='image-container-last'>
         <img className='img-settings' src='images/OLI_0105.jpg'
