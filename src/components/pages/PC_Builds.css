@@ -10,18 +10,25 @@ position: relative;
   height: 15%;
   font-size: 90px;
   left: 5%;
-  font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  color: white;
   width: 80%;
 }
+
+.heading1{    
+  position: relative;
+  height: 15%;
+  font-size: 90px;
+  left: 5%;
+  font-weight: 300;
+  width: 80%;
+}
+
+
 
  .compPara{
   position: relative;
   left: 5%;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  color: white;
+  font-weight: 300;  
   width: 80%;
   top: 30px;
   height: 0px;
@@ -36,9 +43,8 @@ position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  top: 10%;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 80px;
   margin-bottom: 160px;
 
 }
@@ -126,7 +132,16 @@ position: relative;
 @media screen and (max-width: 542px) {
   .heading{
       font-size: 60px;
+    height: 8%;
   }
+
+  .top-menu{
+    top: 65px;
+  }
+
+  .heading1{
+    font-size: 60px;
+}
 
 }
 
@@ -134,5 +149,7 @@ position: relative;
   .heading{
       font-size: 40px;
   }
-
+  .heading1{
+    font-size: 40px;
+}
 }

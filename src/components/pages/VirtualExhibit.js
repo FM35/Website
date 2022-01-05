@@ -20,10 +20,10 @@ export default function VirtualExhibit() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ delay: 0.25, duration: 1 }}
+            transition={{ duration: 0.5 }}
             className='exhibit-container'>
             <Navbar />
-            <div style={{ color: "white" }} className='heading'> Virtual Exhibit</div>
+            <div style={{ color: "white" }} className='heading'> Exhibit</div>
             <div className='mobilePC'>
                 <p className='question'> Please note that the virtual exhibit is only accessible via computers with keyboard and mouse/trackpad input.</p>
                 <Link to='/virtual-exhibit-computer' className='mobilePCButton'>

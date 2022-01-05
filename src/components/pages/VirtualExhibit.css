@@ -1,6 +1,6 @@
 .exhibit-container{
 
-  height: 100vh;
+  height: 100vh;  max-height: -webkit-fill-available;
   position: relative;
   background-size: cover;
 }
@@ -32,9 +32,9 @@
   position: absolute;
   left: 48.2%;
   top: 54%;
-  color: white;
+  
   z-index: -1;
-  font-family: 'Roboto Slab', serif;
+  
 
 }
 
@@ -53,7 +53,7 @@
   color: whitesmoke;
   padding: 14px 20px;
   margin-top: 70px;
-  font-family: 'Roboto Slab', serif;
+  
   border: 3px solid whitesmoke;
   width:200px;
   text-align: center;
@@ -61,11 +61,11 @@
 }
 
 .question{
-  color: white;
+  
   text-align: center;
   font-size: 40px;
   font-weight: 100;
-  font-family: 'Roboto Slab', serif;
+  
   margin-top: 80px;
   max-width: 85%;
 }
@@ -74,4 +74,13 @@
   display: block;
   width: 80vw;
   transform: translatex(calc(50vw - 50%)) translatey(calc(43vh - 50%));
+}
+
+@media screen and (max-width: 600px) {
+ 
+  .question{
+    font-size: 25px;
+  }
+
+
 }

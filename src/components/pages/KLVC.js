@@ -42,7 +42,7 @@ export default function HeatPack() {
       polaroid2.gridColumn = '4/7'
       polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -60,7 +60,7 @@ export default function HeatPack() {
     if (e.matches && animate) {
       polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -76,7 +76,7 @@ export default function HeatPack() {
     if (e.matches && animate) {
       polaroid3.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -291,7 +291,7 @@ export default function HeatPack() {
         </motion.div>
       </div>
 
-      <div style={{ top: '100px' }} className='image-container'>
+      <div style={{ top: '100px', color: 'white' }} className='image-container'>
         <img className='img-settings' src='images/KLVC-4.png'
           alt='Photography-Icon'
         />
@@ -312,9 +312,9 @@ export default function HeatPack() {
         <img className='img-settings' src='images/KLVC-1.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Designed for streaming church services online and presenting slides both in house and online. Compactness was at the focal point of the design process inorder to save space on the media table as it was limited and to also make transporting the Computer to different locations easier as a media team member might need to take it home or to a venue being hosted outside the church building. The Fractal Design Node 202 was a great choice to achieve compactness with a volume coming in at only 10.2 litres, whereas standard computer cases have a volume of 45 litres.
+            Designed for presenting slides and streaming church services online. Copactness was also a key feature for this build with us using a computer case that's less than half the size of regular builds.
           </p>
         </div>
       </div>
@@ -323,9 +323,9 @@ export default function HeatPack() {
         <img className='img-settings' src='images/KLVC-2.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Coupled with a portable monitor, wireless keyboard and mouse to make the system decoupled interms of wire connections. The only component that need to be plugged into power is the Power Supply in the computer. To make the system fully portable a portable power station can be implemented
+            Coupled with a portable monitor, wireless keyboard and mouse to make the entire system lightweight and easily moveable.
           </p>
         </div>
       </div>

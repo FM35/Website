@@ -1,13 +1,13 @@
 .about-me-container{
 
-  height: 90vh;
+  height: 100vh;  max-height: -webkit-fill-available;
   position: relative;
     }
 
 
 .about-me-container h1{
-  color: white;
-  font-family: 'Roboto Slab', serif;
+  
+  
   font-weight: 400;
   max-width: 100%;
   padding: 10px;
@@ -15,8 +15,8 @@
 }
 
 .about-me-container p{
-  color: white;
-  font-family: 'Roboto Slab', serif;
+  
+  
   font-weight: 400;
   position: relative;
   text-align: center;
@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  top: 10%;
+  top: 2%;
   justify-content: center;
 
 }
@@ -61,8 +61,6 @@ input{
   margin: 20px;
   background-color: #0b0b0b;
   border: 1px solid white;
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 400;
 }
 
@@ -74,8 +72,6 @@ textarea{
   height: 300px;
   background-color: #0b0b0b;
   border: 1px solid white;
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 400;
 
 }
@@ -95,8 +91,21 @@ textarea{
 
 .button{
   background-color: #0b0b0b;
-  color: white;
   border: 1px solid white;
   width: 65px;
   height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .position-1{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    max-width: 90%;
+  }
+
+  .position-2{
+    max-width: 100%;
+  }
+
 }

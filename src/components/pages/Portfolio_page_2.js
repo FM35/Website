@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Portfolio.css';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import Navbar from '../Nav_helper';
+import Navbar2 from '../Nav_helperB&W';
 
 export default function Services() {
 
@@ -19,35 +19,27 @@ export default function Services() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ delay: 0.25, duration: 1 }}
+      transition={{ duration: 0.5 }}
       style={{ overflowX: 'hidden' }}
       className='App'>
-      <Navbar />
-      <div className='heading'>Portfolio</div>
+      <Navbar2 />
+      <div className='heading' style={{ color: 'black' }}>Portfolio</div>
       <p className='paragraph'>Olivine's best shots</p>
       <ul className='menu-top'>
-        <li className='list-menu' style={{ opacity: 0.5 }}>Page: </li>
+        <li className='list-menu' style={{ color: 'black' }}>Page: </li>
         <motion.li whileHover={{
           scale: 1.3,
         }}
 
-          whileTap={{
-            scale: 0.8,
-          }}
-
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-one' className='page-links'>One</Link></motion.li>
-        <li className='list-menu' style={{ opacity: 0.5 }}>Two</li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-one' style={{ color: 'black' }} className='page-links'>One</Link></motion.li>
+        <li className='list-menu' style={{ opacity: 0.3, color: 'black' }}>Two</li>
         <motion.li whileHover={{
           scale: 1.3,
         }}
 
-          whileTap={{
-            scale: 0.8,
-          }}
-
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' style={{ color: 'black' }} className='page-links'>Three</Link></motion.li>
       </ul>
-      <div className='image-container1'>
+      <div className='image-container-portfolio-1'>
         <img className='img-settings' src='images/OLI_0016.jpg'
           alt='Photography-Icon'
         />
@@ -58,7 +50,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0014.jpg'
           alt='Photography-Icon'
         />
@@ -69,7 +61,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0033.jpg'
           alt='Photography-Icon'
         />
@@ -80,7 +72,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0022(1).jpg'
           alt='Photography-Icon'
         />
@@ -91,7 +83,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0034.jpg'
           alt='Photography-Icon'
         />
@@ -102,7 +94,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0040.jpg'
           alt='Photography-Icon'
         />
@@ -113,7 +105,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0074.jpg'
           alt='Photography-Icon'
         />
@@ -124,7 +116,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0042.jpg'
           alt='Photography-Icon'
         />
@@ -136,7 +128,7 @@ export default function Services() {
       </div>
 
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0094.jpg'
           alt='Photography-Icon'
         />
@@ -148,7 +140,7 @@ export default function Services() {
       </div>
 
 
-      <div className='image-container'>
+      <div className='image-container-portfolio'>
         <img className='img-settings' src='images/OLI_0029.JPG'
           alt='Photography-Icon'
         />
@@ -160,7 +152,7 @@ export default function Services() {
       </div>
 
 
-      <div className='image-container-last'>
+      <div className='image-container-portfolio-last'>
         <img className='img-settings' src='images/OLI_0105.jpg'
           alt='Photography-Icon'
         />
@@ -172,26 +164,16 @@ export default function Services() {
       </div>
 
       <ul className='menu-bottom'>
-        <li className='list-menu' style={{ opacity: 0.5 }}>Page: </li>
+        <li className='list-menu' style={{ color: 'black' }}>Page: </li>
         <motion.li whileHover={{
           scale: 1.3,
         }}
-
-          whileTap={{
-            scale: 0.8,
-          }}
-
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-one' className='page-links'>One</Link></motion.li>
-        <li className='list-menu' style={{ opacity: 0.5 }}>Two</li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-one' style={{ color: 'black' }} className='page-links'>One</Link></motion.li>
+        <li className='list-menu' style={{ opacity: 0.3, color: 'black' }}>Two</li>
         <motion.li whileHover={{
           scale: 1.3,
         }}
-
-          whileTap={{
-            scale: 0.8,
-          }}
-
-          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' className='page-links'>Three</Link></motion.li>
+          transition={{ type: 'spring', stiffness: 300 }} className='list-menu'><Link to='/photography-portfolio-page-three' style={{ color: 'black' }} className='page-links'>Three</Link></motion.li>
       </ul>
     </motion.div>
   );

@@ -17,12 +17,13 @@ export default function PC_Builds() {
   useEffect(() => {
 
     scrollHeightRef.current.scrollHeight = window.pageYOffset;
+    console.log(window.pageYOffset)
   }, [size.yscroll]);
 
   return (
     <motion.div className='container'>
       <Navbar />
-      <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading'>
+      <motion.div initial={{ opacity: 0 }} transition={{ duration: 1 }} animate={{ opacity: 1 }} className='heading1'>
         Computers
       </motion.div>
       <div className='polaroids'>

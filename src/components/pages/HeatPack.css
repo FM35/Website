@@ -1,12 +1,7 @@
-body{
-  background-color: #0b0b0b;
-}
-
 .heatpack-container{
 
   height: auto;
   position: relative;
-    
     }
     
 .heatpack-title-container{
@@ -16,7 +11,7 @@ body{
       height: 15%;
       align-items: center;
       font-size: 90px;
-      color: white;
+      
       left: 5%;
       overflow: hidden;
       
@@ -24,7 +19,7 @@ body{
 
 .heatpack-title-container span{
 
-  font-family: 'Roboto Slab', serif;
+  
   font-weight: 300;
 }
 
@@ -33,9 +28,8 @@ body{
     
   position: absolute;
   display: flex;
-  top: 260px;
-  font-size: 90px;
-  color: white;
+  top: 270px;
+  font-size: 90px; 
   overflow: hidden;
   left: 10%;
           
@@ -44,9 +38,8 @@ body{
 .marquee{
 
     position: absolute;
-    top: 150px;
+    top: 160px;
     width:100%;
-    color: black;
     overflow: hidden;
     z-index: 1;
    }
@@ -61,7 +54,7 @@ body{
       }
 
 .marquee-content span{
-  font-family: 'Roboto Slab', serif;
+  
   font-weight: 300;
 }
       
@@ -79,15 +72,15 @@ body{
     font-size: 90px;
     white-space:nowrap;
     text-align: center;
-    color: white;
-    font-family: 'Roboto Slab', serif;
+    
+    
   font-weight: 300;
 
   }
 
 
 .computer span{
-  font-family: 'Roboto Slab', serif;
+  
   font-weight: 300;
 }
 
@@ -142,10 +135,10 @@ width: 100%;
 
     .computer{
       font-size: 60px;
-      top: 190px;
+      top: 220px;
       }
       .marquee{
-        top: 120px;
+        top: 135px;
       }
 
       .marquee-content li{
@@ -168,11 +161,11 @@ width: 100%;
 
     .computer{
       font-size: 40px;
-      top: 170px; 
+      top: 160px; 
       }
 
       .marquee{
-        top: 110px;
+        top: 105px;
       }
 
       .marquee-content li{

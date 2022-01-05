@@ -46,7 +46,7 @@ export default function Olivine() {
 
       polaroid2.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -64,7 +64,7 @@ export default function Olivine() {
     if (e.matches && animate) {
       polaroid2.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
     if (e.matches && !animate) {
       polaroid1.gridColumn = '1/4'
@@ -79,7 +79,7 @@ export default function Olivine() {
     if (e.matches && animate) {
       polaroid2.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -312,7 +312,7 @@ export default function Olivine() {
         <img className='img-settings' src='images/Olivine-2.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <ul>
             <li>Processor: AMD Ryzen 7 2700X</li>
             <li>Memory: Kingston HyperX Fury 16GB (2 X 8GB) DDR4</li>
@@ -330,9 +330,9 @@ export default function Olivine() {
         <img className='img-settings' src='images/Olivine-3.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <p>
-            This computer was designed for handling large data science and machine learning projects, along with frontend development and playing large open world games in the highest possible settings.It was also designed with future proofing in mind so that the need to upgrade to perform the same requirements doesn't arise till about 5 years, especially when newer games require more and more computing poower to handle the graphics.
+            This computer was designed for handling large data science and machine learning projects, along with frontend development and playing large open world games in the highest possible settings.
           </p>
         </div>
       </div>
@@ -341,9 +341,9 @@ export default function Olivine() {
         <img className='img-settings' src='images/Olivine-1.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static , breathing to name a few. The Computer was also coupled with an RGB mouse and keyboard combo, along with light strips lined up on the bottom of the desk to complete the RGB light setup.
+            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static , breathing to name a few.
           </p>
         </div>
       </div>

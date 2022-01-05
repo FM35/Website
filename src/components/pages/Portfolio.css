@@ -2,8 +2,9 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100vh;  max-height: -webkit-fill-available;
   width: 100%;
+  background-color: #f9f9f9;
 }
 
 .paragraph{
@@ -11,15 +12,37 @@
   position: relative;
   top: 50px;
   left: 5%;
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 300;
+  color:black;
 }
 
  .image-container{
   max-width: 100%;
   position: relative;
   margin: 300px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+ }
+
+ .image-container-portfolio{
+  max-width: 100%;
+  position: relative;
+  margin: 300px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+ }
+
+ .image-container-portfolio-1{
+  max-width: 100%;
+  position: relative;
+  margin: 300px auto;
+  margin-top: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -51,6 +74,18 @@
   overflow: hidden;
  }
 
+ .image-container-portfolio-last{
+  max-width: 100%;
+  position: relative;
+  margin: 300px auto;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+ }
+
  .img-settings {
   display: block;
   max-width: 95%;
@@ -63,35 +98,49 @@ img {
 }
 
  .image-container p{
-  
-   color: white;
-   font-family: 'Roboto Slab', serif;
    font-weight: 400;
    padding: 20px;
-   font-size: 25px;
+   font-size: 20px;
  }
 
- .image-container1 p{
-  
-  color: white;
-  font-family: 'Roboto Slab', serif;
+ .image-container-portfolio p{
   font-weight: 400;
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
+  color: black;
+}
+
+.image-container-portfolio-1 p{
+  font-weight: 400;
+  padding: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.image-container-portfolio-last p{
+  font-weight: 400;
+  padding: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+
+ .image-container1 p{
+  font-weight: 400;
+  padding: 20px;
+  font-size: 20px;
+  color: black;
 }
 
 .image-container-last p{
   
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
+  color: black;
 }
 
  .image-container li{
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   padding: 20px;
   font-size: 25px;
@@ -112,6 +161,7 @@ img {
   position: relative;
   left: 5%;
   width: 280px;
+  margin-top: 5%;
 }
 
 .menu-bottom{
@@ -126,34 +176,31 @@ img {
   display: flex;
   position: relative;
   left: 5%;
-  bottom: 30px;
+  top: 10px;
   width: 280px;
+  margin-bottom: 50px;
 }
 
 .list-menu{
-  color:white;
   display: flex;
   padding-right: 20px;
-  font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
 
 .page-links{
   text-decoration: none;
   display: flex;
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
 
 @media screen and (max-width: 542px) {
   .paragraph{
     font-size: 18px;
-    top: 0px;
+    top: 90px;
   }
 
   .menu-top{
-    top: 50px;
+    top: 120px;
   }
   
   .menu-bottom{
@@ -199,4 +246,17 @@ img {
    font-size: 15px;
  }
 
+
+}
+
+
+@media screen and (max-width: 350px) {
+  .paragraph{
+    font-size: 18px;
+    top: 10px;
+  }
+
+  .menu-top{
+    top: 30px;
+  }
 }

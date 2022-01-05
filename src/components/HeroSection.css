@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&display=swap');
 .hero-container{
-
   background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/home-background.png');
   background-position: center;
   display: flex;
@@ -11,49 +9,41 @@
   overflow: hidden;
 }
 
-.grid-image{
-  display: block;
-
-}
-
 .hide {
   display: none;
 }
 
 .show {
-  
-  position: absolute;
-  bottom: 85px;
-  left: 13px;
   list-style-type: none;
+  display: inline-block;
+  align-self: center;
+  position: relative;
+  top: -8%;
+}
 
+.icons{
+  width: 275px;
+  height: 235px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photo-icon {
- 
-  position: absolute;
-  bottom: 25px;
-  left: 35px;
   cursor: pointer;
 }
 
 .img-container{
-  width: 320px;
-  height: 300px;
+  width: 290px;
+  height: 268px;
   position: relative;
-}
-
-.img-container2{
-  width: 320px;
-  height: 300px;
-  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .tech-icon {
 
-  position: absolute;
-  bottom: 25px;
-  left: 19px;
   cursor: pointer;
 }
 
@@ -66,14 +56,14 @@
 .figcap1{
   color: #fff;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  
   font-size: 25px;
   
 }
 
 .figcap2{
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  
   font-size: 25px;
 }
 
@@ -83,16 +73,11 @@
 
 .item-links {
   display: block;
-  text-align: left;
+  text-align: center;
   margin: 2rem auto;
-  border-radius: 4px;
   text-decoration: none;
   font-size: 1.5rem;
   background-color: transparent;
-  color: rgb(255, 255, 255);
-  padding: 14px 20px;
-  transition: all 0.3s ease-out;
-  font-family: 'Roboto Slab', serif;
 }
 
 .item-links1 {
@@ -106,15 +91,13 @@
   color: rgb(0, 0, 0);
   padding: 14px 20px;
   transition: all 0.3s ease-out;
-  font-family: 'Roboto Slab', serif;
+  
 }
 
 .welcomeMessage{
   position: absolute;
   top: -30px;
   left:0;
-  color: white;
-  font-family: 'Roboto Slab', serif;
   font-weight: 200;
   width: 50vw;
   font-size: 89px;
@@ -163,6 +146,15 @@
 @media screen and (max-width: 473px) {
   .welcomeMessage{
     font-size: 40px;
+  }
+
+}
+
+@media screen and (max-height: 473px) {
+
+  .img-container{
+    width: 300px;
+    height: 282px;
   }
 }
 

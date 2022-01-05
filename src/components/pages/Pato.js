@@ -46,7 +46,7 @@ export default function Pato() {
 
       polaroid1.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -63,7 +63,7 @@ export default function Pato() {
     if (e.matches && animate) {
       polaroid1.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
     if (e.matches && !animate) {
       polaroid1.gridColumn = '1/4'
@@ -78,7 +78,7 @@ export default function Pato() {
     if (e.matches && animate) {
       polaroid1.gridColumn = '1/7'
       polaroid3.left = '0'
-      polaroids.marginTop = '130px'
+      polaroids.marginTop = '80px'
     }
 
     if (e.matches && !animate) {
@@ -132,6 +132,7 @@ export default function Pato() {
 
   useEffect(() => {
     window.scrollTo(0, height);
+    console.log(height)
   });
 
   const staggerEffect = {
@@ -303,7 +304,7 @@ export default function Pato() {
         <img className='img-settings' src='images/Pato-2.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <ul>
             <li>Processor: AMD Ryzen 5 3600</li>
             <li>Memory: Corsair Vengeance LPX 16GB (2 X 8GB) DDR4 3200MHZ</li>
@@ -320,9 +321,9 @@ export default function Pato() {
         <img className='img-settings' src='images/Pato-4.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <p>
-            This Computer was designed to handle backend projects for school and portfolio work. While designing this computer the client also expressed an interest in doing graphic intensive work in the future, therefore a motherboard that would allow for extra memory slots and graphics cards was chosen to make the expansion easier.
+            This Computer was designed to handle backend projects for school and portfolio work, while keeping in mind future plans for intensive graphic work.
           </p>
         </div>
       </div>
@@ -331,9 +332,9 @@ export default function Pato() {
         <img className='img-settings' src='images/Pato-1.png'
           alt='Photography-Icon'
         />
-        <div style={{ width: '800px' }}>
+        <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Computer allows for a tri-display system which provides a 35.5% in productivity as compared to using a single screen. A dual setup provided an increase of 25.5% in productivity over using a single screen. This increase can be attributed to being able to view more than one window or browser tab at any one time, therefore the need to minimise tabs is just replaced with a quick glance to a different monitor.
+            Computer allows for a tri-display system which provides a 35.5% in productivity as compared to using a single screen.
           </p>
         </div>
       </div>

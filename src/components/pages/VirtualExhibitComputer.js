@@ -87,11 +87,11 @@ export default function VirtualExhibit() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ delay: 0.25, duration: 1 }}
+            transition={{ duration: 0.5 }}
         >
             <Navbar />
             <div className='title-3'>
-                <div style={{ fontSize: '50px' }} className='heading'>Virtual Exhibit</div>
+                <div style={{ fontSize: '50px' }} className='heading'> Exhibit</div>
                 <p style={{ fontSize: '15px', left: '15%', fontWeight: '400', top: '10px' }} className='heading'>Press ESC key to show/hide cursor.</p>
             </div>
             <div className='three-dots-wrapper'>

@@ -18,7 +18,7 @@ justify-content: center;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-border-bottom: 1px solid white;
+border-bottom: 1px solid black;
 
 @media screen and (max-width: 1100px) {
 	display: none;
@@ -27,7 +27,7 @@ border-bottom: 1px solid white;
 
 export const NavLink = styled(Link)`
 
-color: #FFFFFF;
+color: #000000;
 display: flex;
 align-items: center;
 text-align: center;
@@ -44,7 +44,7 @@ export const MobileNav = styled(motion(Link))`
 	display: none;
 }
 
-color: #FFFFFF;
+color: #000000;
 display: flex;
 position:relative;
 align-items: center;
@@ -61,7 +61,7 @@ overflow: hidden;
 
 export const Bars = styled(FaBars)`
 display: none;
-color: #FFFFFF;
+color: #000000;
 @media screen and (max-width: 1100px) and (min-width: 500px) {
 	display: block;
 	position: absolute;
@@ -84,7 +84,7 @@ color: #FFFFFF;
 
 export const Close = styled(FaTimes)`
 display: none;
-color: #FFFFFF;
+
 @media screen and (max-width: 1100px) and (min-width: 500px) {
 	display: block;
 	position: absolute;
@@ -107,18 +107,6 @@ color: #FFFFFF;
 }
 `;
 
-export const Close2 = styled(FaTimes)`
-
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	transform: translate(-100%, 75%);
-	font-size: 1.8rem;
-	cursor: pointer;
-	color: #000;
-`;
-
 
 export const ButtonParent = styled(motion.div)`
 display: none;
@@ -128,7 +116,7 @@ width: 0px;
 position: absolute;
 display: flex;
 flex-direction: column;
-background: #0b0b0b;
+background: #f9f9f9;
 top: 100%;
 align-items: flex-end;
 width: 100%;
