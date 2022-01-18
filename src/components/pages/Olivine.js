@@ -135,7 +135,7 @@ export default function Olivine() {
   //Scrolls to similar height as PCBuild
   useEffect(() => {
     window.scrollTo(0, height);
-  });
+  }, []);
 
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -240,10 +240,26 @@ export default function Olivine() {
             <motion.span variants={letter}>e</motion.span>
           </li>
 
+          <li>
+            <motion.span variants={letter}>M</motion.span>
+            <motion.span variants={letter}>u</motion.span>
+            <motion.span variants={letter}>l</motion.span>
+            <motion.span variants={letter}>t</motion.span>
+            <motion.span variants={letter}>i</motion.span>
+            <motion.span variants={letter}>p</motion.span>
+            <motion.span variants={letter}>u</motion.span>
+            <motion.span variants={letter}>r</motion.span>
+            <motion.span variants={letter}>p</motion.span>
+            <motion.span variants={letter}>o</motion.span>
+            <motion.span variants={letter}>s</motion.span>
+            <motion.span variants={letter}>e</motion.span>
+          </li>
+
+
+
           <li> Multipurpose</li>
           <li> Multipurpose</li>
           <li> Multipurpose</li>
-          <li>  Multipurpose</li>
         </motion.ul>
       </motion.div >
       <motion.div
@@ -272,7 +288,7 @@ export default function Olivine() {
           }}
 
           className='polaroid-container-1'>
-          <img src='images/Pato-3.png'
+          <img src='images/Pato-3.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -288,7 +304,7 @@ export default function Olivine() {
           exit={handleClick}
 
           className='polaroid-container-2'>
-          <img src='images/Olivine-4.png'
+          <img src='images/Olivine-4.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -302,14 +318,14 @@ export default function Olivine() {
           }}
 
           className='polaroid-container-3'>
-          < img src='images/KLVC-3.png'
+          < img src='images/KLVC-3.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/Olivine-2.png'
+        <img className='img-settings' src='images/Olivine-2.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
@@ -327,23 +343,23 @@ export default function Olivine() {
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/Olivine-3.png'
+        <img className='img-settings' src='images/Olivine-3.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
           <p>
-            This computer was designed for handling large data science and machine learning projects, along with frontend development and playing large open world games in the highest possible settings.
+            This computer was designed for handling large data science and machine learning projects, along with frontend development and playing large open world games on the highest possible settings.
           </p>
         </div>
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/Olivine-1.png'
+        <img className='img-settings' src='images/Olivine-1.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Computer has four RGB fans(3 in the front and one in the case) that come in with multiple built in effects like colour cycle, static , breathing to name a few.
+            Computer has four RGB fans(3 in the front and one in the case) that come with multiple built in effects like colour cycle, static and breathing lighting sequences to name a few.
           </p>
         </div>
       </div>

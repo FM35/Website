@@ -9,7 +9,7 @@ export default function VirtualExhibit() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    });
+    }, []);
 
 
     return (
@@ -25,7 +25,7 @@ export default function VirtualExhibit() {
             <Navbar />
             <div style={{ color: "white" }} className='heading'> Exhibit</div>
             <div className='mobilePC'>
-                <p className='question'> Please note that the virtual exhibit is only accessible via computers with keyboard and mouse/trackpad input.</p>
+                <p className='question'> Please note that the virtual exhibit is ONLY AVAILABLE ON COMPUTERS with keyboard and mouse input.</p>
                 <Link to='/virtual-exhibit-computer' className='mobilePCButton'>
                     Continue
                 </Link>

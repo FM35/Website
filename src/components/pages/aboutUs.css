@@ -1,3 +1,8 @@
+.about-container{
+height: 100vh;  max-height: -webkit-fill-available;
+position: relative;
+}
+
 .about-me{
   max-width: 100%;
   position: relative;
@@ -12,29 +17,29 @@
 
 .expand-button{
   background-color: #0b0b0b;
-  
   border: 1px solid white;
   width: 85px;
   height: 25px;
   grid-column: 13/17;
+  color: #f9f9f9;
 }
 
 
 .about-me p{
-  
   padding: 10px;
   margin-bottom: 30px;
+  color: #f9f9f9;
 }
 
 .about-me-passage p{
   
   padding: 10px;
   margin-bottom: 30px;
+  color: #f9f9f9;
 }
 
 .about-me-name{
   display: flex;
-  
   max-width: 500px;
   padding: 10px;
   font-size: 35px;
@@ -107,6 +112,11 @@
   display: none;
 }
 
+.section9{
+  grid-column: 3/7;
+  text-align: center;
+}
+
 .vid-section{
   grid-column: 2/8;
   width: 35vw;
@@ -119,6 +129,7 @@
   position: absolute;
   left: 0; right: 0;
   top: 20%;
+  color: #f9f9f9;
 }
 
 .pop-up-heading{
@@ -127,6 +138,7 @@
   margin-bottom: 7%;
   left: 8%;
   top: 4%;
+  color: #f9f9f9;
 }
 
 @media screen and (max-width: 767px){

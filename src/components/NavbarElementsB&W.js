@@ -61,7 +61,7 @@ overflow: hidden;
 
 export const Bars = styled(FaBars)`
 display: none;
-color: #000000;
+color: #000000 !important;
 @media screen and (max-width: 1100px) and (min-width: 500px) {
 	display: block;
 	position: absolute;
@@ -125,15 +125,3 @@ overflow: hidden;
 }
 `;
 
-export const PopUp = styled(motion.div)`
- 
-margin: auto;
-position: fixed;
-top: 0; left: 0; bottom: 0; right: 0;
-background: #f9f9f9;
-width: 80%;
-z-index:12;
-overflow: hidden;
-border-radius: 25px;
-
-`;

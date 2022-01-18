@@ -8,7 +8,7 @@ export default function Portfolio_page_1() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
 
   //Self explanatory
@@ -46,7 +46,7 @@ export default function Portfolio_page_1() {
 
 
       <div className='image-container-portfolio-1'>
-        <img className='img-settings' src='images/DSC_0025.JPG'
+        <img className='img-settings' src='images/DSC_0025.jpg'
           alt='Photography-Icon'
         />
         <p>

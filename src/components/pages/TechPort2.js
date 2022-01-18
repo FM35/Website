@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Nav_helper';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
+import AutoPlay from './AutoPlay';
 
 export default function Services() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <motion.div
@@ -38,12 +43,12 @@ export default function Services() {
 
                 <p className='section1'> Some of the notable features:</p>
                 <p className='section1'>1)Animations</p>
-                <video className='vid-section' src='videos/nested.mp4' autoPlay loop muted />
-                <p style={{ textAlign: 'center' }} className='section6'> Silky smooth animations and page transitions powered by the framer motion library</p>
+                <AutoPlay className='vid-section' src='videos/animations.mp4' />
+                <p style={{ textAlign: 'center' }} className='section6'> Silky smooth animations and page transitions powered by the framer motion library.</p>
 
 
                 <p className='section1'>2)Responsive Design</p>
-                <video className='vid-section' src='videos/nested.mp4' autoPlay loop muted />
+                <AutoPlay className='vid-section' src='videos/responsive.mp4' />
                 <p style={{ textAlign: 'center' }} className='section6'> Designed with the intention to make the website render well on a variety of devices.</p>
             </div>
 

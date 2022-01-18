@@ -8,7 +8,7 @@ export default function Services() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
 
   //Self explanatory
@@ -141,7 +141,7 @@ export default function Services() {
 
 
       <div className='image-container-portfolio'>
-        <img className='img-settings' src='images/OLI_0029.JPG'
+        <img className='img-settings' src='images/OLI_0029.jpg'
           alt='Photography-Icon'
         />
         <p>

@@ -12,6 +12,7 @@
   max-width: 100%;
   padding: 10px;
   text-align: center;
+  color: #f9f9f9;
 }
 
 .about-me-container p{
@@ -20,6 +21,7 @@
   font-weight: 400;
   position: relative;
   text-align: center;
+  color: #f9f9f9;
   
 }
 
@@ -62,6 +64,11 @@ input{
   background-color: #0b0b0b;
   border: 1px solid white;
   font-weight: 400;
+  font-size: 16px;
+  height: 27px;
+  border-radius: 8px;
+  text-align: center;
+  color: #f9f9f9;
 }
 
 textarea{
@@ -73,7 +80,10 @@ textarea{
   background-color: #0b0b0b;
   border: 1px solid white;
   font-weight: 400;
-
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center;
+  color: #f9f9f9;
 }
 
 ::placeholder {
@@ -92,8 +102,11 @@ textarea{
 .button{
   background-color: #0b0b0b;
   border: 1px solid white;
-  width: 65px;
-  height: 25px;
+  width: 75px;
+  height: 30px;
+  color: #f9f9f9;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
@@ -107,5 +120,5 @@ textarea{
   .position-2{
     max-width: 100%;
   }
-
+  
 }

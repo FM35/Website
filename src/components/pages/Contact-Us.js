@@ -7,7 +7,7 @@ export default function ContactUs() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
 
   //Self explanatory
@@ -22,7 +22,7 @@ export default function ContactUs() {
       <Navbar />
       <div className='contact-me'>
         <h1 className='position-1'>Contact Us</h1>
-        <p className='position-1'>We would love to hear from you! Let us know how we can best serve you!</p>
+        <p className='position-1'>We would love to hear from you!</p>
         <div className='position-2'>
           <form className='form-inline' action="https://formsubmit.co/fungaimawoyo@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false" />

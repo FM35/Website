@@ -162,6 +162,7 @@ img {
   left: 5%;
   width: 280px;
   margin-top: 5%;
+  color: #f9f9f9;
 }
 
 .menu-bottom{
@@ -170,6 +171,7 @@ img {
   bottom: 100px;
   left: 5%;
   width: 280px;
+  
 }
 
 .bottom-menu{
@@ -179,6 +181,7 @@ img {
   top: 10px;
   width: 280px;
   margin-bottom: 50px;
+  color: #f9f9f9;
 }
 
 .list-menu{
@@ -191,6 +194,7 @@ img {
   text-decoration: none;
   display: flex;
   font-weight: 300;
+  color: #f9f9f9;
 }
 
 @media screen and (max-width: 542px) {

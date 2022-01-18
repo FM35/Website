@@ -17,8 +17,9 @@ export default function PC_Builds() {
   useEffect(() => {
 
     scrollHeightRef.current.scrollHeight = window.pageYOffset;
-    console.log(window.pageYOffset)
+    console.log(scrollHeightRef.current.scrollHeight);
   }, [size.yscroll]);
+
 
   return (
     <motion.div className='container'>
@@ -40,7 +41,7 @@ export default function PC_Builds() {
             }}
           >
             <Tilt duration={7500} onHover={true}>
-              <img src='images/Pato-3.png'
+              <img src='images/Pato-3.jpg'
                 alt='Photography-Icon'
               />
             </Tilt>
@@ -60,7 +61,7 @@ export default function PC_Builds() {
             }}
           >
             <Tilt duration={7500} onHover={true}>
-              <img src='images/Olivine-4.png'
+              <img src='images/Olivine-4.jpg'
                 alt='Photography-Icon'
               />
             </Tilt>
@@ -80,7 +81,7 @@ export default function PC_Builds() {
             }}
           >
             <Tilt duration={7500} onHover={true}>
-              <img src='images/KLVC-3.png'
+              <img src='images/KLVC-3.jpg'
                 alt='Photography-Icon'
               />
             </Tilt>

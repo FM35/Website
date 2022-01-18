@@ -11,7 +11,7 @@
       height: 15%;
       align-items: center;
       font-size: 90px;
-      
+      color: #f9f9f9;
       left: 5%;
       overflow: hidden;
       
@@ -32,6 +32,7 @@
   font-size: 90px; 
   overflow: hidden;
   left: 10%;
+  color: #f9f9f9;
           
   }
     
@@ -41,15 +42,14 @@
     top: 160px;
     width:100%;
     overflow: hidden;
-    z-index: 1;
+    z-index: 1; 
    }
    
   
 .marquee-content{
     list-style: none;
-    height: 100%;
     display: flex;
-    animation: scrolling 10s linear infinite;
+    
           
       }
 
@@ -59,22 +59,21 @@
 }
       
    @keyframes scrolling{
-    0% {transform: translateX(0);}
-    100% {transform: translateX(-2400px);}
+    0% {transform: translate3d(0,0,0);}
+    100% {transform: translate3d(-2400px,0,0);}
     }
       
 .marquee-content li{
-      
+    animation: scrolling 10s linear infinite;  
     display:flex;
     justify-content: center;
     width: 800px;
     flex-shrink: 0;
     font-size: 90px;
     white-space:nowrap;
-    text-align: center;
-    
-    
-  font-weight: 300;
+    text-align: center;    
+    font-weight: 300;
+    color: #f9f9f9;
 
   }
 
@@ -135,10 +134,10 @@ width: 100%;
 
     .computer{
       font-size: 60px;
-      top: 220px;
+      top: 195px;
       }
       .marquee{
-        top: 135px;
+        top: 120px;
       }
 
       .marquee-content li{
@@ -147,11 +146,10 @@ width: 100%;
       }
 
       @keyframes scrolling{
-        0% {transform: translateX(0);}
-        100% {transform: translateX(-1800px);}
+        0% {transform: translate3d(0,0,0);}
+        100% {transform: translate3d(-1800px,0,0);}
         }
       
-  
   }
   
   @media screen and (max-width: 350px) {
@@ -161,11 +159,11 @@ width: 100%;
 
     .computer{
       font-size: 40px;
-      top: 160px; 
+      top: 150px; 
       }
 
       .marquee{
-        top: 105px;
+        top: 100px;
       }
 
       .marquee-content li{
@@ -174,8 +172,8 @@ width: 100%;
       }
 
       @keyframes scrolling{
-        0% {transform: translateX(0);}
-        100% {transform: translateX(-1200px);}
+        0% {transform: translate3d(0,0,0);}
+        100% {transform: translate3d(-1200px,0,0);}
         }
   
   }

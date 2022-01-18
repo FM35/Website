@@ -86,7 +86,7 @@ function HeroSection() {
         <motion.figure
           initial={showAnimation ? { opacity: 0, x: 1800 } : { opacity: 1, x: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 4.5, type: 'spring', stiffness: 25, damping: 10, ease: [0.6, 0.01, -0.05, 0.9] }}
           className={click1 ? 'tech-icon' : 'display-none'} onClick={handleClick1}>
-          <img className='icons' src='images/laptop.png'
+          <img className='icons' src='images/technology.png'
             alt='Tech-Icon'
           />
           <figcaption style={{ color: '#0b0b0b' }} className="figcap2"> Technology </figcaption>

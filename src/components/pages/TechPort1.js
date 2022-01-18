@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Nav_helper';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import './aboutUs.css';
+import AutoPlay from './AutoPlay';
 
 export default function Services() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <motion.div
@@ -31,8 +36,10 @@ export default function Services() {
 
             <div style={{ top: '100px', color: 'white' }} className='about-me-passage'>
                 <p className='section7'>
-                    Bringing a First Person feel, to the Virtual Gallery World that's more immersive than a 360 VR camera or a Google Maps Street View type of experience
+                    Bringing a First Person feel, to the Virtual Experience that's more immersive than Google Virtual Tours
                 </p>
+                <AutoPlay className='vid-section' src='videos/GoogleVirtualTour.mp4' />
+                <p className='section9'>An example of a Google Virtual Tour</p>
                 <p className='section2'>
                     Project was made using the Unity Game Engine developed by Unity Technologies
                 </p>
@@ -43,13 +50,13 @@ export default function Services() {
                 <p className='section1'> Some of the notable features:</p>
 
                 <p className='section1'>1)Exhibit Layering</p>
-                <video className='vid-section' src='videos/nested.mp4' autoPlay loop muted />
-                <p className='section6'> An exhibit, inside an exhibit, that's inside an exhibit. That's inside of another exhibit. Make sure to take a closer look so you can see our little animated buddies inside</p>
+                <AutoPlay className='vid-section' src='videos/nested.mp4' />
+                <p className='section6'> An exhibit, inside an exhibit, that's inside an exhibit. That's inside of another exhibit. Make sure to take a closer look so you can see our little animated buddies inside.</p>
 
 
                 <p className='section1'>2)Position Based Text Triggering</p>
-                <video className='vid-section' src='videos/info.mp4' autoPlay loop muted />
-                <p className='section6'> Information gets revealed when you get within a certain distance of the photograph</p>
+                <AutoPlay className='vid-section' src='videos/info.mp4' />
+                <p className='section6'> Information gets revealed when you get within a certain distance of the photograph.</p>
             </div>
 
 

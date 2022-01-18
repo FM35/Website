@@ -71,14 +71,20 @@ export default function VirtualExhibit() {
         });
 
         if (progression === 1) {
-            threeDots.display = 'none'
-            loading.display = 'none'
+            threeDots.display = 'none';
+            loading.display = 'none';
         }
     }, [progression]);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-    });
+
+        try {
+            window.scrollTo(0, 0);
+            threeDots.display = 'block';
+            loading.display = 'block';
+        } catch (error) {
+        }
+    }, []);
 
 
     return (
@@ -87,7 +93,7 @@ export default function VirtualExhibit() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ wwwwwwwssssssssssduration: 0.5 }}
         >
             <Navbar />
             <div className='title-3'>

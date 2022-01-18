@@ -128,7 +128,7 @@ width: 0px;
 position: absolute;
 display: flex;
 flex-direction: column;
-background: #0b0b0b;
+background: #090909;
 top: 100%;
 align-items: flex-end;
 width: 100%;
@@ -142,10 +142,9 @@ export const PopUp = styled(motion.div)`
 margin: auto;
 position: fixed;
 top: 0; left: 0; bottom: 0; right: 0;
-background: #f9f9f9;
+background: #0b0b0b;
 width: 80%;
 z-index:12;
 overflow: hidden;
 border-radius: 25px;
-
 `;

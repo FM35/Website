@@ -16,6 +16,7 @@ import About_Me from './components/pages/aboutUs';
 import VirtualExhibitComputer from './components/pages/VirtualExhibitComputer';
 import TechPort from './components/pages/TechPort1';
 import TechPort2 from './components/pages/TechPort2';
+import PageNotFound from "./components/pages/PageNotFound"
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='/virtual-exhibit-computer' component={VirtualExhibitComputer} />
           <Route path='/technology-portfolio-page-one' component={TechPort} />
           <Route path='/technology-portfolio-page-two' component={TechPort2} />
+          <Route component={PageNotFound} />
         </Switch>
       </AnimatePresence>
     </>

@@ -132,8 +132,7 @@ export default function Pato() {
 
   useEffect(() => {
     window.scrollTo(0, height);
-    console.log(height)
-  });
+  }, []);
 
   const staggerEffect = {
     initial: {
@@ -266,7 +265,7 @@ export default function Pato() {
 
           className='polaroid-container-1'>
           <img
-            src='images/Pato-3.png'
+            src='images/Pato-3.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -280,7 +279,7 @@ export default function Pato() {
           }}
 
           className='polaroid-container-2'>
-          <img src='images/Olivine-4.png'
+          <img src='images/Olivine-4.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -294,14 +293,14 @@ export default function Pato() {
           }}
 
           className='polaroid-container-3'>
-          <img src='images/KLVC-3.png'
+          <img src='images/KLVC-3.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/Pato-2.png'
+        <img className='img-settings' src='images/Pato-2.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
@@ -318,7 +317,7 @@ export default function Pato() {
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/Pato-4.png'
+        <img className='img-settings' src='images/Pato-4.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
@@ -329,7 +328,7 @@ export default function Pato() {
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/Pato-1.png'
+        <img className='img-settings' src='images/Pato-1.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>

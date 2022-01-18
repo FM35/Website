@@ -133,7 +133,7 @@ export default function HeatPack() {
 
   useEffect(() => {
     window.scrollTo(0, height);
-  });
+  }, []);
   const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
   const staggerEffect = {
@@ -254,7 +254,7 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-1'>
-          <img src='images/Pato-3.png'
+          <img src='images/Pato-3.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -267,7 +267,7 @@ export default function HeatPack() {
           }}
 
           className='polaroid-container-2'>
-          <img src='images/Olivine-4.png'
+          <img src='images/Olivine-4.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
@@ -285,14 +285,14 @@ export default function HeatPack() {
           exit={handleClick}
 
           className='polaroid-container-3'>
-          <img src='images/KLVC-3.png'
+          <img src='images/KLVC-3.jpg'
             alt='Photography-Icon'
           />
         </motion.div>
       </div>
 
       <div style={{ top: '100px', color: 'white' }} className='image-container'>
-        <img className='img-settings' src='images/KLVC-4.png'
+        <img className='img-settings' src='images/KLVC-4.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px' }}>
@@ -309,23 +309,23 @@ export default function HeatPack() {
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/KLVC-1.png'
+        <img className='img-settings' src='images/KLVC-1.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Designed for presenting slides and streaming church services online. Copactness was also a key feature for this build with us using a computer case that's less than half the size of regular builds.
+            Designed for presenting slides and streaming church services online. Compactness was also a key feature for this build with us using a computer case that's less than half the size of regular cases.
           </p>
         </div>
       </div>
 
       <div style={{ top: '100px' }} className='image-container'>
-        <img className='img-settings' src='images/KLVC-2.png'
+        <img className='img-settings' src='images/KLVC-2.jpg'
           alt='Photography-Icon'
         />
         <div style={{ width: '800px', color: 'white' }}>
           <p>
-            Coupled with a portable monitor, wireless keyboard and mouse to make the entire system lightweight and easily moveable.
+            Coupled with a portable monitor, wireless keyboard and mouse to make the entire system lightweight and easily transportable.
           </p>
         </div>
       </div>
