@@ -27,8 +27,8 @@
 }
 
 .icons{
-  width: 255px;
-  height: 255px;
+  width: 600px;
+  height: 420px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -39,12 +39,24 @@
 }
 
 .img-container{
-  width: 290px;
-  height: 268px;
+  width: 600px;
+  height: 420px;
   position: relative;
   text-align: center;
   display: flex;
   justify-content: center;
+  right: 7.5px;
+}
+
+.img-container1{
+  width: 600px;
+  height: 420px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  left: 7.5px;
+
 }
 
 .tech-icon {
@@ -61,15 +73,19 @@
 .figcap1{
   color: #fff;
   text-align: center;
-  
   font-size: 25px;
-  
+  position: relative;
+  bottom: 85px;
+  left: 4px;
+
 }
 
 .figcap2{
   text-align: center;
-  
   font-size: 25px;
+  position: relative;
+  bottom: 85px;
+  right: 10px;
 }
 
 .photo-item {
@@ -97,10 +113,18 @@
   opacity: 0;
   color: #f9f9f9;
 }
+.continueMessage{
+  font-size: 70px;
+  color: #f9f9f9;
+}
 
 @media screen and (max-width: 1657px) {
   .welcomeMessage{
     font-size: 80px;
+  }
+
+  .continueMessage{
+    font-size: 60px;
   }
 }
 
@@ -108,11 +132,17 @@
   .welcomeMessage{
     font-size: 70px;
   }
+  .continueMessage{
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 1312px) {
   .welcomeMessage{
     font-size: 60px;
+  }
+  .continueMessage{
+    font-size: 40px;
   }
 }
 
@@ -120,9 +150,12 @@
   .welcomeMessage{
     font-size: 50px;
   }
+  .continueMessage{
+    font-size: 30px;
+  }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1199px) {
   .hero-container{
     
     background-image: url('C:\Users\HEATPACK_OLLIE\Desktop\photo-and-tech\src\public\images/website-background.png');
@@ -133,32 +166,153 @@
     font-size: 50px;
     width: 90vw;
   }
+  .continueMessage{
+    font-size: 30px;
+    width: 90vw;
+  }
 
 }
 
-@media screen and (max-width: 473px) {
-  .welcomeMessage{
-    font-size: 40px;
+@media screen and (max-width: 603px) {
+  .img-container{
+    width: 110vw;
+    height: 71vw;
+  }
+
+  .img-container1{
+    width: 110vw;
+    height: 71vw;
   }
 
   .icons{
-    width: 200px;
-    height: 200px;
+    width: 110vw;
+    height: 71vw;
+  }
+  .figcap1{
+    bottom: 10vw;
+  
+  }
+  
+  .figcap2{
+    bottom: 10vw;
   }
 
-}
-
-@media screen and (max-height: 473px) {
-
-  .img-container{
-    width: 300px;
-    height: 282px;
   }
-}
 
-@media screen and (max-width: 385px) {
+  
+  @media screen and (max-width: 526px) {
+    .welcomeMessage{
+      font-size: 35px;
+    }
+    .continueMessage{
+      font-size: 25px;
+    }
+  }
+
+
+@media screen and (max-width: 391px) {
   .welcomeMessage{
     font-size: 30px;
   }
+
+  .continueMessage{
+    font-size: 20px;
+  }
 }
 
+
+@media screen and (max-height: 473px) {
+  .img-container{
+    width: 410px;
+    height: 286px;
+  }
+
+  .img-container1{
+    width: 410px;
+    height: 286px;
+  }
+
+  .icons{
+    width: 410px;
+    height: 286px;
+  }
+
+}
+
+@media screen and (max-height: 842px) {
+  .img-container{
+    width: 410px;
+    height: 286px;
+  }
+
+  .img-container1{
+    width: 410px;
+    height: 286px;
+  }
+
+  .icons{
+    width: 410px;
+    height: 286px;
+  }
+
+  .figcap1{
+    bottom: 45px;
+  
+  }
+  
+  .figcap2{
+    bottom: 45px;
+  }
+}
+
+@media screen and (max-height: 574px) {
+  .img-container{
+    width: 350px;
+    height: 229px;
+  }
+
+  .img-container1{
+    width: 350px;
+    height: 229px;
+  }
+
+  .icons{
+    width: 350px;
+    height: 229px;
+  }
+
+  .figcap1{
+    bottom: 45px;
+  
+  }
+  
+  .figcap2{
+    bottom: 45px;
+  }
+}
+
+@media screen and (max-height: 460px) {
+  .img-container{
+    width: 268px;
+    height: 175px;
+  }
+
+  .img-container1{
+    width: 268px;
+    height: 175px;
+  }
+
+  .icons{
+    width: 268px;
+    height: 175px;
+  }
+
+  .figcap1{
+    bottom: 45px;
+  
+  }
+  
+  .figcap2{
+    bottom: 45px;
+  }
+}
