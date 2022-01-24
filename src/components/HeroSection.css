@@ -36,6 +36,8 @@
 
 .photo-icon {
   cursor: pointer;
+  right: 7.5px;
+  position: relative;
 }
 
 .img-container{
@@ -45,7 +47,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  right: 7.5px;
+ 
 }
 
 .img-container1{
@@ -55,13 +57,13 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  left: 7.5px;
-
 }
 
 .tech-icon {
 
   cursor: pointer;
+  left: 7.5px;
+  position: relative;
 }
 
 .display-none {
@@ -175,17 +177,17 @@
 
 @media screen and (max-width: 603px) {
   .img-container{
-    width: 110vw;
+    width: 100vw;
     height: 71vw;
   }
 
   .img-container1{
-    width: 110vw;
+    width: 100vw;
     height: 71vw;
   }
 
   .icons{
-    width: 110vw;
+    width: 100vw;
     height: 71vw;
   }
   .figcap1{

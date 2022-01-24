@@ -72,9 +72,15 @@
 }
 
 .web-gl-pc{
-  display: block;
   width: 80vw;
-  transform: translatex(calc(50vw - 50%)) translatey(calc(43vh - 50%));
+  position: relative;
+}
+.web-gl-pc-wrapper{
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 600px) {

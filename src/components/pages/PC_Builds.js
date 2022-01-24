@@ -17,7 +17,7 @@ export default function PC_Builds() {
   useEffect(() => {
 
     scrollHeightRef.current.scrollHeight = window.pageYOffset;
-    console.log(scrollHeightRef.current.scrollHeight);
+
   }, [size.yscroll]);
 
 

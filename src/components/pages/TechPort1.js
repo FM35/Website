@@ -41,7 +41,7 @@ export default function Services() {
                 <AutoPlay className='vid-section' src='videos/GoogleVirtualTour.mp4' />
                 <p className='section9'>An example of a Google Virtual Tour</p>
                 <p className='section2'>
-                    Project was made using the Unity Game Engine developed by Unity Technologies
+                    This Project is a virtual exhibit that a user can move throughProject was made using the Unity Game Engine developed by Unity Technologies.
                 </p>
                 <p className='section3'>
                     Scripts that handle game behaviour were written using C#

@@ -76,16 +76,6 @@ export default function VirtualExhibit() {
         }
     }, [progression]);
 
-    useEffect(() => {
-
-        try {
-            window.scrollTo(0, 0);
-            threeDots.display = 'block';
-            loading.display = 'block';
-        } catch (error) {
-        }
-    }, []);
-
 
     return (
 
@@ -93,7 +83,7 @@ export default function VirtualExhibit() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ wwwwwwwssssssssssduration: 0.5 }}
+            transition={{ duration: 0.5 }}
         >
             <Navbar />
             <div className='title-3'>
@@ -126,7 +116,9 @@ export default function VirtualExhibit() {
                 </motion.div>
             </div>
             <p className='loading' >Loading {Math.round(progression * 100) * 1}%</p>
-            <Unity className='web-gl-pc' unityContext={unityContext} />
+            <div className='web-gl-pc-wrapper'>
+                <Unity className='web-gl-pc' unityContext={unityContext} />
+            </div>
         </motion.div >
     );
 }
